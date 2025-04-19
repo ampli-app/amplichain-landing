@@ -1,34 +1,63 @@
+import React, { useEffect } from "react";
+import { UserCheck } from "lucide-react";
 
-import React, { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Mail, UserCheck } from "lucide-react";
+declare global {
+  interface Window {
+    Tally: {
+      loadEmbeds: () => void;
+    };
+  }
+}
 
 const WaitlistSection: React.FC = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [additionalInfo, setAdditionalInfo] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = React.useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  // Load Tally script when component mounts
+  useEffect(() => {
+    // Create script element
+    const script = document.createElement('script');
+    script.src = 'https://tally.so/widgets/embed.js';
+    script.async = true;
     
-    // In a real application, you would send this data to a server
-    console.log("Form submitted:", { name, email, additionalInfo });
+    // Append to document head
+    document.head.appendChild(script);
     
-    // Show success message
+    // Clean up on unmount
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
+  // Load Tally embeds after component renders
+  useEffect(() => {
+    // Load embeds if Tally is available
+    if (window.Tally && !submitted) {
+      window.Tally.loadEmbeds();
+    }
+  }, [submitted]);
+
+  // Handle form submission success
+  const handleFormSuccess = () => {
     setSubmitted(true);
-    
-    // Clear form
-    setName("");
-    setEmail("");
-    setAdditionalInfo("");
     
     // Reset form after 5 seconds
     setTimeout(() => {
       setSubmitted(false);
     }, 5000);
   };
+
+  // We'll use this to listen for messages from the Tally iframe
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      // Check if the message is from Tally
+      if (event.data.type === 'tally.form.submitted') {
+        handleFormSuccess();
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
 
   return (
     <section id="waitlist" className="section py-20 bg-gradient-to-br from-ampli-green/10 to-ampli-blue/10">
@@ -54,62 +83,20 @@ const WaitlistSection: React.FC = () => {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="space-y-2">
-                <label htmlFor="name" className="block text-sm font-medium">
-                  Imię <span className="text-red-500">*</span>
-                </label>
-                <Input
-                  id="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Twoje imię"
-                  required
-                  className="w-full"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="email" className="block text-sm font-medium">
-                  Email <span className="text-red-500">*</span>
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="twoj@email.com"
-                  required
-                  className="w-full"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="additionalInfo" className="block text-sm font-medium">
-                  Dodatkowe informacje (opcjonalnie)
-                </label>
-                <textarea
-                  id="additionalInfo"
-                  value={additionalInfo}
-                  onChange={(e) => setAdditionalInfo(e.target.value)}
-                  placeholder="Napisz czego najbardziej oczekujesz od platformy?"
-                  className="w-full min-h-[120px] rounded-md border border-input bg-background px-3 py-2 text-sm resize-y"
-                />
-              </div>
-
-              <div className="pt-2">
-                <Button
-                  type="submit"
-                  className="w-full bg-ampli-green hover:bg-ampli-lightgreen text-white py-6 text-lg"
-                >
-                  <Mail className="mr-2 h-5 w-5" /> Zapisz się na premierę
-                </Button>
-              </div>
-
+            <div className="tally-embed">
+              <iframe 
+                data-tally-src="https://tally.so/embed/m6pqbA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                loading="lazy" 
+                width="100%" 
+                height="476" 
+                frameBorder="0" 
+                title="Amplichain Waitlist"
+              ></iframe>
+              
               <p className="text-xs text-gray-500 text-center pt-4">
                 Zapisując się, wyrażasz zgodę na otrzymywanie informacji marketingowych od Amplichain. Możesz zrezygnować w każdej chwili.
               </p>
-            </form>
+            </div>
           )}
         </div>
       </div>
