@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in space-y-8">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black mb-6 text-gray-900 leading-[1.1]">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-ampli-green to-ampli-blue">Amplichain</span>
+              <span className="text-ampli-green">Amplichain</span>
               <br />
               <span className="text-3xl sm:text-4xl md:text-5xl font-bold">sieć muzycznych możliwości</span>
             </h1>
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-ampli-green to-ampli-blue hover:opacity-90 text-white font-medium px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-ampli-green hover:bg-ampli-darkgreen text-white font-medium px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => document.getElementById('waitlist')?.scrollIntoView({behavior: 'smooth'})}
               >
                 Dołącz do listy oczekujących
@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-2 border-ampli-green text-ampli-green hover:bg-ampli-green/5 font-medium shadow-soft"
+                className="border-2 border-ampli-green text-ampli-green hover:bg-ampli-green/10 font-medium shadow-soft"
                 onClick={() => document.getElementById('features')?.scrollIntoView({behavior: 'smooth'})}
               >
                 Poznaj szczegóły
