@@ -96,6 +96,22 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-roboto scroll-smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+
+  .section {
+    @apply py-16 px-4 md:py-24 md:px-8 max-w-7xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl mb-12 text-center max-w-3xl mx-auto;
   }
 }
