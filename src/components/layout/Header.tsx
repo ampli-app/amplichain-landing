@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Music2 className="h-8 w-8 text-ampli-green" />
-          <span className="text-xl font-bold font-montserrat bg-gradient-to-r from-ampli-green to-ampli-blue bg-clip-text text-transparent">
+          <span className="text-xl font-bold font-montserrat text-ampli-green">
             Amplichain
           </span>
         </div>
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
         <Button 
           size="sm" 
-          className="bg-gradient-to-r from-ampli-green to-ampli-blue hover:opacity-90 text-white shadow-soft hover:shadow-hover transition-all duration-300"
+          className="bg-ampli-green hover:bg-ampli-darkgreen text-white shadow-soft hover:shadow-hover transition-all duration-300"
           onClick={() => document.getElementById('waitlist')?.scrollIntoView({behavior: 'smooth'})}
         >
           Dołącz do listy

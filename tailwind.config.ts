@@ -34,9 +34,9 @@ export default {
         },
         ampli: {
           green: '#7b9a00',
+          darkgreen: '#6b8a00',
           blue: '#007FBF',
           lightgreen: '#8baa10',
-          darkgreen: '#6b8a00',
           lightblue: '#1090CF',
           darkblue: '#006FAF'
         },
