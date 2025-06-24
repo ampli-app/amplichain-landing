@@ -1,6 +1,6 @@
 
 import React from "react";
-import { UserPlus, Camera, DollarSign, TrendingUp, ArrowRight, CheckCircle, Clock, Percent } from "lucide-react";
+import { UserPlus, Camera, DollarSign, TrendingUp, ArrowRight, CheckCircle, Percent } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const OnboardingSection: React.FC = () => {
@@ -9,7 +9,6 @@ const OnboardingSection: React.FC = () => {
       icon: UserPlus,
       title: "Zarejestruj się",
       description: "Stwórz konto sprzedawcy w mniej niż 2 minuty. Wystarczy email i podstawowe dane firmy.",
-      time: "2 min",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       benefits: ["Bezpłatna rejestracja", "Weryfikacja w 24h", "Pełne wsparcie"]
     },
@@ -17,7 +16,6 @@ const OnboardingSection: React.FC = () => {
       icon: Camera,
       title: "Dodaj pierwszą ofertę",
       description: "Zrób profesjonalne zdjęcia, opisz swój sprzęt lub usługę. Nasze AI pomoże w optymalizacji.",
-      time: "5 min",
       image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       benefits: ["Wsparcie AI w opisach", "Optymalizacja SEO", "Podpowiedzi cenowe"]
     },
@@ -25,7 +23,6 @@ const OnboardingSection: React.FC = () => {
       icon: DollarSign,
       title: "Otrzymaj pierwsze zamówienie",
       description: "Dzięki zaawansowanym algorytmom Twoja oferta trafi do właściwych kupujących. Gwarancja widoczności.",
-      time: "24 godz",
       image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       benefits: ["Algorytmy dopasowania", "Promocja nowych ofert", "Wsparcie sprzedażowe"]
     },
@@ -33,7 +30,6 @@ const OnboardingSection: React.FC = () => {
       icon: TrendingUp,
       title: "Skaluj swój biznes",
       description: "Wykorzystuj zaawansowane analytics, automatyzację i narzędzia marketingowe do maksymalizacji zysków.",
-      time: "Ciągle",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       benefits: ["Zaawansowane analytics", "Automatyzacja procesów", "Narzędzia marketingowe"]
     }
@@ -82,7 +78,7 @@ const OnboardingSection: React.FC = () => {
 
                 {/* Step card */}
                 <div className="relative bg-white rounded-3xl p-8 pt-16 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
-                  {/* Step number - better positioning */}
+                  {/* Step number */}
                   <div className="absolute -top-6 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-black text-lg shadow-lg z-20">
                     {index + 1}
                   </div>
@@ -109,15 +105,9 @@ const OnboardingSection: React.FC = () => {
                   
                   {/* Content */}
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-2xl font-bold font-montserrat text-gray-900">
-                        {step.title}
-                      </h3>
-                      <div className="flex items-center gap-1 bg-gray-100 rounded-lg px-3 py-1">
-                        <Clock className="w-4 h-4 text-gray-600" />
-                        <span className="text-sm font-semibold text-gray-700">{step.time}</span>
-                      </div>
-                    </div>
+                    <h3 className="text-2xl font-bold font-montserrat text-gray-900">
+                      {step.title}
+                    </h3>
                     
                     <p className="text-gray-600 leading-relaxed text-base">
                       {step.description}
