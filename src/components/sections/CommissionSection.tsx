@@ -19,13 +19,15 @@ const CommissionSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-white relative overflow-hidden">
-      <div className="container relative z-10">
-        {/* Premium Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-ampli-green/15 to-ampli-green/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-ampli-green/20">
-            <Crown className="h-4 w-4 text-ampli-green" />
-            <span className="text-sm font-bold text-ampli-green tracking-wide uppercase">Transparentne prowizje</span>
+    <section className="py-24 sm:py-32 bg-white">
+      <div className="container px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="text-center mb-16 sm:mb-20">
+          <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg mb-6 sm:mb-8">
+            <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
+            <span className="text-xs sm:text-sm font-bold text-ampli-green tracking-wide uppercase">
+              Transparentne prowizje
+            </span>
           </div>
           
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black font-montserrat mb-8 text-gray-900 leading-[0.9] tracking-tight">
