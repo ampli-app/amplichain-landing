@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
@@ -38,6 +39,11 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10">
+        {/* Full-width Discount Banner */}
+        <div className="w-full max-w-6xl mx-auto mb-12">
+          <DiscountBanner />
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Column - Enhanced Content */}
@@ -50,9 +56,6 @@ const HeroSection = () => {
                 Właśnie Wystartowaliśmy!
               </span>
             </div>
-
-            {/* Beautiful Discount Banner */}
-            <DiscountBanner />
 
             {/* Main Headline - More Professional Typography */}
             <div className="space-y-6">
