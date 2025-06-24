@@ -77,18 +77,12 @@ const OnboardingSection: React.FC = () => {
 
                   {/* Image */}
                   <div className="relative mb-6">
-                    <div className="aspect-video rounded-2xl overflow-hidden shadow-md">
+                    <div className="aspect-video overflow-hidden rounded-lg">
                       <img
                         src={step.image}
                         alt={step.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                    </div>
-                    
-                    {/* Icon overlay */}
-                    <div className="absolute -bottom-3 left-4 bg-white rounded-xl p-3 shadow-lg border border-gray-100">
-                      <step.icon className="h-6 w-6 text-ampli-green" />
                     </div>
                   </div>
                   
