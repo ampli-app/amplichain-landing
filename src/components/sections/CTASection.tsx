@@ -1,9 +1,13 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Gift, Clock, Users, CheckCircle, Star } from "lucide-react";
+import { ArrowRight, Gift, Clock, Users, CheckCircle, Star, Zap } from "lucide-react";
 
 const CTASection: React.FC = () => {
+  const handleStartSelling = () => {
+    window.open('https://app.amplichain.com/register', '_blank');
+  };
+
   return (
     <section id="cta" className="py-32 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 relative overflow-hidden">
       {/* Background Effects */}
@@ -30,23 +34,23 @@ const CTASection: React.FC = () => {
           {/* Header Section */}
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-ampli-green/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
-              <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
+              <Zap className="w-4 h-4 text-ampli-green" />
               <span className="text-sm font-bold text-ampli-green uppercase tracking-wide">
-                Ograniczona Oferta
+                Właśnie Wystartowaliśmy!
               </span>
             </div>
 
             <h2 className="text-5xl md:text-7xl font-black font-montserrat mb-8 text-white leading-tight">
-              Gotowy na
+              Zostań
               <br />
               <span className="bg-gradient-to-r from-ampli-green to-ampli-lightgreen bg-clip-text text-transparent">
-                wielką sprzedaż?
+                pierwszym sprzedawcą!
               </span>
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-              Dołącz do <strong className="text-white">ekskluzywnej grupy sprzedawców</strong> i otrzymaj 
-              dostęp do najlepszego marketplace'a muzycznego w Polsce
+              Amplichain właśnie ruszył! Dołącz do <strong className="text-white">pierwszej fali sprzedawców</strong> 
+              i skorzystaj z ekskluzywnych bonusów na start
             </p>
           </div>
 
@@ -60,48 +64,47 @@ const CTASection: React.FC = () => {
                   <div className="bg-ampli-green/20 rounded-xl p-2">
                     <Gift className="h-6 w-6 text-ampli-green" />
                   </div>
-                  Pakiet startowy dla pierwszych 1000
+                  Bonusy dla pierwszych sprzedawców
                 </h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">50 PLN bonusu na start</span>
+                    <span className="text-gray-300">Pierwszy miesiąc ZERO prowizji</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Wczesny dostęp - 2 tygodnie przed startem</span>
+                    <span className="text-gray-300">50 PLN bonusu na promocję ogłoszeń</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Pierwszy miesiąc bez prowizji</span>
+                    <span className="text-gray-300">Priorytetowe wyświetlanie w wynikach</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Priorytetowe wsparcie techniczne</span>
+                    <span className="text-gray-300">Dedykowane wsparcie sprzedażowe</span>
                   </div>
                 </div>
               </div>
 
-              {/* Progress Bar */}
-              <div className="bg-gradient-to-r from-ampli-green/20 to-ampli-darkgreen/20 backdrop-blur-sm rounded-2xl p-8 border border-ampli-green/20">
+              {/* Urgency Bar */}
+              <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20">
                 <div className="flex items-center justify-between mb-4">
-                  <h4 className="text-xl font-bold text-white">Pozostało miejsc</h4>
+                  <h4 className="text-xl font-bold text-white">Pierwsze 2 tygodnie</h4>
                   <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-ampli-green" />
-                    <span className="text-ampli-green font-bold text-lg">153 / 1000</span>
+                    <Clock className="h-5 w-5 text-red-400" />
+                    <span className="text-red-400 font-bold text-lg">Czas ucieka!</span>
                   </div>
                 </div>
                 
                 <div className="w-full bg-white/10 rounded-full h-3 mb-4">
-                  <div className="bg-gradient-to-r from-ampli-green to-ampli-lightgreen h-3 rounded-full relative" style={{width: '15.3%'}}>
-                    <div className="absolute right-0 top-0 h-3 w-3 bg-white rounded-full animate-pulse" />
+                  <div className="bg-gradient-to-r from-red-500 to-orange-500 h-3 rounded-full relative animate-pulse" style={{width: '40%'}}>
+                    <div className="absolute right-0 top-0 h-3 w-3 bg-white rounded-full" />
                   </div>
                 </div>
                 
                 <p className="text-gray-300 text-sm">
-                  <Clock className="inline h-4 w-4 mr-1" />
-                  Oferta kończy się za <strong className="text-white">7 dni</strong>
+                  Bonusy startowe dostępne tylko przez <strong className="text-white">pierwsze 14 dni</strong> działania platformy
                 </p>
               </div>
             </div>
@@ -131,14 +134,14 @@ const CTASection: React.FC = () => {
                             <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                           ))}
                         </div>
-                        <span className="text-sm font-bold text-gray-600">4.9/5 ocena</span>
+                        <span className="text-sm font-bold text-gray-600">Nowa platforma</span>
                       </div>
                       
                       <h4 className="text-gray-900 font-bold text-lg mb-2">
-                        +200% wzrost sprzedaży
+                        Bądź pierwszy na rynku
                       </h4>
                       <p className="text-gray-600 text-sm">
-                        Średni wynik naszych sprzedawców w pierwszych 3 miesiącach
+                        Zdobądź przewagę konkurencyjną jako jeden z pierwszych sprzedawców
                       </p>
                     </div>
                   </div>
@@ -150,20 +153,21 @@ const CTASection: React.FC = () => {
           {/* CTA Section */}
           <div className="text-center bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
             <h3 className="text-3xl md:text-4xl font-black font-montserrat mb-6 text-white">
-              Nie czekaj - miejsca się kończą!
+              Rozpocznij sprzedaż już dziś!
             </h3>
             
             <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-              Zapisz się teraz i otrzymaj <strong className="text-ampli-green">pełen pakiet bonusów startowych</strong>.
-              Bez zobowiązań, bez ukrytych kosztów.
+              Dołącz do <strong className="text-ampli-green">pierwszej fali sprzedawców</strong> i skorzystaj 
+              z wszystkich bonusów startowych. Rejestracja zajmuje tylko 2 minuty.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <Button 
+                onClick={handleStartSelling}
                 size="lg" 
                 className="group bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold px-12 py-8 text-xl shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-2xl"
               >
-                Zapisz się na listę oczekujących
+                Rozpocznij sprzedaż teraz
                 <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -171,7 +175,7 @@ const CTASection: React.FC = () => {
                 <div className="text-sm text-gray-400 mb-1">100% bezpłatne</div>
                 <div className="flex items-center gap-2 text-gray-300">
                   <CheckCircle className="h-4 w-4 text-ampli-green" />
-                  <span className="text-sm">Brak spamu, tylko ważne informacje</span>
+                  <span className="text-sm">Aktywacja w 2 minuty</span>
                 </div>
               </div>
             </div>
@@ -179,16 +183,16 @@ const CTASection: React.FC = () => {
             {/* Trust indicators */}
             <div className="flex flex-wrap justify-center gap-8 pt-8 border-t border-white/10">
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">500+</div>
-                <div className="text-sm text-gray-400">Sprzedawców czeka</div>
+                <div className="text-2xl font-bold text-ampli-green">NOWA</div>
+                <div className="text-sm text-gray-400">Platforma</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">2M PLN</div>
-                <div className="text-sm text-gray-400">Wartość transakcji</div>
+                <div className="text-2xl font-bold text-ampli-green">5%</div>
+                <div className="text-sm text-gray-400">Najniższa prowizja</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">48h</div>
-                <div className="text-sm text-gray-400">Średni czas sprzedaży</div>
+                <div className="text-2xl font-bold text-ampli-green">14 DNI</div>
+                <div className="text-sm text-gray-400">Bonusy startowe</div>
               </div>
             </div>
           </div>
