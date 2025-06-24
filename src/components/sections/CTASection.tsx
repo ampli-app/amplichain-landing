@@ -1,7 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, Clock, Users, CheckCircle, Star, Zap } from "lucide-react";
+import DiscountBanner from "@/components/ui/discount-banner";
 
 const CTASection: React.FC = () => {
   const handleStartSelling = () => {
@@ -40,18 +40,9 @@ const CTASection: React.FC = () => {
               </span>
             </div>
 
-            {/* Discount Code Banner */}
-            <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-2xl p-8 border border-orange-500/30 mb-12 mx-auto max-w-4xl">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Gift className="h-8 w-8 text-orange-400" />
-                <h3 className="text-2xl font-bold text-white">Ekskluzywny kod rabatowy!</h3>
-              </div>
-              <p className="text-xl text-orange-200 mb-4">
-                Zarejestruj się do <strong className="text-white">31 grudnia 2024</strong>
-              </p>
-              <p className="text-2xl font-black text-white">
-                i otrzymaj kod obniżający prowizję do tylko <span className="text-orange-400">3%</span>
-              </p>
+            {/* Compact Discount Banner */}
+            <div className="mb-12">
+              <DiscountBanner variant="compact" className="mx-auto" />
             </div>
 
             <h2 className="text-5xl md:text-7xl font-black font-montserrat mb-8 text-white leading-tight">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle, Gift } from "lucide-react";
+import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
+import DiscountBanner from "@/components/ui/discount-banner";
 
 const HeroSection = () => {
   const handleStartSelling = () => {
@@ -50,16 +51,8 @@ const HeroSection = () => {
               </span>
             </div>
 
-            {/* Registration Discount Banner */}
-            <div className="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-200 rounded-2xl p-6 shadow-lg">
-              <div className="flex items-center gap-3 mb-3">
-                <Gift className="h-6 w-6 text-orange-600" />
-                <span className="text-orange-800 font-bold text-lg">Kod rabatowy na start!</span>
-              </div>
-              <p className="text-orange-700 font-medium">
-                Zarejestruj się do <strong>31 grudnia 2024</strong> i otrzymaj kod obniżający prowizję do <strong>tylko 3%</strong>
-              </p>
-            </div>
+            {/* Beautiful Discount Banner */}
+            <DiscountBanner />
 
             {/* Main Headline - More Professional Typography */}
             <div className="space-y-6">
