@@ -39,7 +39,7 @@ const HeroSection = () => {
             <div className="space-y-4 sm:space-y-6">
   <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
     <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
-      Sprzedawaj inteligentnie na Amplichain
+      Twoja sieć <span class="text-gray-900 font-extrabold">muzycznych</span> możliwości
     </span>
   </h1>
 
