@@ -1,4 +1,3 @@
-
 import React from "react";
 import { UserPlus, Camera, DollarSign, TrendingUp, ArrowRight, CheckCircle, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -136,68 +135,6 @@ const OnboardingSection: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Success Story Banner */}
-        <div className="relative bg-gradient-to-r from-ampli-green to-ampli-darkgreen rounded-3xl p-12 mb-16 overflow-hidden shadow-2xl">
-          <div className="absolute inset-0">
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-              alt="Sukces sprzedawcy"
-              className="w-full h-full object-cover opacity-20"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-ampli-green/90 to-ampli-darkgreen/90" />
-          </div>
-          
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white space-y-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
-                <span className="text-sm font-bold uppercase tracking-wide opacity-90">
-                  Historia Sukcesu
-                </span>
-              </div>
-              
-              <h3 className="text-3xl md:text-4xl font-black leading-tight">
-                "W pierwszy miesiąc sprzedałem za 15,000 PLN"
-              </h3>
-              
-              <p className="text-lg opacity-90 leading-relaxed">
-                Marcin, producent muzyczny z Warszawy, wykorzystał nasze narzędzia do sprzedaży 
-                profesjonalnego sprzętu studyjnego i usług produkcyjnych.
-              </p>
-              
-              <div className="flex items-center gap-6 pt-4">
-                <div className="text-center">
-                  <div className="text-2xl font-black">15k PLN</div>
-                  <div className="text-sm opacity-80">pierwszy miesiąc</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-black">47</div>
-                  <div className="text-sm opacity-80">sprzedanych ofert</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-black">4.9★</div>
-                  <div className="text-sm opacity-80">średnia ocena</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="Marcin - sukces na Amplichain"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-xl">
-                  <TrendingUp className="w-8 h-8 text-ampli-green" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
