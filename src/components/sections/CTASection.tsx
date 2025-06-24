@@ -40,6 +40,20 @@ const CTASection: React.FC = () => {
               </span>
             </div>
 
+            {/* Discount Code Banner */}
+            <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-2xl p-8 border border-orange-500/30 mb-12 mx-auto max-w-4xl">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Gift className="h-8 w-8 text-orange-400" />
+                <h3 className="text-2xl font-bold text-white">Ekskluzywny kod rabatowy!</h3>
+              </div>
+              <p className="text-xl text-orange-200 mb-4">
+                Zarejestruj się do <strong className="text-white">31 grudnia 2024</strong>
+              </p>
+              <p className="text-2xl font-black text-white">
+                i otrzymaj kod obniżający prowizję do tylko <span className="text-orange-400">3%</span>
+              </p>
+            </div>
+
             <h2 className="text-5xl md:text-7xl font-black font-montserrat mb-8 text-white leading-tight">
               Zostań
               <br />
@@ -70,7 +84,7 @@ const CTASection: React.FC = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Pierwszy miesiąc ZERO prowizji</span>
+                    <span className="text-gray-300">Kod rabatowy - prowizja tylko 3%</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
@@ -90,7 +104,7 @@ const CTASection: React.FC = () => {
               {/* Urgency Bar */}
               <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20">
                 <div className="flex items-center justify-between mb-4">
-                  <h4 className="text-xl font-bold text-white">Pierwsze 2 tygodnie</h4>
+                  <h4 className="text-xl font-bold text-white">Do 31 grudnia 2024</h4>
                   <div className="flex items-center gap-2">
                     <Clock className="h-5 w-5 text-red-400" />
                     <span className="text-red-400 font-bold text-lg">Czas ucieka!</span>
@@ -98,13 +112,13 @@ const CTASection: React.FC = () => {
                 </div>
                 
                 <div className="w-full bg-white/10 rounded-full h-3 mb-4">
-                  <div className="bg-gradient-to-r from-red-500 to-orange-500 h-3 rounded-full relative animate-pulse" style={{width: '40%'}}>
+                  <div className="bg-gradient-to-r from-red-500 to-orange-500 h-3 rounded-full relative animate-pulse" style={{width: '70%'}}>
                     <div className="absolute right-0 top-0 h-3 w-3 bg-white rounded-full" />
                   </div>
                 </div>
                 
                 <p className="text-gray-300 text-sm">
-                  Bonusy startowe dostępne tylko przez <strong className="text-white">pierwsze 14 dni</strong> działania platformy
+                  Kod rabatowy dostępny tylko do <strong className="text-white">końca roku</strong> - nie przegap okazji!
                 </p>
               </div>
             </div>
@@ -153,12 +167,12 @@ const CTASection: React.FC = () => {
           {/* CTA Section */}
           <div className="text-center bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
             <h3 className="text-3xl md:text-4xl font-black font-montserrat mb-6 text-white">
-              Rozpocznij sprzedaż już dziś!
+              Zarejestruj się i odbierz kod rabatowy!
             </h3>
             
             <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
               Dołącz do <strong className="text-ampli-green">pierwszej fali sprzedawców</strong> i skorzystaj 
-              z wszystkich bonusów startowych. Rejestracja zajmuje tylko 2 minuty.
+              z kodu rabatowego obniżającego prowizję. Rejestracja zajmuje tylko 2 minuty.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
@@ -167,7 +181,7 @@ const CTASection: React.FC = () => {
                 size="lg" 
                 className="group bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold px-12 py-8 text-xl shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-2xl"
               >
-                Rozpocznij sprzedaż teraz
+                Zarejestruj się po kod rabatowy
                 <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -175,7 +189,7 @@ const CTASection: React.FC = () => {
                 <div className="text-sm text-gray-400 mb-1">100% bezpłatne</div>
                 <div className="flex items-center gap-2 text-gray-300">
                   <CheckCircle className="h-4 w-4 text-ampli-green" />
-                  <span className="text-sm">Aktywacja w 2 minuty</span>
+                  <span className="text-sm">Kod wysłany od razu</span>
                 </div>
               </div>
             </div>
@@ -183,16 +197,16 @@ const CTASection: React.FC = () => {
             {/* Trust indicators */}
             <div className="flex flex-wrap justify-center gap-8 pt-8 border-t border-white/10">
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">NOWA</div>
-                <div className="text-sm text-gray-400">Platforma</div>
+                <div className="text-2xl font-bold text-ampli-green">3%</div>
+                <div className="text-sm text-gray-400">Z kodem rabatowym</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">5%</div>
-                <div className="text-sm text-gray-400">Najniższa prowizja</div>
+                <div className="text-2xl font-bold text-ampli-green">31.12</div>
+                <div className="text-sm text-gray-400">Deadline kodu</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">14 DNI</div>
-                <div className="text-sm text-gray-400">Bonusy startowe</div>
+                <div className="text-2xl font-bold text-ampli-green">GRATIS</div>
+                <div className="text-sm text-gray-400">Rejestracja</div>
               </div>
             </div>
           </div>

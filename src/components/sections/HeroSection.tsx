@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
+import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle, Gift } from "lucide-react";
 
 const HeroSection = () => {
   const handleStartSelling = () => {
@@ -51,6 +50,17 @@ const HeroSection = () => {
               </span>
             </div>
 
+            {/* Registration Discount Banner */}
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-200 rounded-2xl p-6 shadow-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <Gift className="h-6 w-6 text-orange-600" />
+                <span className="text-orange-800 font-bold text-lg">Kod rabatowy na start!</span>
+              </div>
+              <p className="text-orange-700 font-medium">
+                Zarejestruj się do <strong>31 grudnia 2024</strong> i otrzymaj kod obniżający prowizję do <strong>tylko 3%</strong>
+              </p>
+            </div>
+
             {/* Main Headline - More Professional Typography */}
             <div className="space-y-6">
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[0.95] tracking-tight">
@@ -77,7 +87,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-ampli-green" />
-                <span className="text-lg text-gray-700 font-medium">Tylko 5% prowizji - najniższe na rynku</span>
+                <span className="text-lg text-gray-700 font-medium">Tylko 3% prowizji z kodem rabatowym</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-ampli-green" />
@@ -96,7 +106,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-10 py-6 text-lg shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl"
               >
-                Rozpocznij sprzedaż
+                Zarejestruj się i odbierz kod
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -117,8 +127,8 @@ const HeroSection = () => {
                 <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
                   <TrendingUp className="h-8 w-8 text-ampli-green mx-auto" />
                 </div>
-                <div className="font-black text-3xl text-ampli-green mb-1">5%</div>
-                <div className="text-sm text-gray-600 font-medium">prowizji</div>
+                <div className="font-black text-3xl text-ampli-green mb-1">3%</div>
+                <div className="text-sm text-gray-600 font-medium">z kodem</div>
               </div>
               
               <div className="text-center group cursor-pointer">
