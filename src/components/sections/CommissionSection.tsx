@@ -146,9 +146,7 @@ const CommissionSection: React.FC = () => {
             {/* Header */}
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-3 mb-6">
-                <div className="bg-gradient-to-br from-ampli-green to-ampli-darkgreen rounded-xl p-3">
-                  <Shield className="h-6 w-6 text-white" />
-                </div>
+
                 <h3 className="text-3xl md:text-4xl font-black font-montserrat text-gray-900">
                   Co otrzymujesz w tej cenie?
                 </h3>

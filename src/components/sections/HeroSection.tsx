@@ -101,27 +101,6 @@ const HeroSection = () => {
                   alt="Profesjonalne narzędzia dla sprzedawców muzycznych"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
                 />
-                
-                {/* Elegant overlay with branding */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                
-                {/* Professional badge on image */}
-                <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl">
-                    <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3">
-                      <div className="h-2 w-2 sm:h-3 sm:w-3 bg-ampli-green rounded-full animate-pulse" />
-                      <span className="text-ampli-green font-bold text-xs sm:text-sm uppercase tracking-wide">
-                        Amplichain Pro
-                      </span>
-                    </div>
-                    <h3 className="text-gray-900 font-bold text-lg sm:text-xl mb-1 sm:mb-2">
-                      Profesjonalne narzędzia sprzedażowe
-                    </h3>
-                    <p className="text-gray-600 text-xs sm:text-sm">
-                      Wszystko czego potrzebujesz do efektywnej sprzedaży w branży muzycznej
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

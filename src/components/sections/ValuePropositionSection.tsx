@@ -1,32 +1,28 @@
 import React from "react";
-import { TrendingUp, Users, Shield, Zap, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from 'lucide-react';
 
 const ValuePropositionSection: React.FC = () => {
   const benefits = [
     {
-      icon: TrendingUp,
+      image: "https://images.unsplash.com/photo-1593672715438-d88a706299a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Najniższe prowizje",
       description: "Tylko 5% prowizji oznacza więcej pieniędzy w Twojej kieszeni",
-      highlight: "5% prowizji"
     },
     {
-      icon: Users,
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Rosnąca społeczność",
       description: "Dołącz do pierwszych sprzedawców i zbuduj swoją pozycję na rynku",
-      highlight: "Bądź pierwszy"
     },
     {
-      icon: Shield,
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Pełne bezpieczeństwo",
       description: "Płatności przez Stripe + ochrona sprzedawcy",
-      highlight: "100% bezpieczeństwa"
     },
     {
-      icon: Zap,
+      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Nowoczesna platforma",
       description: "Zaawansowane narzędzia do sprzedaży już w przygotowaniu",
-      highlight: "W rozwoju"
     }
   ];
 
@@ -60,24 +56,24 @@ const ValuePropositionSection: React.FC = () => {
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 sm:mb-20">
           {benefits.map((benefit, index) => (
-            <div key={index} className="group bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 transform hover:scale-105 hover:-translate-y-2">
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-xl h-14 w-14 sm:h-16 sm:w-16 flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:from-ampli-green/25 group-hover:to-ampli-green/10 transition-all duration-300 shadow-lg">
-                  <benefit.icon className="h-7 w-7 sm:h-8 sm:w-8 text-ampli-green" />
+            <div key={index} className="group bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 transform hover:scale-105 hover:-translate-y-2 flex flex-col">
+              <div className="relative mb-6">
+                <div className="aspect-video overflow-hidden rounded-xl sm:rounded-2xl">
+                  <img
+                    src={benefit.image}
+                    alt={benefit.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                 </div>
-                
-                <div className="bg-ampli-green/10 rounded-full px-3 py-1 mb-4 sm:mb-6 inline-block">
-                  <span className="text-xs sm:text-sm font-bold text-ampli-green">{benefit.highlight}</span>
-                </div>
-
-                <h3 className="text-lg sm:text-xl font-bold font-montserrat mb-3 sm:mb-4 text-gray-900">
-                  {benefit.title}
-                </h3>
-                
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  {benefit.description}
-                </p>
               </div>
+              
+              <h3 className="text-lg sm:text-xl font-bold font-montserrat mb-3 sm:mb-4 text-gray-900">
+                {benefit.title}
+              </h3>
+              
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>
