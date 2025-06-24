@@ -128,93 +128,39 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Column - Professional Dashboard Preview */}
+          {/* Right Column - Professional Photo */}
           <div className="hidden lg:block animate-scale-in">
-            <div className="relative group perspective-1000">
+            <div className="relative group">
               
               {/* Professional glow effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-ampli-green/20 via-ampli-green/10 to-ampli-green/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
               
-              {/* Enhanced dashboard */}
-              <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden border-2 border-gray-200/50 shadow-2xl transform group-hover:rotate-y-5 transition-transform duration-500">
+              {/* Professional image */}
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Profesjonalne narzędzia dla sprzedawców muzycznych"
+                  className="w-full h-[600px] object-cover"
+                />
                 
-                {/* Professional header */}
-                <div className="h-20 bg-gradient-to-r from-ampli-green to-ampli-darkgreen flex items-center px-8 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-black/10" />
-                  <div className="flex gap-3 relative z-10">
-                    <div className="h-4 w-4 rounded-full bg-white/30" />
-                    <div className="h-4 w-4 rounded-full bg-white/20" />
-                    <div className="h-4 w-4 rounded-full bg-white/10" />
-                  </div>
-                  <div className="flex-1 text-center text-white font-bold text-lg relative z-10">
-                    Panel Sprzedawcy Pro
-                  </div>
-                </div>
+                {/* Elegant overlay with branding */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
-                {/* Enhanced content */}
-                <div className="p-8 space-y-8">
-                  
-                  {/* Main revenue display */}
-                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-200 shadow-lg">
-                    <div className="flex items-start justify-between mb-6">
-                      <div>
-                        <h3 className="font-bold text-2xl text-gray-900 mb-2">Przychody tego miesiąca</h3>
-                        <p className="text-gray-500 text-sm">Ostatnie 30 dni</p>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-4xl font-black bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
-                          24,680 PLN
-                        </div>
-                        <div className="text-sm text-ampli-green font-bold flex items-center justify-end mt-1">
-                          <TrendingUp className="h-4 w-4 mr-1" />
-                          +34% ↗
-                        </div>
-                      </div>
+                {/* Professional badge on image */}
+                <div className="absolute bottom-8 left-8 right-8">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
+                    <div className="flex items-center gap-4 mb-3">
+                      <div className="h-3 w-3 bg-ampli-green rounded-full animate-pulse" />
+                      <span className="text-ampli-green font-bold text-sm uppercase tracking-wide">
+                        Amplichain Pro
+                      </span>
                     </div>
-                  </div>
-
-                  {/* Recent transactions */}
-                  <div className="space-y-4">
-                    <h4 className="font-bold text-lg text-gray-900 mb-4">Ostatnie transakcje</h4>
-                    
-                    <div className="bg-gradient-to-r from-white to-gray-50/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-ampli-green/20 transition-all group/item shadow-lg">
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <div className="font-bold text-gray-900 mb-1">Gibson Les Paul Standard</div>
-                          <div className="text-sm text-gray-500">Sprzedano dzisiaj</div>
-                        </div>
-                        <div className="text-right">
-                          <div className="text-ampli-green font-black text-xl">8,900 PLN</div>
-                          <div className="text-xs text-gray-500">Prowizja: 445 PLN</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-white to-gray-50/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-ampli-green/20 transition-all group/item shadow-lg">
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <div className="font-bold text-gray-900 mb-1">Mixing & Mastering</div>
-                          <div className="text-sm text-gray-500">Zakończono wczoraj</div>
-                        </div>
-                        <div className="text-right">
-                          <div className="text-ampli-green font-black text-xl">1,200 PLN</div>
-                          <div className="text-xs text-gray-500">Prowizja: 60 PLN</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-white to-gray-50/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-ampli-green/20 transition-all group/item shadow-lg">
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <div className="font-bold text-gray-900 mb-1">Marshall DSL100H</div>
-                          <div className="text-sm text-ampli-green">W trakcie negocjacji</div>
-                        </div>
-                        <div className="text-right">
-                          <div className="text-gray-600 font-bold text-xl">3,200 PLN</div>
-                          <div className="text-xs text-gray-500">Oczekiwana prowizja: 160 PLN</div>
-                        </div>
-                      </div>
-                    </div>
+                    <h3 className="text-gray-900 font-bold text-xl mb-2">
+                      Profesjonalne narzędzia sprzedażowe
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      Wszystko czego potrzebujesz do efektywnej sprzedaży w branży muzycznej
+                    </p>
                   </div>
                 </div>
               </div>
@@ -240,14 +186,6 @@ const HeroSection = () => {
         
         .animate-scale-in {
           animation: scale-in 1.2s ease-out 0.4s both;
-        }
-
-        .perspective-1000 {
-          perspective: 1000px;
-        }
-
-        .rotate-y-5:hover {
-          transform: rotateY(5deg);
         }
       `}</style>
     </section>
