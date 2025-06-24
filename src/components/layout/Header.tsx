@@ -62,7 +62,6 @@ const Header: React.FC = () => {
               >
                 <span className="relative z-10">{item.label}</span>
                 <div className="absolute inset-0 bg-ampli-green/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-200"></div>
-                <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-ampli-green group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
               </button>
             ))}
           </nav>

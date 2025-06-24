@@ -66,10 +66,16 @@ const OnboardingSection: React.FC = () => {
                 )}
 
                 {/* Step card */}
-                <div className="relative bg-white rounded-3xl p-8 pt-16 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
+                <div className="relative bg-white rounded-2xl sm:rounded-3xl p-8 pt-20 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
                   {/* Step number */}
-                  <div className="absolute -top-6 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold text-lg shadow-lg z-20">
-                    {index + 1}
+                  <div className="absolute -top-8 right-8 z-20">
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-ampli-green via-ampli-lightgreen to-ampli-darkgreen text-white rounded-full h-16 w-16 flex items-center justify-center font-bold text-xl shadow-2xl shadow-ampli-green/40 border-4 border-white group-hover:scale-110 transition-all duration-300">
+                        <span className="relative z-10">{index + 1}</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full"></div>
+                      </div>
+                      <div className="absolute -inset-2 bg-gradient-to-br from-ampli-green/30 to-ampli-lightgreen/30 rounded-full blur-md animate-pulse"></div>
+                    </div>
                   </div>
 
                   {/* Background pattern */}
@@ -104,12 +110,12 @@ const OnboardingSection: React.FC = () => {
 
         {/* CTA Section */}
         <div className="mt-20 text-center">
-          <div className="max-w-3xl mx-auto rounded-3xl p-10 border-2 border-gray-200">
+          <div className="max-w-5xl mx-auto rounded-3xl p-12 border-2 border-gray-200">
             <div className="relative">
               <h3 className="text-4xl md:text-5xl font-bold font-syne mb-6 text-gray-900 leading-tight">
                 Zacznij <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zarabiać</span> na swojej <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">pasji</span>
               </h3>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
                 Przekształć swoją muzyczną pasję w stabilne źródło dochodu. 
                 Sprzedawaj sprzęt, oferuj usługi i rozwijaj swój biznes z najniższymi prowizjami na rynku.
               </p>
