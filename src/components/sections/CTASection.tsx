@@ -19,18 +19,6 @@ const CTASection: React.FC = () => {
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-ampli-green/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-ampli-green/5 rounded-full blur-3xl" />
-        
-        {/* Subtle grid pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <svg width="60" height="60" viewBox="0 0 60 60" className="w-full h-full">
-            <defs>
-              <pattern id="cta-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#7b9a00" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#cta-grid)" />
-          </svg>
-        </div>
       </div>
 
       <div className="container relative z-10">
