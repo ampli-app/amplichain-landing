@@ -12,7 +12,7 @@ const HeroSection = () => {
   const deadline = "2025-07-10T23:59:59";
 
   return (
-    <section className="min-h-screen pt-16 sm:pt-20 pb-12 sm:pb-16 flex items-center bg-white">
+    <section className="min-h-screen pt-24 sm:pt-28 pb-12 sm:pb-16 flex items-center bg-white">
       <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
         {/* Full-width Discount Banner */}
         <div className="w-full max-w-6xl mx-auto mb-8 sm:mb-12">
