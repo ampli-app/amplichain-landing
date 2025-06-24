@@ -10,7 +10,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-bold mb-4 text-gray-900">Amplichain</h3>
+            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="inline-block mb-4">
+              <img src="/logotype.png" alt="Amplichain Logo" className="h-8 mx-auto md:mx-0" />
+            </a>
             <p className="text-gray-600 text-sm mb-6">
               Pierwszy marketplace społecznościowy stworzony specjalnie dla branży muzycznej
             </p>

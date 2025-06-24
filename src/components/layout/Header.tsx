@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Music2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,15 +48,9 @@ const Header: React.FC = () => {
       >
         <div className="container flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="relative">
-              <Music2 className="h-8 w-8 text-ampli-green transform hover:scale-110 transition-transform duration-200" />
-              <div className="absolute -inset-1 bg-ampli-green/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <span className="text-xl font-bold font-montserrat text-ampli-green hover:text-ampli-darkgreen transition-colors duration-200">
-              Amplichain
-            </span>
-          </div>
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-3">
+            <img src="/logotype.png" alt="Amplichain Logo" className="h-8" />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
@@ -110,12 +103,9 @@ const Header: React.FC = () => {
         <div className="flex flex-col h-full">
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-100">
-            <div className="flex items-center gap-3">
-              <Music2 className="h-7 w-7 text-ampli-green" />
-              <span className="text-lg font-bold font-montserrat text-ampli-green">
-                Amplichain
-              </span>
-            </div>
+            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); setIsMobileMenuOpen(false); }} className="flex items-center gap-3">
+              <img src="/logotype.png" alt="Amplichain Logo" className="h-7" />
+            </a>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="p-2 text-gray-500 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"

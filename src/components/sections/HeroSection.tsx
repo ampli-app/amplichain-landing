@@ -16,64 +16,64 @@ const HeroSection = () => {
   const deadline = "2025-07-10T23:59:59";
 
   return (
-    <section className="min-h-screen pt-20 pb-16 flex items-center bg-white">
-      <div className="container relative z-10">
+    <section className="min-h-screen pt-16 sm:pt-20 pb-12 sm:pb-16 flex items-center bg-white">
+      <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
         {/* Full-width Discount Banner */}
-        <div className="w-full max-w-6xl mx-auto mb-12">
+        <div className="w-full max-w-6xl mx-auto mb-8 sm:mb-12">
           <DiscountBanner 
             deadlineDate={deadline}
             onCtaClick={handleStartSelling}
           />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* Left Column - Enhanced Content */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-6 sm:space-y-8 animate-fade-in order-2 lg:order-1">
             
             {/* Professional Badge */}
-            <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-6 py-3 shadow-lg">
+            <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg">
               <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
-              <span className="text-sm font-semibold text-ampli-green tracking-wide uppercase">
+              <span className="text-xs sm:text-sm font-semibold text-ampli-green tracking-wide uppercase">
                 Właśnie Wystartowaliśmy!
               </span>
             </div>
 
             {/* Main Headline - More Professional Typography */}
-            <div className="space-y-6">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[0.95] tracking-tight">
+            <div className="space-y-4 sm:space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight">
                 <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
                   Sprzedawaj
                 </span>
                 <br />
-                <span className="text-gray-900 text-4xl sm:text-5xl md:text-6xl font-bold">
+                <span className="text-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                   inteligentnie
                 </span>
                 <br />
-                <span className="text-gray-700 text-3xl sm:text-4xl md:text-5xl font-medium">
+                <span className="text-gray-700 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
                   na Amplichain
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
                 Profesjonalny marketplace dla branży muzycznej z najniższymi prowizjami 
                 i zaawansowanymi narzędziami sprzedażowymi
               </p>
             </div>
 
             {/* Key Benefits */}
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <div className="flex items-center gap-3">
-                <CheckCircle className="h-6 w-6 text-ampli-green" />
-                <span className="text-lg text-gray-700 font-medium">Tylko 3% prowizji z kodem rabatowym</span>
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-ampli-green flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700 font-medium">Tylko 3% prowizji z kodem rabatowym</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="h-6 w-6 text-ampli-green" />
-                <span className="text-lg text-gray-700 font-medium">10,000+ zweryfikowanych kupujących</span>
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-ampli-green flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700 font-medium">10,000+ zweryfikowanych kupujących</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="h-6 w-6 text-ampli-green" />
-                <span className="text-lg text-gray-700 font-medium">Gwarancja bezpieczeństwa transakcji</span>
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-ampli-green flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700 font-medium">Gwarancja bezpieczeństwa transakcji</span>
               </div>
             </div>
             
@@ -82,7 +82,7 @@ const HeroSection = () => {
               <Button 
                 onClick={handleStartSelling}
                 size="lg" 
-                className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-10 py-6 text-lg shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl"
+                className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl"
               >
                 Zarejestruj się i odbierz kod
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -92,72 +92,46 @@ const HeroSection = () => {
                 onClick={handleWatchDemo}
                 size="lg" 
                 variant="outline"
-                className="group border-2 border-gray-300 hover:border-ampli-green text-gray-700 hover:text-ampli-green hover:bg-ampli-green/5 backdrop-blur-sm font-semibold px-10 py-6 text-lg transition-all duration-300 rounded-xl"
+                className="group border-2 border-gray-300 hover:border-ampli-green text-gray-700 hover:text-ampli-green hover:bg-ampli-green/5 backdrop-blur-sm font-semibold px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg transition-all duration-300 rounded-xl"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Zobacz prezentację
               </Button>
             </div>
 
-            {/* Professional Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
-              <div className="text-center group cursor-pointer">
-                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
-                  <TrendingUp className="h-8 w-8 text-ampli-green mx-auto" />
-                </div>
-                <div className="font-black text-3xl text-ampli-green mb-1">3%</div>
-                <div className="text-sm text-gray-600 font-medium">z kodem</div>
-              </div>
-              
-              <div className="text-center group cursor-pointer">
-                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
-                  <Users className="h-8 w-8 text-ampli-green mx-auto" />
-                </div>
-                <div className="font-black text-3xl text-ampli-green mb-1">10k+</div>
-                <div className="text-sm text-gray-600 font-medium">kupujących</div>
-              </div>
-              
-              <div className="text-center group cursor-pointer">
-                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
-                  <Shield className="h-8 w-8 text-ampli-green mx-auto" />
-                </div>
-                <div className="font-black text-3xl text-ampli-green mb-1">100%</div>
-                <div className="text-sm text-gray-600 font-medium">bezpieczeństwa</div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Professional Photo */}
-          <div className="hidden lg:block animate-scale-in">
+          <div className="lg:block animate-scale-in order-1 lg:order-2">
             <div className="relative group">
               
               {/* Professional glow effect */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-ampli-green/20 via-ampli-green/10 to-ampli-green/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-ampli-green/20 via-ampli-green/10 to-ampli-green/20 rounded-2xl sm:rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
               
               {/* Professional image */}
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+              <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
                 <img
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Profesjonalne narzędzia dla sprzedawców muzycznych"
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
                 />
                 
                 {/* Elegant overlay with branding */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
                 {/* Professional badge on image */}
-                <div className="absolute bottom-8 left-8 right-8">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-                    <div className="flex items-center gap-4 mb-3">
-                      <div className="h-3 w-3 bg-ampli-green rounded-full animate-pulse" />
-                      <span className="text-ampli-green font-bold text-sm uppercase tracking-wide">
+                <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3">
+                      <div className="h-2 w-2 sm:h-3 sm:w-3 bg-ampli-green rounded-full animate-pulse" />
+                      <span className="text-ampli-green font-bold text-xs sm:text-sm uppercase tracking-wide">
                         Amplichain Pro
                       </span>
                     </div>
-                    <h3 className="text-gray-900 font-bold text-xl mb-2">
+                    <h3 className="text-gray-900 font-bold text-lg sm:text-xl mb-1 sm:mb-2">
                       Profesjonalne narzędzia sprzedażowe
                     </h3>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-xs sm:text-sm">
                       Wszystko czego potrzebujesz do efektywnej sprzedaży w branży muzycznej
                     </p>
                   </div>
