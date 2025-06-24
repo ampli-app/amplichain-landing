@@ -113,7 +113,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
               OFERTA LIMITOWANA
             </div>
             <h3 className="text-3xl lg:text-4xl font-extrabold text-white leading-tight">
-              Odbierz niższą prowizję na start
+              Niższa prowizja na start
             </h3>
             <div className="flex items-baseline gap-2">
               <span className="text-5xl font-black bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
