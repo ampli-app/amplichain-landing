@@ -12,9 +12,9 @@ const ValuePropositionSection: React.FC = () => {
     },
     {
       icon: Users,
-      title: "Gotowi nabywcy",
-      description: "10,000+ zweryfikowanych muzyków aktywnie szuka sprzętu",
-      highlight: "10k+ kupujących"
+      title: "Rosnąca społeczność",
+      description: "Dołącz do pierwszych sprzedawców i zbuduj swoją pozycję na rynku",
+      highlight: "Bądź pierwszy"
     },
     {
       icon: Shield,
@@ -24,9 +24,9 @@ const ValuePropositionSection: React.FC = () => {
     },
     {
       icon: Zap,
-      title: "Szybka sprzedaż",
-      description: "AI dopasowuje Twoje oferty do właściwych kupujących",
-      highlight: "AI matching"
+      title: "Nowoczesna platforma",
+      description: "Zaawansowane narzędzia do sprzedaży już w przygotowaniu",
+      highlight: "W rozwoju"
     }
   ];
 
@@ -36,13 +36,13 @@ const ValuePropositionSection: React.FC = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black font-montserrat mb-6 text-gray-900">
-            Dlaczego wybierają
+            Dlaczego wybrać
             <br />
             <span className="text-ampli-green">Amplichain?</span>
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Nie jesteś kolejnym sprzedawcą w tłumie. Jesteś ekspertem, którego szukają muzycy.
+            Rozpoczynamy rewolucję w sprzedaży sprzętu muzycznego. Dołącz do nas od początku.
           </p>
         </div>
 
@@ -74,10 +74,10 @@ const ValuePropositionSection: React.FC = () => {
         {/* Bottom CTA */}
         <div className="text-center bg-gradient-to-r from-ampli-green/10 to-ampli-green/5 rounded-2xl p-8">
           <h3 className="text-2xl md:text-3xl font-black font-montserrat mb-4 text-gray-900">
-            Gotowy na więcej sprzedaży?
+            Gotowy na nowy start?
           </h3>
           <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-            Dołącz do profesjonalnych sprzedawców na Amplichain.
+            Dołącz do pierwszych sprzedawców na Amplichain i zbuduj swoją pozycję od podstaw.
           </p>
           <button className="bg-ampli-green hover:bg-ampli-darkgreen text-white font-bold px-8 py-3 rounded-xl text-lg transition-all duration-300">
             Zacznij sprzedawać teraz
