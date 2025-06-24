@@ -5,7 +5,7 @@ import { Music2 } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-soft py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft py-4">
       <div className="container flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Music2 className="h-8 w-8 text-ampli-green" />
@@ -15,20 +15,20 @@ const Header: React.FC = () => {
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Możliwości
+          <a href="#value" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
+            Dlaczego my
           </a>
-          <a href="#radar" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Radar
+          <a href="#categories" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
+            Co sprzedawać
           </a>
-          <a href="#shop" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Minisklep
+          <a href="#tools" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
+            Narzędzia
           </a>
-          <a href="#security" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Bezpieczeństwo
+          <a href="#success" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
+            Sukces
           </a>
-          <a href="#community" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Społeczność
+          <a href="#onboarding" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
+            Jak zacząć
           </a>
           <a href="#faq" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
             FAQ
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         <Button 
           size="sm" 
           className="bg-ampli-green hover:bg-ampli-darkgreen text-white shadow-soft hover:shadow-hover transition-all duration-300"
-          onClick={() => document.getElementById('waitlist')?.scrollIntoView({behavior: 'smooth'})}
+          onClick={() => document.getElementById('cta')?.scrollIntoView({behavior: 'smooth'})}
         >
           Dołącz do listy
         </Button>

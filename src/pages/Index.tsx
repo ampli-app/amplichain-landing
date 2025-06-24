@@ -3,27 +3,33 @@ import React from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
-import WaitlistSection from "@/components/sections/WaitlistSection";
-import FeaturesSection from "@/components/sections/FeaturesSection";
-import RadarSection from "@/components/sections/RadarSection";
-import ShopSection from "@/components/sections/ShopSection";
+import ValuePropositionSection from "@/components/sections/ValuePropositionSection";
+import CategoriesSection from "@/components/sections/CategoriesSection";
+import CommissionSection from "@/components/sections/CommissionSection";
+import ToolsSection from "@/components/sections/ToolsSection";
+import SuccessStoriesSection from "@/components/sections/SuccessStoriesSection";
 import SecuritySection from "@/components/sections/SecuritySection";
-import CommunitySection from "@/components/sections/CommunitySection";
+import OnboardingSection from "@/components/sections/OnboardingSection";
+import AmpliFutureSection from "@/components/sections/AmpliFutureSection";
 import FAQSection from "@/components/sections/FAQSection";
+import CTASection from "@/components/sections/CTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       <Header />
       <main>
         <HeroSection />
-        <WaitlistSection />
-        <FeaturesSection />
-        <RadarSection />
-        <ShopSection />
+        <ValuePropositionSection />
+        <CategoriesSection />
+        <CommissionSection />
+        <ToolsSection />
+        <SuccessStoriesSection />
         <SecuritySection />
-        <CommunitySection />
+        <OnboardingSection />
+        <AmpliFutureSection />
         <FAQSection />
+        <CTASection />
       </main>
       <Footer />
     </div>
