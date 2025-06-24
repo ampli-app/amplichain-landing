@@ -37,19 +37,12 @@ const HeroSection = () => {
 
             {/* Main Headline - More Professional Typography */}
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
-                <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
-                  Sprzedawaj
-                </span>
-                <br />
-                <span className="text-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-                  inteligentnie
-                </span>
-                <br />
-                <span className="text-gray-700 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-                  na Amplichain
-                </span>
-              </h1>
+  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
+    <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
+      Sprzedawaj inteligentnie na Amplichain
+    </span>
+  </h1>
+
               
               <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
                 Profesjonalny marketplace dla branży muzycznej z najniższymi prowizjami 
