@@ -30,7 +30,7 @@ const CommissionSection: React.FC = () => {
             </span>
           </div>
           
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black font-montserrat mb-8 text-gray-900 leading-[0.9] tracking-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 leading-[0.9] tracking-tight">
             Najniższe prowizje
             <br />
             <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
@@ -39,7 +39,7 @@ const CommissionSection: React.FC = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
-            Żadnych ukrytych kosztów. Płacisz tylko za udane transakcje.
+            Żadanych ukrytych kosztów. Płacisz tylko za udane transakcje.
             <br />
             <strong className="text-gray-900 font-semibold">Im więcej sprzedajesz, tym więcej zarabiasz.</strong>
           </p>
@@ -73,12 +73,12 @@ const CommissionSection: React.FC = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-3xl font-black font-montserrat mb-4">
+                  <h3 className="text-3xl font-bold font-syne mb-4">
                     Sprzęt muzyczny
                   </h3>
                   
                   <div className="flex items-baseline gap-2 mb-6">
-                    <span className="text-6xl font-black">5</span>
+                    <span className="text-6xl font-bold">5</span>
                     <span className="text-3xl font-bold">%</span>
                     <span className="text-lg opacity-80 ml-2">prowizji</span>
                   </div>
@@ -114,12 +114,12 @@ const CommissionSection: React.FC = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-3xl font-black font-montserrat mb-4 text-gray-900">
+                  <h3 className="text-3xl font-bold font-syne mb-4 text-gray-900">
                     Usługi i konsultacje
                   </h3>
                   
                   <div className="flex items-baseline gap-2 mb-6">
-                    <span className="text-6xl font-black text-gray-900">10</span>
+                    <span className="text-6xl font-bold text-gray-900">10</span>
                     <span className="text-3xl font-bold text-gray-900">%</span>
                     <span className="text-lg text-gray-600 ml-2">prowizji</span>
                   </div>
@@ -147,12 +147,12 @@ const CommissionSection: React.FC = () => {
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-3 mb-6">
 
-                <h3 className="text-3xl md:text-4xl font-black font-montserrat text-gray-900">
+                <h3 className="text-3xl md:text-4xl font-bold font-syne text-gray-900">
                   Co otrzymujesz w tej cenie?
                 </h3>
               </div>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Nasze prowizje obejmują pełen pakiet usług premium. Żadnych dodatkowych, ukrytych kosztów.
+                Nasze prowizje obejmują pełen pakiet usług premium. Żadanych dodatkowych, ukrytych kosztów.
               </p>
             </div>
 
@@ -161,10 +161,8 @@ const CommissionSection: React.FC = () => {
               {/* Included Services */}
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-2xl font-black text-gray-900 mb-6 flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-br from-ampli-green to-ampli-darkgreen rounded-lg flex items-center justify-center">
-                      <CheckCircle className="h-4 w-4 text-white" />
-                    </div>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                    
                     W cenie otrzymujesz:
                   </h4>
                   <div className="space-y-4">
@@ -183,10 +181,8 @@ const CommissionSection: React.FC = () => {
               {/* No Additional Costs */}
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-2xl font-black text-gray-900 mb-6 flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-br from-gray-600 to-gray-700 rounded-lg flex items-center justify-center">
-                      <Shield className="h-4 w-4 text-white" />
-                    </div>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                  
                     Brak dodatkowych opłat za:
                   </h4>
                   <div className="space-y-4">
@@ -206,7 +202,7 @@ const CommissionSection: React.FC = () => {
             {/* Bottom CTA */}
             <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="text-center bg-gradient-to-r from-ampli-green/10 via-ampli-green/5 to-ampli-green/10 rounded-2xl p-8">
-                <h5 className="text-2xl font-black text-gray-900 mb-4">
+                <h5 className="text-2xl font-bold text-gray-900 mb-4">
                   Gotowy na najlepsze warunki w branży?
                 </h5>
                 <p className="text-lg text-gray-600 mb-6">

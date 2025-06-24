@@ -42,7 +42,7 @@ const ValuePropositionSection: React.FC = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black font-montserrat mb-6 sm:mb-8 text-gray-900 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-6 sm:mb-8 text-gray-900 tracking-tight">
             Dlaczego wybrać
             <br />
             <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">Amplichain?</span>
@@ -67,7 +67,7 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
               </div>
               
-              <h3 className="text-lg sm:text-xl font-bold font-montserrat mb-3 sm:mb-4 text-gray-900">
+              <h3 className="text-lg sm:text-xl font-bold font-syne mb-3 sm:mb-4 text-gray-900">
                 {benefit.title}
               </h3>
               
@@ -80,7 +80,7 @@ const ValuePropositionSection: React.FC = () => {
 
         {/* Enhanced Bottom CTA */}
         <div className="text-center bg-gradient-to-br from-ampli-green/10 via-ampli-green/5 to-transparent rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-lg border border-ampli-green/10">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-black font-montserrat mb-4 sm:mb-6 text-gray-900">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold font-syne mb-4 sm:mb-6 text-gray-900">
             Gotowy na nowy start?
           </h3>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">

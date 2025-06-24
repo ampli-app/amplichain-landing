@@ -51,7 +51,7 @@ const SecuritySection: React.FC = () => {
             </span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-gray-900 via-ampli-green to-gray-900 bg-clip-text text-transparent leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-ampli-green to-gray-900 bg-clip-text text-transparent leading-tight">
             Sprzedawaj z pewnością i spokojem
           </h2>
           
@@ -71,7 +71,7 @@ const SecuritySection: React.FC = () => {
                   <div className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gray-100 mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className={`h-6 w-6 ${stat.color}`} />
                   </div>
-                  <div className="font-black text-3xl text-gray-900 mb-2">{stat.value}</div>
+                  <div className="font-bold text-3xl text-gray-900 mb-2">{stat.value}</div>
                   <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
                 </CardContent>
               </Card>

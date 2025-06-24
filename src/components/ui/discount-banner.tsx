@@ -116,7 +116,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
               Niższa prowizja na start
             </h3>
             <div className="flex items-baseline gap-2">
-              <span className="text-5xl font-black bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+              <span className="text-5xl font-bold bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
                 3%
               </span>
               <span className="text-xl text-gray-400 line-through">15%</span>

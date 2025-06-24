@@ -40,7 +40,7 @@ const SuccessStoriesSection: React.FC = () => {
     <section id="success" className="py-24 bg-white">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold font-syne mb-6 text-gray-900">
             Historie <span className="text-ampli-green">sukcesu</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -88,7 +88,7 @@ const SuccessStoriesSection: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold font-montserrat mb-2">
+                <div className="text-3xl md:text-4xl font-bold font-syne mb-2">
                   {stat.value}
                 </div>
                 <div className="text-sm opacity-90">
