@@ -1,175 +1,218 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, Shield, ArrowRight, Play } from "lucide-react";
+import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen pt-20 pb-16 flex items-center relative overflow-hidden bg-white">
-      {/* Light animated background */}
+      {/* Professional background with subtle patterns */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Subtle gradient orbs */}
-        <div className="absolute top-1/4 -right-32 w-[600px] h-[600px] bg-ampli-green/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/3 -left-32 w-[500px] h-[500px] bg-ampli-green/3 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+        {/* Elegant gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-ampli-green/5" />
         
-        {/* Very subtle grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(123,154,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(123,154,0,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
+        {/* Subtle geometric pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <svg width="60" height="60" viewBox="0 0 60 60" className="absolute top-0 left-0 w-full h-full">
+            <defs>
+              <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#7b9a00" strokeWidth="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
         
-        {/* Floating particles */}
-        <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-ampli-green/20 rounded-full animate-ping" />
-        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-ampli-green/20 rounded-full animate-ping" style={{animationDelay: '0.5s'}} />
-        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-ampli-green/20 rounded-full animate-ping" style={{animationDelay: '1.5s'}} />
+        {/* Modern accent elements */}
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-ampli-green/10 to-ampli-green/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 left-1/5 w-48 h-48 bg-gradient-to-br from-ampli-green/8 to-transparent rounded-full blur-2xl" />
       </div>
 
-      <div className="container relative z-10 text-gray-900">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="container relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          {/* Left Column - Content */}
-          <div className="space-y-10 animate-fade-in">
+          {/* Left Column - Enhanced Content */}
+          <div className="space-y-8 animate-fade-in">
             
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-ampli-green/10 backdrop-blur-sm border border-ampli-green/20 rounded-full px-4 py-2">
+            {/* Professional Badge */}
+            <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-6 py-3 shadow-lg">
               <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-ampli-green">Nowa generacja marketplace'a</span>
+              <span className="text-sm font-semibold text-ampli-green tracking-wide uppercase">
+                Marketplace Przyszłości
+              </span>
             </div>
 
-            {/* Main Headline */}
-            <div className="space-y-4">
-              <h1 className="text-6xl sm:text-7xl md:text-8xl font-black leading-[0.9] tracking-tight">
-                <span className="text-ampli-green">
+            {/* Main Headline - More Professional Typography */}
+            <div className="space-y-6">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[0.95] tracking-tight">
+                <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
                   Sprzedawaj
                 </span>
                 <br />
                 <span className="text-gray-900 text-4xl sm:text-5xl md:text-6xl font-bold">
-                  więcej na<br />Amplichain
+                  inteligentnie
+                </span>
+                <br />
+                <span className="text-gray-700 text-3xl sm:text-4xl md:text-5xl font-medium">
+                  na Amplichain
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-600 max-w-xl leading-relaxed font-light">
-                Pierwszy marketplace społecznościowy stworzony specjalnie dla sprzedawców w branży muzycznej
+              <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
+                Profesjonalny marketplace dla branży muzycznej z najniższymi prowizjami 
+                i zaawansowanymi narzędziami sprzedażowymi
               </p>
             </div>
 
-            {/* Value Proposition */}
-            <div className="bg-ampli-green/5 backdrop-blur-sm border border-ampli-green/15 rounded-2xl p-6">
-              <p className="text-lg text-ampli-green font-semibold mb-2">💰 Najniższe prowizje w branży</p>
-              <p className="text-gray-600">Zarabiaj więcej dzięki transparentnym i konkurencyjnym prowizjom</p>
+            {/* Key Benefits */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <CheckCircle className="h-6 w-6 text-ampli-green" />
+                <span className="text-lg text-gray-700 font-medium">Tylko 5% prowizji - najniższe na rynku</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle className="h-6 w-6 text-ampli-green" />
+                <span className="text-lg text-gray-700 font-medium">10,000+ zweryfikowanych kupujących</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle className="h-6 w-6 text-ampli-green" />
+                <span className="text-lg text-gray-700 font-medium">Gwarancja bezpieczeństwa transakcji</span>
+              </div>
             </div>
             
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* Enhanced CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="group bg-ampli-green hover:bg-ampli-darkgreen text-white font-semibold px-8 py-6 text-lg shadow-lg shadow-ampli-green/15 hover:shadow-ampli-green/25 transition-all duration-300 transform hover:scale-105"
+                className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-10 py-6 text-lg shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl"
               >
-                Zacznij sprzedawać za darmo
+                Rozpocznij sprzedaż
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button 
                 size="lg" 
                 variant="outline"
-                className="group border-2 border-gray-300 text-gray-700 hover:bg-gray-50 backdrop-blur-sm font-semibold px-8 py-6 text-lg transition-all duration-300"
+                className="group border-2 border-gray-300 hover:border-ampli-green text-gray-700 hover:text-ampli-green hover:bg-ampli-green/5 backdrop-blur-sm font-semibold px-10 py-6 text-lg transition-all duration-300 rounded-xl"
               >
                 <Play className="mr-2 h-5 w-5" />
-                Zobacz demo
+                Zobacz prezentację
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-4">
-              <div className="text-center group">
-                <div className="bg-ampli-green/10 backdrop-blur-sm rounded-2xl p-4 mb-3 group-hover:scale-105 transition-transform">
+            {/* Professional Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
+              <div className="text-center group cursor-pointer">
+                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
                   <TrendingUp className="h-8 w-8 text-ampli-green mx-auto" />
                 </div>
-                <div className="font-black text-2xl text-ampli-green">5%</div>
-                <div className="text-sm text-gray-500 font-medium">prowizji od sprzętu</div>
+                <div className="font-black text-3xl text-ampli-green mb-1">5%</div>
+                <div className="text-sm text-gray-600 font-medium">prowizji</div>
               </div>
               
-              <div className="text-center group">
-                <div className="bg-ampli-green/10 backdrop-blur-sm rounded-2xl p-4 mb-3 group-hover:scale-105 transition-transform">
+              <div className="text-center group cursor-pointer">
+                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
                   <Users className="h-8 w-8 text-ampli-green mx-auto" />
                 </div>
-                <div className="font-black text-2xl text-ampli-green">10k+</div>
-                <div className="text-sm text-gray-500 font-medium">muzyków czeka</div>
+                <div className="font-black text-3xl text-ampli-green mb-1">10k+</div>
+                <div className="text-sm text-gray-600 font-medium">kupujących</div>
               </div>
               
-              <div className="text-center group">
-                <div className="bg-ampli-green/10 backdrop-blur-sm rounded-2xl p-4 mb-3 group-hover:scale-105 transition-transform">
+              <div className="text-center group cursor-pointer">
+                <div className="bg-gradient-to-br from-ampli-green/15 to-ampli-green/5 rounded-2xl p-5 mb-4 group-hover:scale-105 transition-all duration-300 shadow-lg">
                   <Shield className="h-8 w-8 text-ampli-green mx-auto" />
                 </div>
-                <div className="font-black text-2xl text-ampli-green">100%</div>
-                <div className="text-sm text-gray-500 font-medium">bezpieczeństwa</div>
+                <div className="font-black text-3xl text-ampli-green mb-1">100%</div>
+                <div className="text-sm text-gray-600 font-medium">bezpieczeństwa</div>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Dashboard Preview */}
+          {/* Right Column - Professional Dashboard Preview */}
           <div className="hidden lg:block animate-scale-in">
-            <div className="relative group">
+            <div className="relative group perspective-1000">
               
-              {/* Subtle glow effect */}
-              <div className="absolute -inset-1 bg-ampli-green/10 rounded-3xl blur-xl opacity-30 group-hover:opacity-40 transition-opacity" />
+              {/* Professional glow effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-ampli-green/20 via-ampli-green/10 to-ampli-green/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
               
-              {/* Main dashboard */}
-              <div className="relative bg-white/90 backdrop-blur-xl rounded-3xl overflow-hidden border border-gray-200 shadow-xl">
+              {/* Enhanced dashboard */}
+              <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden border-2 border-gray-200/50 shadow-2xl transform group-hover:rotate-y-5 transition-transform duration-500">
                 
-                {/* Header */}
-                <div className="h-16 bg-ampli-green flex items-center px-6">
-                  <div className="flex gap-2">
-                    <div className="h-3 w-3 rounded-full bg-white/40" />
-                    <div className="h-3 w-3 rounded-full bg-white/30" />
-                    <div className="h-3 w-3 rounded-full bg-white/20" />
+                {/* Professional header */}
+                <div className="h-20 bg-gradient-to-r from-ampli-green to-ampli-darkgreen flex items-center px-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-black/10" />
+                  <div className="flex gap-3 relative z-10">
+                    <div className="h-4 w-4 rounded-full bg-white/30" />
+                    <div className="h-4 w-4 rounded-full bg-white/20" />
+                    <div className="h-4 w-4 rounded-full bg-white/10" />
                   </div>
-                  <div className="flex-1 text-center text-white font-semibold">Panel Sprzedawcy</div>
+                  <div className="flex-1 text-center text-white font-bold text-lg relative z-10">
+                    Panel Sprzedawcy Pro
+                  </div>
                 </div>
                 
-                {/* Content */}
-                <div className="p-8">
+                {/* Enhanced content */}
+                <div className="p-8 space-y-8">
                   
-                  {/* Main stats */}
-                  <div className="flex items-start justify-between mb-8">
-                    <div>
-                      <h3 className="font-bold text-2xl text-gray-900 mb-1">Twoje sprzedaże</h3>
-                      <p className="text-gray-500 text-sm">Ostatnie 30 dni</p>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-3xl font-black text-ampli-green">
-                        12,450 PLN
+                  {/* Main revenue display */}
+                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+                    <div className="flex items-start justify-between mb-6">
+                      <div>
+                        <h3 className="font-bold text-2xl text-gray-900 mb-2">Przychody tego miesiąca</h3>
+                        <p className="text-gray-500 text-sm">Ostatnie 30 dni</p>
                       </div>
-                      <div className="text-sm text-ampli-green font-medium">+23% ↗</div>
+                      <div className="text-right">
+                        <div className="text-4xl font-black bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
+                          24,680 PLN
+                        </div>
+                        <div className="text-sm text-ampli-green font-bold flex items-center justify-end mt-1">
+                          <TrendingUp className="h-4 w-4 mr-1" />
+                          +34% ↗
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Transactions */}
+                  {/* Recent transactions */}
                   <div className="space-y-4">
+                    <h4 className="font-bold text-lg text-gray-900 mb-4">Ostatnie transakcje</h4>
                     
-                    <div className="bg-gradient-to-r from-gray-50 to-gray-100/50 backdrop-blur-sm p-5 rounded-2xl border border-gray-100 hover:border-ampli-green/15 transition-all group/item">
+                    <div className="bg-gradient-to-r from-white to-gray-50/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-ampli-green/20 transition-all group/item shadow-lg">
                       <div className="flex justify-between items-center">
                         <div>
-                          <div className="font-semibold text-gray-900 mb-1">Fender Stratocaster</div>
-                          <div className="text-sm text-gray-500">Sprzedano 2 dni temu</div>
+                          <div className="font-bold text-gray-900 mb-1">Gibson Les Paul Standard</div>
+                          <div className="text-sm text-gray-500">Sprzedano dzisiaj</div>
                         </div>
-                        <div className="text-ampli-green font-bold text-lg">4,200 PLN</div>
+                        <div className="text-right">
+                          <div className="text-ampli-green font-black text-xl">8,900 PLN</div>
+                          <div className="text-xs text-gray-500">Prowizja: 445 PLN</div>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-gray-50 to-gray-100/50 backdrop-blur-sm p-5 rounded-2xl border border-gray-100 hover:border-ampli-green/15 transition-all group/item">
+                    <div className="bg-gradient-to-r from-white to-gray-50/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-ampli-green/20 transition-all group/item shadow-lg">
                       <div className="flex justify-between items-center">
                         <div>
-                          <div className="font-semibold text-gray-900 mb-1">Usługa masteringu</div>
+                          <div className="font-bold text-gray-900 mb-1">Mixing & Mastering</div>
                           <div className="text-sm text-gray-500">Zakończono wczoraj</div>
                         </div>
-                        <div className="text-ampli-green font-bold text-lg">300 PLN</div>
+                        <div className="text-right">
+                          <div className="text-ampli-green font-black text-xl">1,200 PLN</div>
+                          <div className="text-xs text-gray-500">Prowizja: 60 PLN</div>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-gray-50 to-gray-100/50 backdrop-blur-sm p-5 rounded-2xl border border-gray-100 hover:border-ampli-green/15 transition-all group/item">
+                    <div className="bg-gradient-to-r from-white to-gray-50/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-ampli-green/20 transition-all group/item shadow-lg">
                       <div className="flex justify-between items-center">
                         <div>
-                          <div className="font-semibold text-gray-900 mb-1">Marshall JCM800</div>
-                          <div className="text-sm text-gray-500">W trakcie negocjacji</div>
+                          <div className="font-bold text-gray-900 mb-1">Marshall DSL100H</div>
+                          <div className="text-sm text-ampli-green">W trakcie negocjacji</div>
                         </div>
-                        <div className="text-gray-500 font-bold text-lg">2,800 PLN</div>
+                        <div className="text-right">
+                          <div className="text-gray-600 font-bold text-xl">3,200 PLN</div>
+                          <div className="text-xs text-gray-500">Oczekiwana prowizja: 160 PLN</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -182,21 +225,29 @@ const HeroSection = () => {
 
       <style>{`
         @keyframes fade-in {
-          from { opacity: 0; transform: translateY(30px); }
+          from { opacity: 0; transform: translateY(40px); }
           to { opacity: 1; transform: translateY(0); }
         }
         
         @keyframes scale-in {
-          from { opacity: 0; transform: scale(0.9); }
-          to { opacity: 1; transform: scale(1); }
+          from { opacity: 0; transform: scale(0.95) rotateY(-10deg); }
+          to { opacity: 1; transform: scale(1) rotateY(0deg); }
         }
         
         .animate-fade-in {
-          animation: fade-in 1s ease-out;
+          animation: fade-in 1.2s ease-out;
         }
         
         .animate-scale-in {
-          animation: scale-in 1s ease-out 0.3s both;
+          animation: scale-in 1.2s ease-out 0.4s both;
+        }
+
+        .perspective-1000 {
+          perspective: 1000px;
+        }
+
+        .rotate-y-5:hover {
+          transform: rotateY(5deg);
         }
       `}</style>
     </section>
