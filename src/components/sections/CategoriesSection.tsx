@@ -1,13 +1,10 @@
-
 import React from "react";
-import { Music, Mic, Settings } from "lucide-react";
 
 const CategoriesSection: React.FC = () => {
   const categories = [
     {
-      icon: Music,
+      image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Instrumenty i sprzęt audio",
-      description: "Gitary, basy, perkusja, mikrofony, słuchawki, interfejsy audio i więcej",
       examples: [
         "Gitary elektryczne i akustyczne", 
         "Perkusja i akcesoria perkusyjne", 
@@ -18,9 +15,8 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      icon: Mic,
+      image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Usługi muzyczne",
-      description: "Nagrywanie, miks, mastering, aranżacje",
       examples: [
         "Nagrywanie w studiu", 
         "Mixing i mastering", 
@@ -29,9 +25,8 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      icon: Settings,
+      image: "https://images.unsplash.com/photo-1516116216624-53e697314c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Konsultacje",
-      description: "Doradztwo muzyczne, coaching, mentoring",
       examples: [
         "Konsultacje producenckie", 
         "Coaching wokalny", 
@@ -55,18 +50,21 @@ const CategoriesSection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 group border border-gray-100">
-              <div className="text-center">
-                <div className="bg-ampli-green/10 rounded-xl h-16 w-16 flex items-center justify-center mx-auto mb-6 group-hover:bg-ampli-green/20 transition-colors duration-300">
-                  <category.icon className="h-8 w-8 text-ampli-green" />
+            <div key={index} className="group bg-white rounded-2xl sm:rounded-3xl p-6 shadow-soft hover:shadow-hover transition-all duration-300 border border-gray-100 flex flex-col">
+              <div className="relative mb-6">
+                <div className="aspect-video overflow-hidden rounded-xl">
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold font-syne mb-4 text-gray-900">
+              </div>
+              <div className="flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold font-syne mb-4 text-gray-900 text-center">
                   {category.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {category.description}
-                </p>
-                <ul className="space-y-3 text-left">
+                <ul className="space-y-3 text-left flex-grow">
                   {category.examples.map((example, idx) => (
                     <li key={idx} className="flex items-center text-gray-600">
                       <span className="w-2 h-2 bg-ampli-green rounded-full mr-3 flex-shrink-0"></span>

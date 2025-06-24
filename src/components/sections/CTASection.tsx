@@ -26,12 +26,7 @@ const CTASection: React.FC = () => {
           
           {/* Header Section */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 bg-ampli-green/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
-              <Zap className="w-4 h-4 text-ampli-green" />
-              <span className="text-sm font-bold text-ampli-green uppercase tracking-wide">
-                Właśnie Wystartowaliśmy!
-              </span>
-            </div>
+            
 
             {/* Compact Discount Banner */}
             <div className="mb-12">
@@ -57,62 +52,10 @@ const CTASection: React.FC = () => {
             </p>
           </div>
 
-          {/* Main Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+          {/* Main Content Sections */}
+          <div className="space-y-12 mb-20">
             
-            {/* Left Column - Benefits */}
-            <div className="space-y-8">
-              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                  <div className="bg-ampli-green/20 rounded-xl p-2">
-                    <Gift className="h-6 w-6 text-ampli-green" />
-                  </div>
-                  Bonusy dla pierwszych sprzedawców
-                </h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Kod rabatowy - prowizja tylko 3%</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">50 PLN bonusu na promocję ogłoszeń</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Priorytetowe wyświetlanie w wynikach</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-ampli-green flex-shrink-0" />
-                    <span className="text-gray-300">Dedykowane wsparcie sprzedażowe</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Urgency Bar */}
-              <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20">
-                <div className="flex items-center justify-between mb-4">
-                  <h4 className="text-xl font-bold text-white">Do {deadlineFormatted}</h4>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-red-400" />
-                    <span className="text-red-400 font-bold text-lg">Czas ucieka!</span>
-                  </div>
-                </div>
-                
-                <div className="w-full bg-white/10 rounded-full h-3 mb-4">
-                  <div className="bg-gradient-to-r from-red-500 to-orange-500 h-3 rounded-full relative animate-pulse" style={{width: '70%'}}>
-                    <div className="absolute right-0 top-0 h-3 w-3 bg-white rounded-full" />
-                  </div>
-                </div>
-                
-                <p className="text-gray-300 text-sm">
-                  Kod rabatowy dostępny tylko do <strong className="text-white">{deadlineFormatted}</strong> - nie przegap okazji!
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column - Visual */}
+            {/* Bonusy Section */}
             <div className="relative">
               <div className="relative group">
                 {/* Glow effect */}
@@ -131,25 +74,54 @@ const CTASection: React.FC = () => {
                   
                   <div className="absolute bottom-8 left-8 right-8">
                     <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6">
-                      <div className="flex items-center gap-2 mb-3">
-                        <div className="flex items-center gap-1">
-                          {[...Array(5)].map((_, i) => (
-                            <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                          ))}
-                        </div>
-                        <span className="text-sm font-bold text-gray-600">Nowa platforma</span>
+                      <div className="mb-4">
+                        <h4 className="text-gray-900 font-bold text-lg mb-2">
+                          Bonusy dla pierwszych sprzedawców
+                        </h4>
+                        <p className="text-gray-600 text-sm mb-3">
+                          Zdobądź przewagę konkurencyjną jako jeden z pierwszych sprzedawców
+                        </p>
                       </div>
                       
-                      <h4 className="text-gray-900 font-bold text-lg mb-2">
-                        Bądź pierwszy na rynku
-                      </h4>
-                      <p className="text-gray-600 text-sm">
-                        Zdobądź przewagę konkurencyjną jako jeden z pierwszych sprzedawców
-                      </p>
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-3 w-3 text-ampli-green flex-shrink-0" />
+                          <span className="text-xs text-gray-600">Prowizja tylko 3%</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-3 w-3 text-ampli-green flex-shrink-0" />
+                          <span className="text-xs text-gray-600">50 PLN bonusu na promocję</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-3 w-3 text-ampli-green flex-shrink-0" />
+                          <span className="text-xs text-gray-600">Priorytetowe wyświetlanie</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Urgency Bar */}
+            <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20">
+              <div className="flex items-center justify-between mb-4">
+                <h4 className="text-xl font-bold text-white">Do {deadlineFormatted}</h4>
+                <div className="flex items-center gap-2">
+                  <Clock className="h-5 w-5 text-red-400" />
+                  <span className="text-red-400 font-bold text-lg">Czas ucieka!</span>
+                </div>
+              </div>
+              
+              <div className="w-full bg-white/10 rounded-full h-3 mb-4">
+                <div className="bg-gradient-to-r from-red-500 to-orange-500 h-3 rounded-full relative animate-pulse" style={{width: '70%'}}>
+                  <div className="absolute right-0 top-0 h-3 w-3 bg-white rounded-full" />
+                </div>
+              </div>
+              
+              <p className="text-gray-300 text-sm">
+                Kod rabatowy dostępny tylko do <strong className="text-white">{deadlineFormatted}</strong> - nie przegap okazji!
+              </p>
             </div>
           </div>
 
