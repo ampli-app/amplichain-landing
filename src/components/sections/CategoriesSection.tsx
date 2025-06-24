@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Music, Headphones, Mic, Settings } from "lucide-react";
 
@@ -41,7 +42,7 @@ const CategoriesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {categories.map((category, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 group">
               <div className="flex items-start gap-6">
@@ -67,16 +68,6 @@ const CategoriesSection: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center bg-ampli-green/5 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold font-montserrat mb-4 text-gray-900">
-            Masz coś innego?
-          </h3>
-          <p className="text-gray-600 text-lg mb-6">
-            Jeśli Twoja oferta nie pasuje do żadnej z powyższych kategorii, skontaktuj się z nami. 
-            Ciągle rozwijamy platformę i dodajemy nowe kategorie.
-          </p>
         </div>
       </div>
     </section>
