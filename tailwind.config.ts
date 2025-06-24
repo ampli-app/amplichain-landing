@@ -142,7 +142,7 @@ export default {
         'pulse-light': 'pulse-light 2s infinite ease-in-out'
       },
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
+        'syne': ['Syne', 'sans-serif'],
         'work-sans': ['Work Sans', 'sans-serif']
       },
       boxShadow: {

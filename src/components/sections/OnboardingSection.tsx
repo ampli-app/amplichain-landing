@@ -42,10 +42,10 @@ const OnboardingSection: React.FC = () => {
             </span>
           </div>
 
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black font-montserrat mb-8 text-gray-900 tracking-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
             Od <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zera</span> do <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">bohatera</span>
             <br />
-            <span className="text-4xl md:text-5xl lg:text-6xl text-gray-600 font-semibold">w 4 prostych krokach</span>
+            <span className="text-4xl md:text-5xl lg:text-6xl text-gray-600 font-bold">w 4 prostych krokach</span>
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
@@ -68,7 +68,7 @@ const OnboardingSection: React.FC = () => {
                 {/* Step card */}
                 <div className="relative bg-white rounded-3xl p-8 pt-16 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
                   {/* Step number */}
-                  <div className="absolute -top-6 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-black text-lg shadow-lg z-20">
+                  <div className="absolute -top-6 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold text-lg shadow-lg z-20">
                     {index + 1}
                   </div>
 
@@ -88,7 +88,7 @@ const OnboardingSection: React.FC = () => {
                   
                   {/* Content */}
                   <div className="space-y-4">
-                    <h3 className="text-2xl font-bold font-montserrat text-gray-900">
+                    <h3 className="text-2xl font-bold font-syne text-gray-900">
                       {step.title}
                     </h3>
                     
@@ -106,7 +106,7 @@ const OnboardingSection: React.FC = () => {
         <div className="mt-20 text-center">
           <div className="max-w-3xl mx-auto rounded-3xl p-10 border-2 border-gray-200">
             <div className="relative">
-              <h3 className="text-4xl md:text-5xl font-black font-montserrat mb-6 text-gray-900 leading-tight">
+              <h3 className="text-4xl md:text-5xl font-bold font-syne mb-6 text-gray-900 leading-tight">
                 Zacznij <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zarabiać</span> na swojej <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">pasji</span>
               </h3>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">

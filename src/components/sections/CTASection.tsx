@@ -43,7 +43,7 @@ const CTASection: React.FC = () => {
               />
             </div>
 
-            <h2 className="text-5xl md:text-7xl font-black font-montserrat mb-8 text-white leading-tight">
+            <h2 className="text-5xl md:text-7xl font-bold font-syne mb-8 text-white leading-tight">
               Zostań
               <br />
               <span className="bg-gradient-to-r from-ampli-green to-ampli-lightgreen bg-clip-text text-transparent">
@@ -155,7 +155,7 @@ const CTASection: React.FC = () => {
 
           {/* CTA Section */}
           <div className="text-center bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
-            <h3 className="text-3xl md:text-4xl font-black font-montserrat mb-6 text-white">
+            <h3 className="text-3xl md:text-4xl font-bold font-syne mb-6 text-white">
               Zarejestruj się i odbierz kod rabatowy!
             </h3>
             
