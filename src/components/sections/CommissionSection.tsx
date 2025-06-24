@@ -1,5 +1,5 @@
 import React from "react";
-import { Calculator, TrendingDown, Shield, CheckCircle, Zap, Crown } from "lucide-react";
+import { TrendingDown, Shield, CheckCircle, Zap, Crown } from "lucide-react";
 
 const CommissionSection: React.FC = () => {
   const benefits = [
@@ -19,7 +19,7 @@ const CommissionSection: React.FC = () => {
   ];
 
   return (
-    <section className="pt-8 pb-16 bg-white">
+    <section id="conditions" className="pt-8 pb-16 bg-white">
       <div className="container px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16 sm:mb-20">
@@ -50,26 +50,30 @@ const CommissionSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             
             {/* Music Equipment Card */}
-            <div className="group relative">
+            <div className="group relative h-full">
               {/* Glow Effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-ampli-green via-ampli-green to-ampli-darkgreen rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-all duration-500" />
               
               {/* Main Card */}
-              <div className="relative bg-gradient-to-br from-ampli-green via-ampli-green to-ampli-darkgreen rounded-3xl p-10 text-white overflow-hidden transform group-hover:scale-[1.02] transition-all duration-500">
+              <div className="relative bg-gradient-to-br from-ampli-green via-ampli-green to-ampli-darkgreen rounded-3xl p-10 text-white overflow-hidden transform group-hover:scale-[1.02] transition-all duration-500 h-full flex flex-col">
                 
                 {/* Background Pattern */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.1),transparent_50%)]" />
                 <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -mr-20 -mt-20" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16" />
                 
-                <div className="relative z-10">
-                  <div className="flex items-start justify-between mb-8">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
-                      <Calculator className="h-8 w-8" />
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
-                      <Zap className="h-4 w-4 inline mr-1" />
-                      <span className="text-sm font-bold">Najlepsze</span>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex items-start justify-between">
+                   
+                  </div>
+                  
+                  <div className="relative mb-6">
+                    <div className="aspect-video overflow-hidden rounded-2xl">
+                      <img
+                        src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=450&fit=crop&crop=center"
+                        alt="Sprzęt muzyczny"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
                     </div>
                   </div>
                   
@@ -83,7 +87,7 @@ const CommissionSection: React.FC = () => {
                     <span className="text-lg opacity-80 ml-2">prowizji</span>
                   </div>
                   
-                  <p className="text-lg opacity-90 leading-relaxed">
+                  <p className="text-lg opacity-90 leading-relaxed flex-grow">
                     Najniższa prowizja w branży od sprzedaży instrumentów i sprzętu audio. 
                     <strong className="text-white"> 95% zysku zostaje u Ciebie.</strong>
                   </p>
@@ -97,20 +101,24 @@ const CommissionSection: React.FC = () => {
             </div>
 
             {/* Services Card */}
-            <div className="group relative">
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 relative overflow-hidden border-2 border-gray-200/50 hover:border-ampli-green/30 transition-all duration-500 transform group-hover:scale-[1.02]">
+            <div className="group relative h-full">
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 relative overflow-hidden border-2 border-gray-200/50 hover:border-ampli-green/30 transition-all duration-500 transform group-hover:scale-[1.02] h-full flex flex-col">
                 
                 {/* Background Elements */}
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-gray-200/30 to-transparent rounded-full -mr-20 -mt-20" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tl from-ampli-green/10 to-transparent rounded-full -ml-16 -mb-16" />
                 
-                <div className="relative z-10">
-                  <div className="flex items-start justify-between mb-8">
-                    <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
-                      <TrendingDown className="h-8 w-8 text-gray-700" />
-                    </div>
-                    <div className="bg-ampli-green/10 rounded-full px-4 py-2">
-                      <span className="text-sm font-bold text-ampli-green">Konkurencyjne</span>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex items-start justify-between">
+                  </div>
+                  
+                  <div className="relative mb-6">
+                    <div className="aspect-video overflow-hidden rounded-2xl">
+                      <img
+                        src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=450&fit=crop&crop=center"
+                        alt="Usługi muzyczne"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
                     </div>
                   </div>
                   
@@ -124,7 +132,7 @@ const CommissionSection: React.FC = () => {
                     <span className="text-lg text-gray-600 ml-2">prowizji</span>
                   </div>
                   
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed flex-grow">
                     Konkurencyjna prowizja od usług muzycznych i konsultacji. 
                     <strong className="text-gray-900"> Wciąż znacznie poniżej średniej rynkowej.</strong>
                   </p>

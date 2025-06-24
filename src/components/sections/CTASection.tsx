@@ -14,8 +14,8 @@ const CTASection: React.FC = () => {
   const deadlineDayMonth = deadlineDate.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit' });
 
   return (
-    <section id="cta" // Zamiast py-32, użyj:
-    className="pt-16 pb-24 md:pt-20 md:pb-32 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 relative overflow-hidden">
+    <section id="" // Zamiast py-32, użyj:
+    className="pt-8 pb-16 md:pt-20 md:pb-32 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-ampli-green/10 rounded-full blur-3xl" />
