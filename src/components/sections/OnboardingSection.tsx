@@ -1,5 +1,6 @@
+
 import React from "react";
-import { UserPlus, Camera, DollarSign, TrendingUp, ArrowRight, CheckCircle, Clock } from "lucide-react";
+import { UserPlus, Camera, DollarSign, TrendingUp, ArrowRight, CheckCircle, Clock, Percent } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const OnboardingSection: React.FC = () => {
@@ -80,8 +81,8 @@ const OnboardingSection: React.FC = () => {
                 )}
 
                 {/* Step card */}
-                <div className="relative bg-white rounded-3xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
-                  {/* Step number - fixed positioning */}
+                <div className="relative bg-white rounded-3xl p-8 pt-16 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
+                  {/* Step number - better positioning */}
                   <div className="absolute -top-6 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-black text-lg shadow-lg z-20">
                     {index + 1}
                   </div>
@@ -146,11 +147,11 @@ const OnboardingSection: React.FC = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-4xl md:text-5xl font-black font-montserrat mb-4 text-gray-900">
-                  Gotowy na <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">przełom</span>?
+                  Zacznij <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zarabiać</span> na swojej <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">pasji</span>
                 </h3>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                  Dołącz do listy oczekujących i otrzymaj ekskluzywny dostęp do platformy 
-                  oraz pakiet startowy o wartości 200 PLN
+                  Przekształć swoją muzyczną pasję w stabilne źródło dochodu. 
+                  Sprzedawaj sprzęt, oferuj usługi i rozwijaj swój biznes z najniższymi prowizjami na rynku.
                 </p>
               </div>
 
@@ -158,21 +159,21 @@ const OnboardingSection: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
                 <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
                   <div className="w-10 h-10 bg-ampli-green/10 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-ampli-green" />
+                    <Percent className="w-5 h-5 text-ampli-green" />
                   </div>
-                  <span className="font-semibold text-gray-700">Wczesny dostęp</span>
+                  <span className="font-semibold text-gray-700">Tylko 5% prowizji</span>
                 </div>
                 <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
                   <div className="w-10 h-10 bg-ampli-green/10 rounded-lg flex items-center justify-center">
                     <DollarSign className="w-5 h-5 text-ampli-green" />
                   </div>
-                  <span className="font-semibold text-gray-700">Bonus 200 PLN</span>
+                  <span className="font-semibold text-gray-700">Szybkie wypłaty</span>
                 </div>
                 <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
                   <div className="w-10 h-10 bg-ampli-green/10 rounded-lg flex items-center justify-center">
-                    <UserPlus className="w-5 h-5 text-ampli-green" />
+                    <TrendingUp className="w-5 h-5 text-ampli-green" />
                   </div>
-                  <span className="font-semibold text-gray-700">Wsparcie 1-na-1</span>
+                  <span className="font-semibold text-gray-700">Stały rozwój</span>
                 </div>
               </div>
 
@@ -181,14 +182,14 @@ const OnboardingSection: React.FC = () => {
                   size="lg" 
                   className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-12 py-6 text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl"
                 >
-                  Zapisz się na listę oczekujących
+                  Rozpocznij sprzedaż już dziś
                   <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 
                 <div className="flex items-center gap-2 text-gray-500">
-                  <span className="text-2xl">🎁</span>
+                  <span className="text-2xl">🎯</span>
                   <span className="text-sm font-medium">
-                    Pakiet startowy za darmo
+                    Zarabiaj na tym, co kochasz
                   </span>
                 </div>
               </div>
@@ -197,15 +198,15 @@ const OnboardingSection: React.FC = () => {
               <div className="flex items-center justify-center gap-8 pt-6 text-sm text-gray-500">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-ampli-green" />
-                  <span>Bez zobowiązań</span>
+                  <span>Bez opłat miesięcznych</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-ampli-green" />
-                  <span>Anuluj kiedy chcesz</span>
+                  <span>Bezpieczne transakcje</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-ampli-green" />
-                  <span>100% bezpieczeństwa</span>
+                  <span>Pełne wsparcie</span>
                 </div>
               </div>
             </div>
