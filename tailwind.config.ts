@@ -143,7 +143,7 @@ export default {
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif']
+        'work-sans': ['Work Sans', 'sans-serif']
       },
       boxShadow: {
         'soft': '0 2px 15px rgba(0, 0, 0, 0.05)',

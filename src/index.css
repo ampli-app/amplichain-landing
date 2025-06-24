@@ -97,7 +97,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-poppins scroll-smooth;
+    @apply bg-background text-foreground font-work-sans scroll-smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -113,7 +113,7 @@
   }
 
   .section-subtitle {
-    @apply text-lg md:text-xl font-poppins mb-12 text-center max-w-3xl mx-auto leading-relaxed text-gray-600;
+    @apply text-lg md:text-xl font-work-sans mb-12 text-center max-w-3xl mx-auto leading-relaxed text-gray-600;
   }
 
   .card {
