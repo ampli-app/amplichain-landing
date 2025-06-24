@@ -6,23 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const SecuritySection: React.FC = () => {
-  const [serialNumber, setSerialNumber] = useState("");
-  const [category, setCategory] = useState("");
-  const [brand, setBrand] = useState("");
-  const [isSearching, setIsSearching] = useState(false);
-
-  const handleSearch = async () => {
-    if (!serialNumber.trim()) return;
-    
-    setIsSearching(true);
-    // Simulate search delay
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsSearching(false);
-    
-    // Here would be actual search logic
-    console.log('Searching for:', { serialNumber, category, brand });
-  };
-
   const stats = [
     { icon: Database, value: "15,000+", label: "Sprawdzonych seriali", color: "text-blue-600" },
     { icon: Users, value: "2,500+", label: "Zgłoszeń kradzieży", color: "text-red-600" },
@@ -167,100 +150,15 @@ const SecuritySection: React.FC = () => {
             </Card>
           </div>
 
-          {/* Search Tool */}
+          {/* Search Image */}
           <div className="lg:sticky lg:top-8">
-            <Card className="p-8 bg-white/90 backdrop-blur-sm shadow-2xl border-0 hover:shadow-3xl transition-all duration-300">
-              <div className="text-center mb-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl mb-4 shadow-lg">
-                  <Search className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  Sprawdź sprzęt przed zakupem
-                </h3>
-                <p className="text-gray-600">
-                  Wprowadź dane sprzętu aby sprawdzić czy nie figuruje w bazie skradzionych
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <div>
-                  <label htmlFor="serialNumber" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Numer seryjny sprzętu *
-                  </label>
-                  <Input
-                    id="serialNumber"
-                    value={serialNumber}
-                    onChange={(e) => setSerialNumber(e.target.value)}
-                    placeholder="Np. ABC123456789"
-                    className="h-12 text-lg border-2 border-gray-200 focus:border-blue-500 transition-colors"
-                  />
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="category" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Kategoria
-                    </label>
-                    <select 
-                      id="category"
-                      value={category}
-                      onChange={(e) => setCategory(e.target.value)}
-                      className="w-full h-12 rounded-md border-2 border-gray-200 bg-white px-4 text-lg focus:border-blue-500 transition-colors"
-                    >
-                      <option value="">Wybierz kategorię</option>
-                      <option value="guitar">Gitary</option>
-                      <option value="bass">Gitary basowe</option>
-                      <option value="keys">Instrumenty klawiszowe</option>
-                      <option value="drums">Perkusja</option>
-                      <option value="studio">Sprzęt studyjny</option>
-                      <option value="pa">Nagłośnienie</option>
-                      <option value="other">Inne</option>
-                    </select>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="brand" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Marka
-                    </label>
-                    <Input
-                      id="brand"
-                      value={brand}
-                      onChange={(e) => setBrand(e.target.value)}
-                      placeholder="Np. Fender, Gibson..."
-                      className="h-12 text-lg border-2 border-gray-200 focus:border-blue-500 transition-colors"
-                    />
-                  </div>
-                </div>
-                
-                <Button 
-                  onClick={handleSearch}
-                  disabled={!serialNumber.trim() || isSearching}
-                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
-                >
-                  {isSearching ? (
-                    <>
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-3"></div>
-                      Sprawdzam...
-                    </>
-                  ) : (
-                    <>
-                      <ScanSearch className="mr-3 h-5 w-5" />
-                      Sprawdź sprzęt
-                    </>
-                  )}
-                </Button>
-
-                <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
-                  <div className="flex items-start gap-3">
-                    <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <div className="text-sm text-blue-800">
-                      <p className="font-semibold mb-1">100% bezpłatne sprawdzenie</p>
-                      <p>Każde wyszukiwanie jest całkowicie darmowe i anonimowe</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
+            <div className="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300">
+              <img 
+                src="/lovable-uploads/0bc43e50-cae2-4e5a-934f-049c52363336.png" 
+                alt="Sprawdź sprzęt przed zakupem"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
