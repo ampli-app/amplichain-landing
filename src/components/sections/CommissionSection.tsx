@@ -208,7 +208,7 @@ const CommissionSection: React.FC = () => {
             </div>
 
             {/* Bottom CTA */}
-            <div className="mt-12 pt-8 border-t border-gray-200">
+            <div className="mt-12 pt-2 border-t border-gray-200">
               <div className="text-center bg-gradient-to-r from-ampli-green/10 via-ampli-green/5 to-ampli-green/10 rounded-2xl p-8">
                 <h5 className="text-2xl font-bold text-gray-900 mb-4">
                   Gotowy na najlepsze warunki w branży?
