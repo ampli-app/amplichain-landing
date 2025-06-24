@@ -1,42 +1,41 @@
 
-import React, { useState } from "react";
-import { Shield, ScanSearch, AlertTriangle, CheckCircle2, Users, Database, Lock, Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
+import React from "react";
+import { Shield, CheckCircle2, Users, CreditCard, Lock, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const SecuritySection: React.FC = () => {
   const stats = [
-    { icon: Database, value: "15,000+", label: "Sprawdzonych seriali", color: "text-blue-600" },
-    { icon: Users, value: "2,500+", label: "Zgłoszeń kradzieży", color: "text-red-600" },
-    { icon: CheckCircle2, value: "98%", label: "Skuteczność", color: "text-green-600" },
-    { icon: Lock, value: "24/7", label: "Monitoring", color: "text-purple-600" }
+    { icon: Users, value: "10,000+", label: "Zadowolonych sprzedawców", color: "text-ampli-green" },
+    { icon: CreditCard, value: "50M+", label: "Bezpiecznych transakcji", color: "text-blue-600" },
+    { icon: CheckCircle2, value: "99.8%", label: "Pomyślnych płatności", color: "text-green-600" },
+    { icon: TrendingUp, value: "24/7", label: "Wsparcie sprzedawców", color: "text-purple-600" }
   ];
 
   const benefits = [
     {
       icon: Shield,
-      title: "Weryfikuj przed zakupem",
-      description: "Sprawdź numer seryjny instrumentu w naszej bazie zanim dokonasz zakupu",
+      title: "Bezpieczne płatności",
+      description: "Gwarancja wypłat i ochrona przed nieuczciwymi kupującymi. Twoje pieniądze są zawsze bezpieczne",
       color: "bg-blue-50 text-blue-600"
     },
     {
-      icon: AlertTriangle,
-      title: "Zgłaszaj kradzieże",
-      description: "Pomóż odzyskać utracone instrumenty i zwiększ szanse na ich odnalezienie",
-      color: "bg-orange-50 text-orange-600"
-    },
-    {
-      icon: Users,
-      title: "Współpraca z organami",
-      description: "Pracujemy z policją i ubezpieczycielami w całej Polsce",
+      icon: CheckCircle2,
+      title: "Weryfikowani kupujący",
+      description: "Wszyscy kupujący przechodzą proces weryfikacji, co minimalizuje ryzyko problemowych transakcji",
       color: "bg-green-50 text-green-600"
     },
     {
-      icon: Database,
-      title: "Zniechęcaj złodziei",
-      description: "Ograniczamy możliwości sprzedaży skradzionego sprzętu muzycznego",
+      icon: Users,
+      title: "Społeczność sprzedawców",
+      description: "Dołącz do tysięcy muzyków, którzy już zarabiają na swojej pasji dzięki naszej platformie",
       color: "bg-purple-50 text-purple-600"
+    },
+    {
+      icon: CreditCard,
+      title: "Szybkie wypłaty",
+      description: "Otrzymuj pieniądze w ciągu 24 godzin od zakończenia transakcji. Bez ukrytych opłat",
+      color: "bg-orange-50 text-orange-600"
     }
   ];
 
@@ -45,13 +44,13 @@ const SecuritySection: React.FC = () => {
       
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 left-1/5 w-80 h-80 bg-green-100/20 rounded-full blur-2xl" />
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-ampli-green/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 left-1/5 w-80 h-80 bg-blue-100/20 rounded-full blur-2xl" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
           <svg className="w-full h-full opacity-5" viewBox="0 0 100 100">
             <defs>
               <pattern id="security-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#3B82F6" strokeWidth="0.5"/>
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#7b9a00" strokeWidth="0.5"/>
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#security-grid)" />
@@ -63,21 +62,20 @@ const SecuritySection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-3 mb-8 shadow-lg">
-            <Shield className="h-5 w-5 text-blue-600" />
-            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
-              Bezpieczeństwo Przede Wszystkim
+          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-ampli-green/30 rounded-full px-6 py-3 mb-8 shadow-lg">
+            <Shield className="h-5 w-5 text-ampli-green" />
+            <span className="text-sm font-semibold text-ampli-green uppercase tracking-wide">
+              Bezpieczeństwo i Zaufanie
             </span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 bg-clip-text text-transparent leading-tight">
-            Bezpieczne zakupy z bazą skradzionych sprzętów
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-gray-900 via-ampli-green to-gray-900 bg-clip-text text-transparent leading-tight">
+            Sprzedawaj z pewnością i spokojem
           </h2>
           
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Amplichain walczy z nielegalnym obrotem instrumentów muzycznych oferując 
-            <span className="font-semibold text-blue-600"> największą w Polsce bazę </span>
-            skradzionych przedmiotów dostępną dla wszystkich użytkowników
+            Amplichain to miejsce, gdzie <span className="font-semibold text-ampli-green">sprzedawcy są chronieni</span>, 
+            transakcje są bezpieczne, a zarabianie na muzycznej pasji staje się proste i przyjemne
           </p>
         </div>
 
@@ -115,7 +113,7 @@ const SecuritySection: React.FC = () => {
                           <Icon className="h-6 w-6" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                          <h3 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-ampli-green transition-colors">
                             {benefit.title}
                           </h3>
                           <p className="text-gray-600 leading-relaxed">
@@ -129,33 +127,33 @@ const SecuritySection: React.FC = () => {
               })}
             </div>
 
-            {/* Report Theft CTA */}
-            <Card className="p-6 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 hover:shadow-xl transition-all duration-300">
+            {/* Start Selling CTA */}
+            <Card className="p-6 bg-gradient-to-r from-ampli-green/10 to-ampli-darkgreen/10 border border-ampli-green/30 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
+                <div className="w-12 h-12 bg-ampli-green/20 rounded-2xl flex items-center justify-center">
+                  <TrendingUp className="h-6 w-6 text-ampli-green" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-bold text-lg text-gray-900 mb-1">
-                    Skradziono Ci sprzęt?
+                    Gotowy na pierwsze zyski?
                   </h3>
                   <p className="text-gray-600 text-sm mb-3">
-                    Zgłoś kradzież natychmiast i zwiększ szanse na odzyskanie
+                    Dołącz do tysięcy sprzedawców i zacznij zarabiać już dziś
                   </p>
-                  <Button size="sm" className="bg-red-600 hover:bg-red-700 text-white">
-                    Zgłoś kradzież
+                  <Button size="sm" className="bg-ampli-green hover:bg-ampli-darkgreen text-white">
+                    Rozpocznij sprzedaż
                   </Button>
                 </div>
               </div>
             </Card>
           </div>
 
-          {/* Search Image */}
+          {/* Trust Image */}
           <div className="lg:sticky lg:top-8">
             <div className="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300">
               <img 
                 src="/lovable-uploads/0bc43e50-cae2-4e5a-934f-049c52363336.png" 
-                alt="Sprawdź sprzęt przed zakupem"
+                alt="Bezpieczna sprzedaż na Amplichain"
                 className="w-full h-auto"
               />
             </div>
