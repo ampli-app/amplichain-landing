@@ -33,7 +33,7 @@ const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-white">
+    <section id="faq" className="pt-8 pb-16 bg-white">
       <div className="container">
         {/* Nagłówek - teraz maksymalnie czysty, bez ikony */}
         <div className="text-center mb-16">
