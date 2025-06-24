@@ -81,9 +81,9 @@ const OnboardingSection: React.FC = () => {
                 )}
 
                 {/* Step card */}
-                <div className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-hidden h-full">
-                  {/* Step number */}
-                  <div className="absolute -top-4 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-black text-lg shadow-lg z-20">
+                <div className="relative bg-white rounded-3xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
+                  {/* Step number - fixed positioning */}
+                  <div className="absolute -top-6 left-8 bg-gradient-to-r from-ampli-green to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-black text-lg shadow-lg z-20">
                     {index + 1}
                   </div>
 
@@ -91,7 +91,7 @@ const OnboardingSection: React.FC = () => {
                   <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-ampli-green/5 to-transparent rounded-bl-3xl" />
 
                   {/* Image */}
-                  <div className="relative mb-6 mt-4">
+                  <div className="relative mb-6">
                     <div className="aspect-video rounded-2xl overflow-hidden shadow-md">
                       <img
                         src={step.image}
