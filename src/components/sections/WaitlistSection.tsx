@@ -60,7 +60,7 @@ const WaitlistSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="waitlist" className="section py-20 bg-gradient-to-br from-ampli-green/10 to-ampli-blue/10">
+    <section id="waitlist" className="section py-20 bg-white">
       <div className="container">
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">

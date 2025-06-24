@@ -1,4 +1,3 @@
-
 import React from "react";
 import { TrendingUp, Users, Shield, Zap, Target, Award, ChevronRight } from "lucide-react";
 
@@ -53,13 +52,7 @@ const ValuePropositionSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
-      {/* Subtle background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-ampli-green/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-ampli-green/3 rounded-full blur-3xl" />
-      </div>
-
+    <section className="py-32 bg-white relative overflow-hidden">
       <div className="container relative z-10">
         {/* Header Section */}
         <div className="text-center mb-20">

@@ -1,16 +1,12 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import DiscountBanner from "@/components/ui/discount-banner";
 
 const HeroSection = () => {
+
   const handleStartSelling = () => {
     window.open('https://app.amplichain.com/register', '_blank');
-  };
-
-  const handleWatchDemo = () => {
-    // Link to demo video or tour
-    window.open('https://app.amplichain.com/demo', '_blank');
   };
 
   const deadline = "2025-07-10T23:59:59";
@@ -86,16 +82,6 @@ const HeroSection = () => {
               >
                 Zarejestruj się i odbierz kod
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              
-              <Button 
-                onClick={handleWatchDemo}
-                size="lg" 
-                variant="outline"
-                className="group border-2 border-gray-300 hover:border-ampli-green text-gray-700 hover:text-ampli-green hover:bg-ampli-green/5 backdrop-blur-sm font-semibold px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg transition-all duration-300 rounded-xl"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                Zobacz prezentację
               </Button>
             </div>
 

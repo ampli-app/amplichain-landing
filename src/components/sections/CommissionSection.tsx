@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Calculator, TrendingDown, Shield, CheckCircle, Zap, Crown } from "lucide-react";
 
@@ -20,14 +19,7 @@ const CommissionSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-br from-white via-gray-50/50 to-white relative overflow-hidden">
-      {/* Premium Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[800px] h-[600px] bg-gradient-to-br from-ampli-green/8 via-ampli-green/4 to-transparent rounded-full blur-3xl opacity-60" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[500px] bg-gradient-to-tl from-ampli-green/6 via-ampli-green/3 to-transparent rounded-full blur-3xl opacity-40" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(123,154,0,0.03),transparent_70%),radial-gradient(circle_at_80%_20%,rgba(123,154,0,0.02),transparent_70%)]" />
-      </div>
-
+    <section className="py-32 bg-white relative overflow-hidden">
       <div className="container relative z-10">
         {/* Premium Header */}
         <div className="text-center mb-20">

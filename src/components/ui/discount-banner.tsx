@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Gift, ArrowRight, Zap, Clock, Sparkles } from "lucide-react";
+import { Gift, ArrowRight, Zap, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // --- Helper Hook: Logika odliczania czasu ---
@@ -84,7 +84,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
   return (
     <div
       className={cn(
-        "relative bg-gradient-to-br from-slate-900 via-gray-900 to-black rounded-3xl p-8 shadow-2xl border border-gray-800/50 overflow-hidden",
+        "relative bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-800/50 overflow-hidden",
         className
       )}
     >
@@ -172,10 +172,6 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
                 <span>Zarejestruj się i zyskaj</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </div>
-              
-              {/* Floating particles effect */}
-              <div className="absolute top-1 right-4 w-1 h-1 bg-yellow-400 rounded-full animate-ping opacity-75" />
-              <div className="absolute bottom-2 left-6 w-1 h-1 bg-yellow-400 rounded-full animate-ping animation-delay-300 opacity-50" />
             </button>
           </div>
         </div>

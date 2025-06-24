@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Shield, CheckCircle2, Users, CreditCard, Lock, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -40,24 +39,7 @@ const SecuritySection: React.FC = () => {
   ];
 
   return (
-    <section id="security" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-      
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-ampli-green/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 left-1/5 w-80 h-80 bg-blue-100/20 rounded-full blur-2xl" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
-          <svg className="w-full h-full opacity-5" viewBox="0 0 100 100">
-            <defs>
-              <pattern id="security-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#7b9a00" strokeWidth="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#security-grid)" />
-          </svg>
-        </div>
-      </div>
-
+    <section id="security" className="py-24 bg-white relative overflow-hidden">
       <div className="container relative z-10">
         
         {/* Header */}
