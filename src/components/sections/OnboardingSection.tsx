@@ -31,7 +31,7 @@ const OnboardingSection: React.FC = () => {
   ];
 
   return (
-    <section id="onboarding" className="py-32 bg-white relative overflow-hidden">
+    <section id="onboarding" className="pt-8 pb-16 bg-white relative overflow-hidden">
       <div className="container relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
@@ -66,11 +66,11 @@ const OnboardingSection: React.FC = () => {
                 )}
 
                 {/* Step card */}
-                <div className="relative bg-white rounded-2xl sm:rounded-3xl p-8 pt-20 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
+                <div className="relative bg-white rounded-2xl sm:rounded-3xl p-8 shadow-lg transition-all duration-500 transform group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
                   {/* Step number */}
                   <div className="absolute -top-8 right-8 z-20">
                     <div className="relative">
-                      <div className="bg-gradient-to-br from-ampli-green via-ampli-lightgreen to-ampli-darkgreen text-white rounded-full h-16 w-16 flex items-center justify-center font-bold text-xl shadow-2xl shadow-ampli-green/40 border-4 border-white group-hover:scale-110 transition-all duration-300">
+                      <div className="bg-gradient-to-br from-ampli-green via-ampli-lightgreen to-ampli-darkgreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl shadow-2xl group-hover:scale-110 transition-all duration-300">
                         <span className="relative z-10">{index + 1}</span>
                         <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full"></div>
                       </div>

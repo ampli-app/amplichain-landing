@@ -37,7 +37,7 @@ const CategoriesSection: React.FC = () => {
   ];
 
   return (
-    <section id="categories" className="py-24 bg-white">
+    <section id="categories" className="pt-8 pb-16 bg-white">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-syne mb-6 text-gray-900">

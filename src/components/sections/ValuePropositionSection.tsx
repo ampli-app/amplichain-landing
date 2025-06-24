@@ -31,7 +31,7 @@ const ValuePropositionSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 sm:py-32 bg-white">
+    <section className="pt-8 pb-16 bg-white">
       <div className="container px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16 sm:mb-20">
