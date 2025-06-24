@@ -4,6 +4,15 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
+  const handleStartSelling = () => {
+    window.open('https://app.amplichain.com/register', '_blank');
+  };
+
+  const handleWatchDemo = () => {
+    // Link to demo video or tour
+    window.open('https://app.amplichain.com/demo', '_blank');
+  };
+
   return (
     <section className="min-h-screen pt-20 pb-16 flex items-center relative overflow-hidden bg-white">
       {/* Professional background with subtle patterns */}
@@ -38,7 +47,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-6 py-3 shadow-lg">
               <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
               <span className="text-sm font-semibold text-ampli-green tracking-wide uppercase">
-                Marketplace Przyszłości
+                Właśnie Wystartowaliśmy!
               </span>
             </div>
 
@@ -83,6 +92,7 @@ const HeroSection = () => {
             {/* Enhanced CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
+                onClick={handleStartSelling}
                 size="lg" 
                 className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-10 py-6 text-lg shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl"
               >
@@ -91,6 +101,7 @@ const HeroSection = () => {
               </Button>
               
               <Button 
+                onClick={handleWatchDemo}
                 size="lg" 
                 variant="outline"
                 className="group border-2 border-gray-300 hover:border-ampli-green text-gray-700 hover:text-ampli-green hover:bg-ampli-green/5 backdrop-blur-sm font-semibold px-10 py-6 text-lg transition-all duration-300 rounded-xl"

@@ -34,7 +34,7 @@ const Header: React.FC = () => {
   };
 
   const handleCtaClick = () => {
-    document.getElementById('cta')?.scrollIntoView({behavior: 'smooth'});
+    window.open('https://app.amplichain.com/register', '_blank');
     setIsMobileMenuOpen(false);
   };
 
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
             className="hidden lg:flex bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             onClick={handleCtaClick}
           >
-            <span className="font-semibold">Dołącz do listy</span>
+            <span className="font-semibold">Rozpocznij sprzedaż</span>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -146,7 +146,7 @@ const Header: React.FC = () => {
               onClick={handleCtaClick}
               className="w-full bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 py-3"
             >
-              <span className="font-semibold">Dołącz do listy</span>
+              <span className="font-semibold">Rozpocznij sprzedaż</span>
             </Button>
           </div>
         </div>
