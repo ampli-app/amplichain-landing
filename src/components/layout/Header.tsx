@@ -1,49 +1,157 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Music2 } from "lucide-react";
+import { Music2, Menu, X } from "lucide-react";
 
 const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navItems = [
+    { href: "#value", label: "Dlaczego my" },
+    { href: "#categories", label: "Co sprzedawać" },
+    { href: "#tools", label: "Narzędzia" },
+    { href: "#success", label: "Sukces" },
+    { href: "#onboarding", label: "Jak zacząć" },
+    { href: "#faq", label: "FAQ" },
+  ];
+
+  const handleNavClick = (href: string) => {
+    const element = document.getElementById(href.substring(1));
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  const handleCtaClick = () => {
+    document.getElementById('cta')?.scrollIntoView({behavior: 'smooth'});
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft py-4">
-      <div className="container flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <Music2 className="h-8 w-8 text-ampli-green" />
-          <span className="text-xl font-bold font-montserrat text-ampli-green">
-            Amplichain
-          </span>
+    <>
+      <header 
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled 
+            ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100' 
+            : 'bg-white/90 backdrop-blur-sm'
+        }`}
+      >
+        <div className="container flex justify-between items-center py-4">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <div className="relative">
+              <Music2 className="h-8 w-8 text-ampli-green transform hover:scale-110 transition-transform duration-200" />
+              <div className="absolute -inset-1 bg-ampli-green/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <span className="text-xl font-bold font-montserrat text-ampli-green hover:text-ampli-darkgreen transition-colors duration-200">
+              Amplichain
+            </span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-1">
+            {navItems.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => handleNavClick(item.href)}
+                className="relative px-4 py-2 text-sm font-medium text-gray-700 hover:text-ampli-green transition-all duration-200 group"
+              >
+                <span className="relative z-10">{item.label}</span>
+                <div className="absolute inset-0 bg-ampli-green/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-ampli-green group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
+              </button>
+            ))}
+          </nav>
+
+          {/* Desktop CTA Button */}
+          <Button 
+            size="sm" 
+            className="hidden lg:flex bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            onClick={handleCtaClick}
+          >
+            <span className="font-semibold">Dołącz do listy</span>
+          </Button>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden p-2 text-gray-700 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"
+          >
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
+      </header>
 
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#value" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Dlaczego my
-          </a>
-          <a href="#categories" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Co sprzedawać
-          </a>
-          <a href="#tools" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Narzędzia
-          </a>
-          <a href="#success" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Sukces
-          </a>
-          <a href="#onboarding" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            Jak zacząć
-          </a>
-          <a href="#faq" className="text-sm font-medium hover:text-ampli-green transition-colors hover:scale-105 transform duration-200">
-            FAQ
-          </a>
-        </nav>
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
+          isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
 
-        <Button 
-          size="sm" 
-          className="bg-ampli-green hover:bg-ampli-darkgreen text-white shadow-soft hover:shadow-hover transition-all duration-300"
-          onClick={() => document.getElementById('cta')?.scrollIntoView({behavior: 'smooth'})}
-        >
-          Dołącz do listy
-        </Button>
+      {/* Mobile Menu */}
+      <div 
+        className={`fixed top-0 right-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl z-50 lg:hidden transform transition-transform duration-300 ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Mobile Menu Header */}
+          <div className="flex items-center justify-between p-6 border-b border-gray-100">
+            <div className="flex items-center gap-3">
+              <Music2 className="h-7 w-7 text-ampli-green" />
+              <span className="text-lg font-bold font-montserrat text-ampli-green">
+                Amplichain
+              </span>
+            </div>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 text-gray-500 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <nav className="flex-1 px-6 py-8">
+            <div className="space-y-2">
+              {navItems.map((item, index) => (
+                <button
+                  key={item.href}
+                  onClick={() => handleNavClick(item.href)}
+                  className="w-full text-left px-4 py-3 text-gray-700 hover:text-ampli-green hover:bg-ampli-green/10 rounded-lg transition-all duration-200 font-medium"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </nav>
+
+          {/* Mobile CTA */}
+          <div className="p-6 border-t border-gray-100">
+            <Button 
+              onClick={handleCtaClick}
+              className="w-full bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 py-3"
+            >
+              <span className="font-semibold">Dołącz do listy</span>
+            </Button>
+          </div>
+        </div>
       </div>
-    </header>
+    </>
   );
 };
 
