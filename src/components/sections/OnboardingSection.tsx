@@ -8,29 +8,25 @@ const OnboardingSection: React.FC = () => {
       icon: UserPlus,
       title: "Zarejestruj się",
       description: "Stwórz konto sprzedawcy w mniej niż 2 minuty. Wystarczy email i podstawowe dane firmy.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      benefits: ["Bezpłatna rejestracja", "Weryfikacja w 24h", "Pełne wsparcie"]
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Camera,
       title: "Dodaj pierwszą ofertę",
       description: "Zrób profesjonalne zdjęcia, opisz swój sprzęt lub usługę. Nasze AI pomoże w optymalizacji.",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      benefits: ["Wsparcie AI w opisach", "Optymalizacja SEO", "Podpowiedzi cenowe"]
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: DollarSign,
       title: "Otrzymaj pierwsze zamówienie",
       description: "Dzięki zaawansowanym algorytmom Twoja oferta trafi do właściwych kupujących. Gwarancja widoczności.",
-      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      benefits: ["Algorytmy dopasowania", "Promocja nowych ofert", "Wsparcie sprzedażowe"]
+      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: TrendingUp,
       title: "Skaluj swój biznes",
       description: "Wykorzystuj zaawansowane analytics, automatyzację i narzędzia marketingowe do maksymalizacji zysków.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      benefits: ["Zaawansowane analytics", "Automatyzacja procesów", "Narzędzia marketingowe"]
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -105,16 +101,6 @@ const OnboardingSection: React.FC = () => {
                     <p className="text-gray-600 leading-relaxed text-base">
                       {step.description}
                     </p>
-
-                    {/* Benefits */}
-                    <div className="space-y-2 pt-2">
-                      {step.benefits.map((benefit, i) => (
-                        <div key={i} className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-ampli-green flex-shrink-0" />
-                          <span className="text-sm text-gray-600 font-medium">{benefit}</span>
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>
@@ -123,58 +109,26 @@ const OnboardingSection: React.FC = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center">
-          <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-100/50 max-w-4xl mx-auto relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-ampli-green via-ampli-darkgreen to-ampli-green" />
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-4xl md:text-5xl font-black font-montserrat mb-4 text-gray-900">
-                  Zacznij <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zarabiać</span> na swojej <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">pasji</span>
-                </h3>
-                <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                  Przekształć swoją muzyczną pasję w stabilne źródło dochodu. 
-                  Sprzedawaj sprzęt, oferuj usługi i rozwijaj swój biznes z najniższymi prowizjami na rynku.
-                </p>
-              </div>
+        <div className="mt-20 text-center">
+          <div className="max-w-3xl mx-auto rounded-3xl p-10 border-2 border-gray-200">
+            <div className="relative">
+              <h3 className="text-4xl md:text-5xl font-black font-montserrat mb-6 text-gray-900 leading-tight">
+                Zacznij <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zarabiać</span> na swojej <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">pasji</span>
+              </h3>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Przekształć swoją muzyczną pasję w stabilne źródło dochodu. 
+                Sprzedawaj sprzęt, oferuj usługi i rozwijaj swój biznes z najniższymi prowizjami na rynku.
+              </p>
 
-              {/* Benefits grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-                <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                  <div className="w-10 h-10 bg-ampli-green/10 rounded-lg flex items-center justify-center">
-                    <Percent className="w-5 h-5 text-ampli-green" />
-                  </div>
-                  <span className="font-semibold text-gray-700">Tylko 5% prowizji</span>
-                </div>
-                <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                  <div className="w-10 h-10 bg-ampli-green/10 rounded-lg flex items-center justify-center">
-                    <DollarSign className="w-5 h-5 text-ampli-green" />
-                  </div>
-                  <span className="font-semibold text-gray-700">Szybkie wypłaty</span>
-                </div>
-                <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
-                  <div className="w-10 h-10 bg-ampli-green/10 rounded-lg flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5 text-ampli-green" />
-                  </div>
-                  <span className="font-semibold text-gray-700">Stały rozwój</span>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="my-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
                   size="lg" 
                   className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-12 py-6 text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl"
                 >
-                  Rozpocznij sprzedaż już dziś
+                  Zarabiaj na swojej pasji
                   <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 
-                <div className="flex items-center gap-2 text-gray-500">
-                  <span className="text-2xl">🎯</span>
-                  <span className="text-sm font-medium">
-                    Zarabiaj na tym, co kochasz
-                  </span>
-                </div>
               </div>
 
               {/* Trust indicators */}
