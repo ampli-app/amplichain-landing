@@ -8,6 +8,11 @@ const CTASection: React.FC = () => {
     window.open('https://app.amplichain.com/register', '_blank');
   };
 
+  const deadline = "2025-07-10T23:59:59";
+  const deadlineDate = new Date(deadline);
+  const deadlineFormatted = deadlineDate.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });
+  const deadlineDayMonth = deadlineDate.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit' });
+
   return (
     <section id="cta" className="py-32 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 relative overflow-hidden">
       {/* Background Effects */}
@@ -42,7 +47,12 @@ const CTASection: React.FC = () => {
 
             {/* Compact Discount Banner */}
             <div className="mb-12">
-              <DiscountBanner variant="compact" className="mx-auto" />
+              <DiscountBanner 
+                variant="compact" 
+                className="mx-auto" 
+                deadlineDate={deadline}
+                onCtaClick={handleStartSelling}
+              />
             </div>
 
             <h2 className="text-5xl md:text-7xl font-black font-montserrat mb-8 text-white leading-tight">
@@ -95,7 +105,7 @@ const CTASection: React.FC = () => {
               {/* Urgency Bar */}
               <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20">
                 <div className="flex items-center justify-between mb-4">
-                  <h4 className="text-xl font-bold text-white">Do 31 grudnia 2024</h4>
+                  <h4 className="text-xl font-bold text-white">Do {deadlineFormatted}</h4>
                   <div className="flex items-center gap-2">
                     <Clock className="h-5 w-5 text-red-400" />
                     <span className="text-red-400 font-bold text-lg">Czas ucieka!</span>
@@ -109,7 +119,7 @@ const CTASection: React.FC = () => {
                 </div>
                 
                 <p className="text-gray-300 text-sm">
-                  Kod rabatowy dostępny tylko do <strong className="text-white">końca roku</strong> - nie przegap okazji!
+                  Kod rabatowy dostępny tylko do <strong className="text-white">{deadlineFormatted}</strong> - nie przegap okazji!
                 </p>
               </div>
             </div>
@@ -192,7 +202,7 @@ const CTASection: React.FC = () => {
                 <div className="text-sm text-gray-400">Z kodem rabatowym</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-ampli-green">31.12</div>
+                <div className="text-2xl font-bold text-ampli-green">{deadlineDayMonth}</div>
                 <div className="text-sm text-gray-400">Deadline kodu</div>
               </div>
               <div className="text-center">

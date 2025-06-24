@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Users, Shield, ArrowRight, Play, CheckCircle } from "lucide-react";
@@ -14,34 +13,17 @@ const HeroSection = () => {
     window.open('https://app.amplichain.com/demo', '_blank');
   };
 
-  return (
-    <section className="min-h-screen pt-20 pb-16 flex items-center relative overflow-hidden bg-white">
-      {/* Professional background with subtle patterns */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Elegant gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-ampli-green/5" />
-        
-        {/* Subtle geometric pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <svg width="60" height="60" viewBox="0 0 60 60" className="absolute top-0 left-0 w-full h-full">
-            <defs>
-              <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#7b9a00" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
-        </div>
-        
-        {/* Modern accent elements */}
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-ampli-green/10 to-ampli-green/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 left-1/5 w-48 h-48 bg-gradient-to-br from-ampli-green/8 to-transparent rounded-full blur-2xl" />
-      </div>
+  const deadline = "2025-07-10T23:59:59";
 
+  return (
+    <section className="min-h-screen pt-20 pb-16 flex items-center bg-white">
       <div className="container relative z-10">
         {/* Full-width Discount Banner */}
         <div className="w-full max-w-6xl mx-auto mb-12">
-          <DiscountBanner />
+          <DiscountBanner 
+            deadlineDate={deadline}
+            onCtaClick={handleStartSelling}
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -50,7 +32,7 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-in">
             
             {/* Professional Badge */}
-            <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-6 py-3 shadow-lg">
+            <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-6 py-3 shadow-lg">
               <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
               <span className="text-sm font-semibold text-ampli-green tracking-wide uppercase">
                 Właśnie Wystartowaliśmy!
