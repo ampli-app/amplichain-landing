@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Music4, ShoppingCart, Store } from "lucide-react";
 
@@ -52,7 +51,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 
 const FeaturesSection: React.FC = () => {
   return (
-    <section id="features" className="section py-20 bg-gray-50">
+    <section id="features" className="section py-20 bg-white">
       <div className="container">
         <h2 className="section-title">Jeden marketplace - trzy możliwości</h2>
         <p className="section-subtitle text-gray-600">

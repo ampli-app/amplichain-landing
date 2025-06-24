@@ -1,4 +1,3 @@
-
 import React from "react";
 import { UserPlus, Camera, DollarSign, TrendingUp, ArrowRight, CheckCircle, Percent } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,13 +35,7 @@ const OnboardingSection: React.FC = () => {
   ];
 
   return (
-    <section id="onboarding" className="py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-gradient-to-br from-ampli-green/5 to-ampli-green/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-gradient-to-br from-ampli-green/8 to-transparent rounded-full blur-2xl" />
-      </div>
-
+    <section id="onboarding" className="py-32 bg-white relative overflow-hidden">
       <div className="container relative z-10">
         {/* Header */}
         <div className="text-center mb-20">

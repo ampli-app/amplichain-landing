@@ -1,11 +1,10 @@
-
 import React from "react";
 import { Store, Link, ExternalLink, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ShopSection: React.FC = () => {
   return (
-    <section id="shop" className="section py-24 bg-gray-50">
+    <section id="shop" className="section py-24 bg-white">
       <div className="container">
         <h2 className="section-title">Promuj swoją ofertę we własnym minisklepie</h2>
         <p className="section-subtitle text-gray-600">
