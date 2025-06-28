@@ -3,7 +3,7 @@ import React from "react";
 const MoreThanMarketplaceSection: React.FC = () => {
   const features = [
     {
-      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/radar.jpg",
       title: "Inteligentne poszukiwania",
       subtitle: "Znajdź to, czego szukasz",
       description: "Publikuj ogłoszenia \"Szukam\" na tablicy społeczności. Potrzebujesz konkretnego sprzętu? Inni użytkownicy mogą odpowiedzieć swoimi ofertami z marketplace."
