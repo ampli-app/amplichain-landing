@@ -58,19 +58,14 @@ const HeroSection = () => {
 
           </div>
 
-          {/* Right Column - Professional Photo */}
-          <div className="lg:block animate-scale-in order-1 lg:order-2">
-            <div className="relative group">
-              
-              {/* Professional glow effect */}
-              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-ampli-green/20 via-ampli-green/10 to-ampli-green/20 rounded-2xl sm:rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-              
-              {/* Professional image */}
-              <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+          {/* Right Column - Image */}
+          <div className="lg:block order-1 lg:order-2">
+            <div>
+              <div>
                 <img
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="./images/mock.png"
                   alt="Profesjonalne narzędzia dla sprzedawców muzycznych"
-                  className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
+                  className="w-full h-auto max-h-[600px] object-contain"
                 />
               </div>
             </div>
