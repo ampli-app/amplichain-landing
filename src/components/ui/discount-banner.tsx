@@ -77,7 +77,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
     );
   }
 
-  // --- Wariant pro z poprawionym UX na mobile ---
+  // --- Wariant pro z POPRAWIONĄ responsywnością dla tabletów ---
   return (
     <div
       className={cn(
@@ -86,23 +86,24 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
         className
       )}
     >
-      {/* Tło i efekty wizualne - bez zmian */}
+      {/* Tło i efekty wizualne */}
       <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-orange-500/5 to-yellow-500/10" />
       <div className="absolute -top-16 -right-16 w-48 h-48 md:-top-24 md:-right-24 md:w-64 md:h-64 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute -bottom-8 -left-8 w-32 h-32 md:-bottom-12 md:-left-12 md:w-48 md:h-48 bg-gradient-to-br from-orange-500/15 to-yellow-500/15 rounded-full blur-2xl" />
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-8">
+      {/* POPRAWIONY LAYOUT - lepsze breakpointy dla tabletów */}
+      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
         
         {/* SEKCJA GŁÓWNA (LEWA) - Treść i oferta */}
-        <div className="flex-1 w-full space-y-4 text-center md:text-left">
+        <div className="flex-1 w-full space-y-4 text-center lg:text-left">
           
-          {/* Górna część z ikoną i nagłówkiem */}
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-4">
-            {/* Zmniejszona ikona na mobile */}
+          {/* Górna część z ikoną i nagłówkiem - POPRAWIONA dla tabletów */}
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-4">
+            {/* Ikona z lepszym scalowaniem */}
             <div className="relative group flex-shrink-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl md:rounded-3xl blur-md opacity-60 group-hover:opacity-75 transition-opacity" />
-              <div className="relative bg-gradient-to-br from-red-500 via-red-600 to-orange-500 text-white rounded-2xl md:rounded-3xl p-4 md:p-5 shadow-xl transform group-hover:scale-105 transition-transform duration-300">
-                <Gift className="h-8 w-8 md:h-12 md:w-12" />
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl lg:rounded-3xl blur-md opacity-60 group-hover:opacity-75 transition-opacity" />
+              <div className="relative bg-gradient-to-br from-red-500 via-red-600 to-orange-500 text-white rounded-2xl lg:rounded-3xl p-4 lg:p-5 shadow-xl transform group-hover:scale-105 transition-transform duration-300">
+                <Gift className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" />
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping" />
               </div>
             </div>
@@ -112,29 +113,29 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
                 <Clock className="h-4 w-4" />
                 OFERTA LIMITOWANA
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
                Bonusy na start
               </h3>
             </div>
           </div>
 
-          {/* Sekcja z ceną */}
-          <div className="flex items-baseline justify-center md:justify-start gap-2">
-            <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+          {/* Sekcja z ceną - POPRAWIONA dla tabletów */}
+          <div className="flex items-baseline justify-center lg:justify-start gap-2">
+            <span className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
               -70%
             </span>
-            
           </div>
           
-          <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-          Startujemy w lipcu! Ekskluzywne bonusy dla pierwszych użytkowników        </p>
+          <p className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Startujemy w lipcu! Ekskluzywne bonusy dla pierwszych użytkowników        
+          </p>
         </div>
 
-        {/* SEKCJA CTA (PRAWA) - Licznik i Przycisk */}
-        <div className="w-full lg:w-auto flex-shrink-0 mt-4 md:mt-0">
+        {/* SEKCJA CTA (PRAWA) - POPRAWIONA dla tabletów */}
+        <div className="w-full sm:w-auto lg:w-auto flex-shrink-0 mt-4 lg:mt-0 max-w-sm sm:max-w-none">
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-gray-700/50 space-y-4">
             
-            {/* Zmniejszony licznik na mobile */}
+            {/* Licznik z lepszym scalowaniem */}
             <div className="text-center space-y-2">
               <div className="text-xs font-semibold text-red-400 uppercase tracking-wider flex items-center justify-center gap-2">
                 <Clock className="h-4 w-4" />
@@ -148,8 +149,8 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
                   { value: timeLeft.seconds, label: 'SEK' }
                 ].map((item, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-gradient-to-b from-gray-700 to-gray-800 rounded-lg p-2 border border-gray-600">
-                      <div className="text-xl sm:text-2xl font-bold text-white font-mono">
+                    <div className="bg-gradient-to-b from-gray-700 to-gray-800 rounded-lg p-2 sm:p-3 border border-gray-600">
+                      <div className="text-lg sm:text-xl lg:text-2xl font-bold text-white font-mono">
                         {String(item.value).padStart(2, '0')}
                       </div>
                     </div>
@@ -161,7 +162,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
               </div>
             </div>
 
-            {/* Przycisk CTA */}
+            {/* Przycisk CTA - POPRAWIONY */}
             <button
               data-tally-open="m6pqbA"
               data-tally-layout="modal"
