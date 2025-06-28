@@ -37,8 +37,7 @@ const useCountdown = (deadline: string) => {
 interface DiscountBannerProps {
   className?: string;
   variant?: "default" | "compact";
-  deadlineDate: string; 
-  onCtaClick: () => void; 
+  deadlineDate: string;
 }
 
 // --- Enhanced Pro Komponent ---
@@ -46,7 +45,6 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
   className,
   variant = "default",
   deadlineDate,
-  onCtaClick,
 }) => {
   const timeLeft = useCountdown(deadlineDate);
   const deadlineFormatted = new Date(deadlineDate).toLocaleDateString('pl-PL', {
@@ -58,7 +56,6 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
   if (variant === "compact") {
     return (
       <button
-        onClick={onCtaClick}
         className={cn(
           "group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-gradient-to-r from-red-500 via-red-600 to-orange-500 text-white rounded-2xl px-6 py-3.5 shadow-2xl transition-all duration-300 hover:shadow-red-500/25 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-red-300 overflow-hidden",
           className
@@ -166,7 +163,6 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
 
             {/* Przycisk CTA */}
             <button
-              onClick={onCtaClick}
               data-tally-open="m6pqbA"
               data-tally-layout="modal"
               data-tally-width="500"
