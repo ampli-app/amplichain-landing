@@ -7,26 +7,20 @@ const OnboardingSection: React.FC = () => {
     {
       icon: UserPlus,
       title: "Zarejestruj się",
-      description: "Stwórz konto sprzedawcy w mniej niż 2 minuty. Wystarczy email i podstawowe dane firmy.",
+      description: "Email i podstawowe dane. Prosty proces - w 2 minuty masz dostęp do platformy.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Camera,
-      title: "Dodaj pierwszą ofertę",
-      description: "Zrób profesjonalne zdjęcia, opisz swój sprzęt lub usługę. Nasze AI pomoże w optymalizacji.",
+      title: "Skonfiguruj płatności",
+      description: "Globalny standard Stripe Connect umożliwia odbieranie płatności od klientów.",
       image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: DollarSign,
-      title: "Otrzymaj pierwsze zamówienie",
-      description: "Dzięki zaawansowanym algorytmom Twoja oferta trafi do właściwych kupujących. Gwarancja widoczności.",
+      title: "Dodaj pierwszą ofertę",
+      description: "Wystaw swoją pierwszą ofertę - zdjęcia, opis, cena. Automatycznie tworzysz swój unikalny sklep.",
       image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      icon: TrendingUp,
-      title: "Skaluj swój biznes",
-      description: "Wykorzystuj zaawansowane analytics, automatyzację i narzędzia marketingowe do maksymalizacji zysków.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -57,7 +51,7 @@ const OnboardingSection: React.FC = () => {
 
         {/* Steps Grid */}
         <div className="max-w-7xl mx-auto mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="group relative">
                 {/* Connection line */}
@@ -125,7 +119,7 @@ const OnboardingSection: React.FC = () => {
                   size="lg" 
                   className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-12 py-6 text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl"
                 >
-                  Zarabiaj na swojej pasji
+                  Chcę zarabiać na swojej pasji
                   <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 

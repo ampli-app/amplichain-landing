@@ -27,7 +27,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Czy mogę oferować usługi muzyczne?",
-      answer: "Tak! Amplichain to nie tylko marketplace sprzętu, ale też miejsce dla usług muzycznych: nagrywanie, mixing, mastering, aranżacje, lekcje gry na instrumentach, konsultacje producenckie i wiele więcej.",
+      answer: "Tak! Amplichain to nie tylko marketplace sprzętu, ale też miejsce dla usług muzycznych: nagrywanie, mixing, mastering, aranżacje, konsultacje producenckie i wiele więcej.",
     },
     // ... reszta pytań
   ];
