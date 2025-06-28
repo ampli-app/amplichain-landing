@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 const ValuePropositionSection: React.FC = () => {
   const benefits = [
     {
-      image: "https://images.unsplash.com/photo-1593672715438-d88a706299a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/prow.jpg",
       title: "Najniższe prowizje",
       description: "Więcej pieniędzy zostaje u Ciebie - prowizje niższe niż na Allegro i Fiverr",
     },
