@@ -20,7 +20,7 @@ const ValuePropositionSection: React.FC = () => {
       description: "Weryfikowani sprzedawcy, płatności Stripe, baza skradzionych sprzętów",
     },
     {
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/rocket.jpg",
       title: "Od startu z nami",
       description: "Dołącz do pierwszych użytkowników i zmieniaj branżę muzyczną",
     }
