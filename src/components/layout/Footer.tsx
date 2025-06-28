@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -42,16 +43,17 @@ const Footer: React.FC = () => {
             <p className="text-gray-600 text-sm mb-4">
               Zacznij budować swoją sieć muzycznych możliwości
             </p>
-            <button
-              data-tally-open="mRxM6p"
+            <Button
+              data-tally-open="m6pqbA"
               data-tally-layout="modal"
               data-tally-width="500"
               data-tally-emoji-text="👋"
               data-tally-emoji-animation="wave"
-              className="inline-block py-3 px-6 bg-ampli-green hover:bg-ampli-lightgreen text-white rounded-lg transition-colors text-sm font-medium"
+              size="sm"
+              className="bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl"
             >
-              Dołącz do platformy
-            </button>
+              <span className="whitespace-nowrap font-semibold">Dołącz do platformy</span>
+            </Button>
           </div>
         </div>
         

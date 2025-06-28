@@ -63,7 +63,7 @@ const Header: React.FC = () => {
 
           {/* Desktop CTA Button */}
           <Button 
-            data-tally-open="mRxM6p"
+            data-tally-open="m6pqbA"
             data-tally-layout="modal"
             data-tally-width="500"
             data-tally-emoji-text="👋"

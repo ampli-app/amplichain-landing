@@ -74,7 +74,7 @@ const CategoriesSection: React.FC = () => {
         
         <div className="text-center mt-12">
           <p className="text-xl text-gray-600 font-medium">
-            ...i wiele więcej!
+            ...i nie tylko!
           </p>
         </div>
       </div>
