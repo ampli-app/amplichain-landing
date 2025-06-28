@@ -31,7 +31,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg">
               <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
               <span className="text-xs sm:text-sm font-semibold text-ampli-green tracking-wide uppercase">
-                Właśnie Wystartowaliśmy!
+                Startujemy w lipcu!
               </span>
             </div>
 

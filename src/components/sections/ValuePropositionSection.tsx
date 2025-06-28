@@ -7,22 +7,22 @@ const ValuePropositionSection: React.FC = () => {
     {
       image: "https://images.unsplash.com/photo-1593672715438-d88a706299a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Najniższe prowizje",
-      description: "Tylko 5% prowizji oznacza więcej pieniędzy w Twojej kieszeni",
+      description: "Więcej pieniędzy zostaje u Ciebie - prowizje niższe niż na Allegro i Fiverr",
     },
     {
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Rosnąca społeczność",
-      description: "Dołącz do pierwszych sprzedawców i zbuduj swoją pozycję na rynku",
+      title: "Prawdziwa społeczność",
+      description: "Szukaj sprzętu, poznawaj ludzi z branży, korzystaj z usług profesjonalistów",
     },
     {
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Pełne bezpieczeństwo",
-      description: "Płatności przez Stripe + ochrona sprzedawcy",
+      description: "Weryfikowani sprzedawcy, płatności Stripe, baza skradzionych sprzętów",
     },
     {
       image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Nowoczesna platforma",
-      description: "Zaawansowane narzędzia do sprzedaży już w przygotowaniu",
+      title: "Od startu z nami",
+      description: "Dołącz do pierwszych użytkowników i zmieniaj branżę muzyczną",
     }
   ];
 
@@ -43,14 +43,11 @@ const ValuePropositionSection: React.FC = () => {
           </div>
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-6 sm:mb-8 text-gray-900 tracking-tight">
-            Dlaczego wybrać
+            Co zyskujesz z
             <br />
             <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">Amplichain?</span>
           </h2>
           
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-            Rozpoczynamy rewolucję w sprzedaży sprzętu muzycznego. Dołącz do nas od początku.
-          </p>
         </div>
 
         {/* Benefits Grid */}

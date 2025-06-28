@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import ValuePropositionSection from "@/components/sections/ValuePropositionSection";
 import CategoriesSection from "@/components/sections/CategoriesSection";
-import CommissionSection from "@/components/sections/CommissionSection";
+import MoreThanMarketplaceSection from "@/components/sections/MoreThanMarketplaceSection";
 import OnboardingSection from "@/components/sections/OnboardingSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
@@ -18,7 +18,7 @@ const Index = () => {
         <HeroSection />
         <ValuePropositionSection />
         <CategoriesSection />
-        <CommissionSection />
+        <MoreThanMarketplaceSection />
         <OnboardingSection />
         <FAQSection />
         <CTASection />

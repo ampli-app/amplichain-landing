@@ -49,7 +49,7 @@ const Header: React.FC = () => {
         <div className="container flex justify-between items-center py-4">
           {/* Logo */}
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-3">
-            <img src="/logotype.png" alt="Amplichain Logo" className="h-8" />
+            <img src="./logotype.png" alt="Amplichain Logo" className="h-8" />
           </a>
 
           {/* Desktop Navigation */}

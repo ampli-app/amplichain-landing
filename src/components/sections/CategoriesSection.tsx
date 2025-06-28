@@ -4,14 +4,11 @@ const CategoriesSection: React.FC = () => {
   const categories = [
     {
       image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Instrumenty i sprzęt audio",
+      title: "Sprzęt muzyczny",
       examples: [
-        "Gitary elektryczne i akustyczne", 
-        "Perkusja i akcesoria perkusyjne", 
-        "Mikrofony studyjne i sceniczne",
-        "Słuchawki profesjonalne",
-        "Interfejsy audio USB/Thunderbolt",
-        "Monitory studyjne"
+        "Instrumenty muzyczne", 
+        "Sprzęt studyjny i nagraniowy", 
+        "Sprzęt sceniczny i koncertowy"
       ]
     },
     {
@@ -20,8 +17,7 @@ const CategoriesSection: React.FC = () => {
       examples: [
         "Nagrywanie w studiu", 
         "Mixing i mastering", 
-        "Aranżacje muzyczne", 
-        "Lekcje gry na instrumentach"
+        "Aranżacje muzyczne"
       ]
     },
     {
@@ -30,7 +26,6 @@ const CategoriesSection: React.FC = () => {
       examples: [
         "Konsultacje producenckie", 
         "Coaching wokalny", 
-        "Doradztwo w zakresie sprzętu", 
         "Mentoring dla muzyków"
       ]
     }
@@ -41,10 +36,10 @@ const CategoriesSection: React.FC = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-syne mb-6 text-gray-900">
-            Co możesz <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">sprzedawać</span>?
+          Co mogę <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">sprzedawać</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Amplichain to miejsce dla każdego rodzaju oferty muzycznej. Od sprzętu po usługi - wszystko ma tu swoje miejsce.
+          Dajesz wartość scenie muzycznej? Czas na tym zarobić.
           </p>
         </div>
 
@@ -75,6 +70,12 @@ const CategoriesSection: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <p className="text-xl text-gray-600 font-medium">
+            ...i wiele więcej!
+          </p>
         </div>
       </div>
     </section>

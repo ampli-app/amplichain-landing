@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="text-center md:text-left">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="inline-block mb-4">
-              <img src="/logotype.png" alt="Amplichain Logo" className="h-8 mx-auto md:mx-0" />
+              <img src="./logotype.png" alt="Amplichain Logo" className="h-8 mx-auto md:mx-0" />
             </a>
             <p className="text-gray-600 text-sm mb-6">
               Pierwszy marketplace społecznościowy stworzony specjalnie dla branży muzycznej
@@ -53,31 +53,28 @@ const Footer: React.FC = () => {
         
         {/* Bottom Section */}
         <div className="border-t border-gray-200 mt-8 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div className="text-center md:text-left">
               <p className="text-gray-500 text-xs">
                 &copy; {currentYear} Amplichain. Wszelkie prawa zastrzeżone.
               </p>
             </div>
             
-            <div className="flex justify-center space-x-4">
-              <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors">
+            <div className="flex justify-center md:justify-end space-x-4">
+              <a href="#privacy" className="text-gray-500 hover:text-ampli-green transition-colors text-xs hidden">
+                Polityka prywatności
+              </a>
+              <a href="#terms" className="text-gray-500 hover:text-ampli-green transition-colors text-xs hidden">
+                Regulamin
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61573789722059" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-ampli-green transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors">
+              <a href="https://www.instagram.com/amplichain" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-ampli-green transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors hidden">
                 <Linkedin size={20} />
-              </a>
-            </div>
-            
-            <div className="flex justify-center md:justify-end space-x-4">
-              <a href="#privacy" className="text-gray-500 hover:text-ampli-green transition-colors text-xs">
-                Polityka prywatności
-              </a>
-              <a href="#terms" className="text-gray-500 hover:text-ampli-green transition-colors text-xs">
-                Regulamin
               </a>
             </div>
           </div>
