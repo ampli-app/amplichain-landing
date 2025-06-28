@@ -118,10 +118,13 @@ const OnboardingSection: React.FC = () => {
                   data-tally-emoji-text="👋"
                   data-tally-emoji-animation="wave"
                   size="lg" 
-                  className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl w-full sm:w-auto"
+                  className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-6 sm:px-12 py-4 sm:py-6 text-sm sm:text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl w-full sm:w-auto"
                 >
-                  <span className="text-center">Chcę zarabiać na swojej pasji</span>
-                  <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  <span className="text-center leading-tight">
+                    <span className="block sm:hidden">Zacznij zarabiać</span>
+                    <span className="hidden sm:block">Chcę zarabiać na swojej pasji</span>
+                  </span>
+                  <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-6 sm:w-6 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Button>
               </div>
 
