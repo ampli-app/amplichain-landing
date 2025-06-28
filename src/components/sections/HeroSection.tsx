@@ -44,28 +44,15 @@ const HeroSection = () => {
   </h1>
 
               
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
-                Profesjonalny marketplace dla branży muzycznej z najniższymi prowizjami 
-                i zaawansowanymi narzędziami sprzedażowymi
-              </p>
+  <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
+  To nie jest kolejny marketplace. To nowy{' '}
+  <strong className="font-semibold text-gray-900">hub dla branży muzycznej: </strong>
+  sprzedaż, kontakty i wszystko
+  czego potrzebujesz –{' '}
+  <strong className="font-semibold text-gray-900">w jednym miejscu.</strong>
+</p>
             </div>
 
-            {/* Key Benefits */}
-            <div className="space-y-3 sm:space-y-4">
-              <div className="flex items-center gap-3">
-                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-ampli-green flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700 font-medium">Tylko 3% prowizji z kodem rabatowym</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-ampli-green flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700 font-medium">10,000+ zweryfikowanych kupujących</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-ampli-green flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700 font-medium">Gwarancja bezpieczeństwa transakcji</span>
-              </div>
-            </div>
-            
             {/* Enhanced CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
