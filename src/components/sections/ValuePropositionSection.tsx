@@ -15,7 +15,7 @@ const ValuePropositionSection: React.FC = () => {
       description: "Szukaj sprzętu, poznawaj ludzi z branży, korzystaj z usług profesjonalistów",
     },
     {
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/padlock.jpg",
       title: "Pełne bezpieczeństwo",
       description: "Weryfikowani sprzedawcy, płatności Stripe, baza skradzionych sprzętów",
     },
