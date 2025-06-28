@@ -172,7 +172,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-pulse" />
               <div className="relative flex items-center justify-center gap-2 sm:gap-3">
-                <span>Zarejestruj się i zyskaj</span>
+                <span>Zapisz się na listę</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </div>
             </button>

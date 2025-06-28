@@ -54,16 +54,7 @@ const HeroSection = () => {
             </div>
 
             {/* Enhanced CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button 
-                onClick={handleStartSelling}
-                size="lg" 
-                className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl"
-              >
-                Zarejestruj się i odbierz kod
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
+            
 
           </div>
 
