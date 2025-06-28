@@ -28,11 +28,13 @@ const HeroSection = () => {
           <div className="space-y-6 sm:space-y-8 animate-fade-in order-2 lg:order-1">
             
             {/* Professional Badge */}
-            <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg">
-              <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
-              <span className="text-xs sm:text-sm font-semibold text-ampli-green tracking-wide uppercase">
-                Startujemy w lipcu!
-              </span>
+            <div className="flex justify-center lg:justify-start">
+              <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg">
+                <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
+                <span className="text-xs sm:text-sm font-semibold text-ampli-green tracking-wide uppercase">
+                  Startujemy w lipcu!
+                </span>
+              </div>
             </div>
 
             {/* Main Headline - More Professional Typography */}
@@ -65,7 +67,7 @@ const HeroSection = () => {
                 <img
                   src="./images/mock.png"
                   alt="Profesjonalne narzędzia dla sprzedawców muzycznych"
-                  className="w-full h-auto max-h-[600px] object-contain"
+                  className="w-full h-auto max-h-[500px] md:max-h-[600px] lg:max-h-[700px] xl:max-h-[800px] 2xl:max-h-none object-contain lg:object-cover lg:object-center animate-scale-in"
                 />
               </div>
             </div>

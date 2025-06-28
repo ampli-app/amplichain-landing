@@ -16,7 +16,7 @@ const OnboardingSection: React.FC = () => {
     },
     {
       icon: DollarSign,
-      title: "Dodaj pierwszą ofertę",
+      title: "Dodaj ofertę",
       description: "Wystaw swoją pierwszą ofertę - zdjęcia, opis, cena. Automatycznie tworzysz swój unikalny sklep."
     }
   ];
