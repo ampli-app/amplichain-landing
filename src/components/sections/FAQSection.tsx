@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react"; // Usunęliśmy nieużywane ikony
 
 const FAQSection: React.FC = () => {
@@ -81,10 +82,15 @@ const FAQSection: React.FC = () => {
                         </p>
                     </div>
                     <div className="flex-shrink-0">
-                         <a href="mailto:hello@amplichain.com" className="inline-flex items-center gap-2 bg-ampli-green hover:bg-ampli-darkgreen text-white px-6 py-3 rounded-lg font-semibold transition-transform duration-200 hover:scale-105">
-                            <MessageCircle className="w-5 h-5" />
-                            Skontaktuj się z nami
-                        </a>
+                         <Button 
+                            asChild
+                            className="inline-flex items-center gap-2 bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl"
+                         >
+                            <a href="mailto:hello@amplichain.com">
+                                <MessageCircle className="w-5 h-5" />
+                                <span className="whitespace-nowrap font-semibold">Skontaktuj się z nami</span>
+                            </a>
+                         </Button>
                     </div>
                 </div>
             </div>
