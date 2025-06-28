@@ -7,20 +7,17 @@ const OnboardingSection: React.FC = () => {
     {
       icon: UserPlus,
       title: "Zarejestruj się",
-      description: "Email i podstawowe dane. Prosty proces - w 2 minuty masz dostęp do platformy.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      description: "Email i podstawowe dane. Prosty proces - w 2 minuty masz dostęp do platformy."
     },
     {
       icon: Camera,
       title: "Skonfiguruj płatności",
-      description: "Globalny standard Stripe Connect umożliwia odbieranie płatności od klientów.",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      description: "Globalny standard Stripe Connect umożliwia odbieranie płatności od klientów."
     },
     {
       icon: DollarSign,
       title: "Dodaj pierwszą ofertę",
-      description: "Wystaw swoją pierwszą ofertę - zdjęcia, opis, cena. Automatycznie tworzysz swój unikalny sklep.",
-      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      description: "Wystaw swoją pierwszą ofertę - zdjęcia, opis, cena. Automatycznie tworzysz swój unikalny sklep."
     }
   ];
 
@@ -40,7 +37,7 @@ const OnboardingSection: React.FC = () => {
             Jak <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zacząć</span>?
           </h2>
           
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light px-4">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Prosty proces rejestracji - od założenia konta do wystawienia pierwszych ofert
           </p>
         </div>
@@ -57,36 +54,23 @@ const OnboardingSection: React.FC = () => {
 
                 {/* Step card */}
                 <div className="relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg transition-all duration-500 transform group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
-                  {/* Step number */}
-                  <div className="absolute -top-6 sm:-top-8 right-6 sm:right-8 z-20">
-                    <div className="relative">
-                      <div className="bg-gradient-to-br from-ampli-green via-ampli-lightgreen to-ampli-darkgreen text-white rounded-full h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center font-bold text-lg sm:text-xl shadow-2xl group-hover:scale-110 transition-all duration-300">
-                        <span className="relative z-10">{index + 1}</span>
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full"></div>
-                      </div>
-                      <div className="absolute -inset-2 bg-gradient-to-br from-ampli-green/30 to-ampli-lightgreen/30 rounded-full blur-md animate-pulse"></div>
-                    </div>
-                  </div>
-
                   {/* Background pattern */}
                   <div className="absolute top-0 right-0 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-ampli-green/5 to-transparent rounded-bl-3xl" />
 
-                  {/* Image */}
-                  <div className="relative mb-4 sm:mb-6">
-                    <div className="aspect-video overflow-hidden rounded-lg">
-                      <img
-                        src={step.image}
-                        alt={step.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                    </div>
-                  </div>
-                  
                   {/* Content */}
                   <div className="space-y-3 sm:space-y-4">
-                    <h3 className="text-xl sm:text-2xl font-bold font-syne text-gray-900">
-                      {step.title}
-                    </h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="relative">
+                        <div className="bg-gradient-to-br from-ampli-green via-ampli-lightgreen to-ampli-darkgreen text-white rounded-full h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center font-bold text-base sm:text-lg shadow-xl group-hover:scale-110 transition-all duration-300">
+                          <span className="relative z-10">{index + 1}</span>
+                          <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full"></div>
+                        </div>
+                        <div className="absolute -inset-1 bg-gradient-to-br from-ampli-green/30 to-ampli-lightgreen/30 rounded-full blur-sm animate-pulse"></div>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold font-syne text-gray-900">
+                        {step.title}
+                      </h3>
+                    </div>
                     
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                       {step.description}
