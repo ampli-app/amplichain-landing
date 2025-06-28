@@ -26,7 +26,7 @@ const MoreThanMarketplaceSection: React.FC = () => {
     <section id="more-than-marketplace" className="pt-8 pb-16 bg-white">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-syne mb-6 text-gray-900">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
             Więcej niż <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">marketplace</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

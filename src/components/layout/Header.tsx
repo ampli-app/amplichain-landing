@@ -72,7 +72,7 @@ const Header: React.FC = () => {
             className="hidden lg:flex bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             onClick={handleCtaClick}
           >
-            <span className="font-semibold">Rozpocznij sprzedaż</span>
+            <span className="font-semibold">Zapisz się na listę</span>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -135,7 +135,7 @@ const Header: React.FC = () => {
               onClick={handleCtaClick}
               className="w-full bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 py-3"
             >
-              <span className="font-semibold">Rozpocznij sprzedaż</span>
+              <span className="font-semibold">Zapisz się na listę</span>
             </Button>
           </div>
         </div>
