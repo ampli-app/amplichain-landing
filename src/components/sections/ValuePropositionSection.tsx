@@ -10,7 +10,7 @@ const ValuePropositionSection: React.FC = () => {
       description: "Więcej pieniędzy zostaje u Ciebie - prowizje niższe niż na Allegro i Fiverr",
     },
     {
-      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/spol.jpg",
       title: "Prawdziwa społeczność",
       description: "Szukaj sprzętu, poznawaj ludzi z branży, korzystaj z usług profesjonalistów",
     },

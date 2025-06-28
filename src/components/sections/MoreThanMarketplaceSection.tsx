@@ -9,13 +9,13 @@ const MoreThanMarketplaceSection: React.FC = () => {
       description: "Publikuj ogłoszenia \"Szukam\" na tablicy społeczności. Potrzebujesz konkretnego sprzętu? Inni użytkownicy mogą odpowiedzieć swoimi ofertami z marketplace."
     },
     {
-      image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/hand.jpg",
       title: "Bezpieczne zakupy",
       subtitle: "Sprawdź przed zakupem",
       description: "Weryfikuj numery seryjne w bazie skradzionych instrumentów. Zgłaszaj kradzieże i czytaj opinie od prawdziwych kupujących po transakcjach."
     },
     {
-      image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/prof.jpg",
       title: "Profesjonalne usługi",
       subtitle: "Od konsultacji po mastering",
       description: "Znajdź eksperta który Ci pomoże: doradztwo przy zakupach, lekcje, mixing, mastering. Wszystko w jednym miejscu, z systemem ocen i bezpiecznych płatności."
