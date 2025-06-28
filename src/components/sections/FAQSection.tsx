@@ -37,7 +37,7 @@ const FAQSection: React.FC = () => {
       <div className="container">
         {/* Nagłówek - teraz maksymalnie czysty, bez ikony */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
             Często zadawane pytania
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">

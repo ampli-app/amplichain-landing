@@ -75,24 +75,7 @@ const ValuePropositionSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Enhanced Bottom CTA */}
-        <div className="text-center bg-gradient-to-br from-ampli-green/10 via-ampli-green/5 to-transparent rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-lg border border-ampli-green/10">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold font-syne mb-4 sm:mb-6 text-gray-900">
-            Gotowy na nowy start?
-          </h3>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-            Dołącz do pierwszych sprzedawców na Amplichain i zbuduj swoją pozycję od podstaw.
-          </p>
-          
-          <Button 
-            onClick={handleStartSelling}
-            size="lg" 
-            className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-xl sm:rounded-2xl"
-          >
-            Zacznij sprzedawać teraz
-            <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
+        
       </div>
     </section>
   );

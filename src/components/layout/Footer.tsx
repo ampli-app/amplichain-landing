@@ -42,12 +42,16 @@ const Footer: React.FC = () => {
             <p className="text-gray-600 text-sm mb-4">
               Zacznij budować swoją sieć muzycznych możliwości
             </p>
-            <a 
-              href="#start-selling"
+            <button
+              data-tally-open="mRxM6p"
+              data-tally-layout="modal"
+              data-tally-width="500"
+              data-tally-emoji-text="👋"
+              data-tally-emoji-animation="wave"
               className="inline-block py-3 px-6 bg-ampli-green hover:bg-ampli-lightgreen text-white rounded-lg transition-colors text-sm font-medium"
             >
               Dołącz do platformy
-            </a>
+            </button>
           </div>
         </div>
         
