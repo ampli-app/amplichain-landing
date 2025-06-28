@@ -80,10 +80,10 @@ const FAQSection: React.FC = () => {
                         </p>
                     </div>
                     <div className="flex-shrink-0">
-                         <button className="inline-flex items-center gap-2 bg-ampli-green hover:bg-ampli-darkgreen text-white px-6 py-3 rounded-lg font-semibold transition-transform duration-200 hover:scale-105">
+                         <a href="mailto:hello@amplichain.com" className="inline-flex items-center gap-2 bg-ampli-green hover:bg-ampli-darkgreen text-white px-6 py-3 rounded-lg font-semibold transition-transform duration-200 hover:scale-105">
                             <MessageCircle className="w-5 h-5" />
                             Skontaktuj się z nami
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
