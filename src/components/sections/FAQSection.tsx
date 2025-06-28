@@ -10,12 +10,16 @@ import { MessageCircle } from "lucide-react"; // Usunęliśmy nieużywane ikony
 const FAQSection: React.FC = () => {
   const faqs = [
     {
-      question: "Ile kosztuje sprzedawanie na Amplichain?",
-      answer: "Rejestracja i prowadzenie sklepu są całkowicie bezpłatne. Płacisz tylko prowizję od udanych transakcji: 5% od sprzętu muzycznego i 10% od usług. To jedne z najniższych stawek na rynku.",
+      question: "Czy Amplichain jest tylko dla muzyków?",
+      answer: "Amplichain został stworzony z myślą o całej społeczności muzycznej, nie tylko dla muzyków. Zapraszamy wszystkich - muzyków, kolekcjonerów sprzętu, techników, producentów dźwięku czy po prostu entuzjastów, którzy chcą kupić lub sprzedać sprzęt muzyczny i być na bieżąco.",
     },
     {
-      question: "Jak szybko otrzymam pieniądze za sprzedaż?",
-      answer: "Pieniądze są automatycznie przekazywane na Twoje konto w ciągu 2-7 dni roboczych po potwierdzeniu otrzymania produktu przez kupującego. Korzystamy z systemu płatności Stripe, który zapewnia szybkie i bezpieczne transfery.",
+      question: "Kiedy ruszy platforma?",
+      answer: "Planujemy uruchomienie platformy w lipcu 2025. Osoby zapisane na listę oczekujących otrzymają dostęp do platformy jako pierwsze.",
+    },
+    {
+      question: "Czy platforma jest tylko dla profesjonalistów?",
+      answer: "Nie, Amplichain jest platformą dla wszystkich pasjonatów muzyki - od początkujących po profesjonalistów z branży. Każdy może sprzedawać swój sprzęt, oferować usługi muzyczne. Zależy nam aby każdy mógł budować swoją markę osobistą w branży.",
     },
     {
       question: "Czy mogę sprzedawać używany sprzęt?",
@@ -24,10 +28,6 @@ const FAQSection: React.FC = () => {
     {
       question: "Jak działa proces weryfikacji sprzedawców?",
       answer: "Wszyscy sprzedawcy przechodzą proces weryfikacji przez Stripe Connect. Sprawdzamy dane osobowe, dokumenty tożsamości i dane bankowe. To zapewnia bezpieczeństwo wszystkim użytkownikom platformy.",
-    },
-    {
-      question: "Czy mogę oferować usługi muzyczne?",
-      answer: "Tak! Amplichain to nie tylko marketplace sprzętu, ale też miejsce dla usług muzycznych: nagrywanie, mixing, mastering, aranżacje, konsultacje producenckie i wiele więcej.",
     },
     // ... reszta pytań
   ];

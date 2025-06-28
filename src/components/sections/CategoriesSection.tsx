@@ -34,9 +34,9 @@ const CategoriesSection: React.FC = () => {
   return (
     <section id="categories" className="pt-8 pb-16 bg-white">
       <div className="container">
-        <div className="text-center mb-16">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
-          Co mogę <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">sprzedawać</span>?
+        <div className="text-center mb-8">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
+            Co mogę <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">sprzedawać</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Dajesz wartość scenie muzycznej? Czas na tym zarobić.

@@ -58,8 +58,7 @@ const CTASection: React.FC = () => {
             </h3>
             
             <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-              Dołącz do <strong className="text-ampli-green">pierwszej fali użytkowników</strong> i skorzystaj 
-              z kodu rabatowego obniżającego prowizję. Rejestracja zajmuje tylko 2 minuty.
+              Dołącz do <strong className="text-ampli-green">pierwszej fali użytkowników</strong> i otrzymaj specjalny kod rabatowy w dniu startu platformy.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
