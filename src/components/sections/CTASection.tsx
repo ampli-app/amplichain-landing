@@ -48,10 +48,7 @@ const CTASection: React.FC = () => {
               </span>
             </h2>
             
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-              Amplichain właśnie ruszył! Dołącz do <strong className="text-white">pierwszej fali użytkowników</strong> 
-              i skorzystaj z ekskluzywnych bonusów na start
-            </p>
+            
           </div>
 
           {/* CTA Section */}
@@ -67,12 +64,16 @@ const CTASection: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <Button 
-                onClick={handleStartSelling}
+                data-tally-open="mRxM6p"
+                data-tally-layout="modal"
+                data-tally-width="500"
+                data-tally-emoji-text="👋"
+                data-tally-emoji-animation="wave"
                 size="lg" 
-                className="group bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold px-12 py-8 text-xl shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-2xl"
+                className="group bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-2xl w-full sm:w-auto"
               >
-                Zarezerwuj kod teraz
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+                <span className="whitespace-nowrap">Zarezerwuj kod</span>
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
               </Button>
               
               <div className="text-center">
