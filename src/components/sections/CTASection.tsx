@@ -5,7 +5,8 @@ import DiscountBanner from "@/components/ui/discount-banner";
 
 const CTASection: React.FC = () => {
   const handleStartSelling = () => {
-    window.open('https://app.amplichain.com/register', '_blank');
+    // Removed the redirect to let the Tally popup handle registration
+    // The Tally popup will be triggered by the data attributes on the button
   };
 
   const deadline = "2025-07-10T23:59:59";
