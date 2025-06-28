@@ -32,11 +32,6 @@ const Header: React.FC = () => {
     }
   };
 
-  const handleCtaClick = () => {
-    window.open('https://app.amplichain.com/register', '_blank');
-    setIsMobileMenuOpen(false);
-  };
-
   return (
     <>
       <header 
@@ -68,11 +63,15 @@ const Header: React.FC = () => {
 
           {/* Desktop CTA Button */}
           <Button 
+            data-tally-open="mRxM6p"
+            data-tally-layout="modal"
+            data-tally-width="500"
+            data-tally-emoji-text="👋"
+            data-tally-emoji-animation="wave"
             size="sm" 
-            className="hidden lg:flex bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            onClick={handleCtaClick}
+            className="hidden lg:flex bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl"
           >
-            <span className="font-semibold">Zapisz się na listę</span>
+            <span className="whitespace-nowrap font-semibold">Zapisz się na listę</span>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -132,10 +131,14 @@ const Header: React.FC = () => {
           {/* Mobile CTA */}
           <div className="p-6 border-t border-gray-100">
             <Button 
-              onClick={handleCtaClick}
-              className="w-full bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 py-3"
+              data-tally-open="mRxM6p"
+              data-tally-layout="modal"
+              data-tally-width="500"
+              data-tally-emoji-text="👋"
+              data-tally-emoji-animation="wave"
+              className="w-full bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl py-3"
             >
-              <span className="font-semibold">Zapisz się na listę</span>
+              <span className="whitespace-nowrap font-semibold">Zapisz się na listę</span>
             </Button>
           </div>
         </div>
