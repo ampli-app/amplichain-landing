@@ -38,15 +38,15 @@ const Footer: React.FC = () => {
           
           {/* CTA Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-bold mb-4 text-gray-900">Zacznij już dziś</h3>
+            <h3 className="text-lg font-bold mb-4 text-gray-900">Dołącz do nas</h3>
             <p className="text-gray-600 text-sm mb-4">
-              Dołącz do społeczności muzyków i zacznij sprzedawać swoją muzykę
+              Zacznij budować swoją sieć muzycznych możliwości
             </p>
             <a 
               href="#start-selling"
               className="inline-block py-3 px-6 bg-ampli-green hover:bg-ampli-lightgreen text-white rounded-lg transition-colors text-sm font-medium"
             >
-              Zacznij sprzedawać
+              Dołącz do platformy
             </a>
           </div>
         </div>

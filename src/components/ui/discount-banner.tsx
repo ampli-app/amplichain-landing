@@ -74,7 +74,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
         </div>
         
         <div className="text-sm font-bold text-center relative z-10">
-          <span className="text-yellow-200">FLASH SALE:</span> Tylko 3% prowizji do {deadlineFormatted}!
+          <span className="text-yellow-200">FLASH SALE:</span> Kod rabatowy na -70% prowizji do {deadlineFormatted}!
         </div>
       </button>
     );
@@ -116,7 +116,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
                 OFERTA LIMITOWANA
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
-                Niższa prowizja na start
+               Bonusy na start
               </h3>
             </div>
           </div>
@@ -124,17 +124,13 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
           {/* Sekcja z ceną */}
           <div className="flex items-baseline justify-center md:justify-start gap-2">
             <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
-              3%
+              -70%
             </span>
-            <span className="text-lg sm:text-xl text-gray-400 line-through">15%</span>
-            <span className="bg-green-500 text-white px-2 py-1 rounded-lg text-xs sm:text-sm font-bold">
-              -80%
-            </span>
+            
           </div>
           
           <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-            Zarejestruj się teraz i korzystaj z rewolucyjnie niskiej prowizji na pierwszą sprzedaż na platformie.
-          </p>
+          Startujemy w lipcu! Ekskluzywne bonusy dla pierwszych użytkowników        </p>
         </div>
 
         {/* SEKCJA CTA (PRAWA) - Licznik i Przycisk */}
@@ -171,6 +167,10 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
             {/* Przycisk CTA */}
             <button
               onClick={onCtaClick}
+              data-tally-open="m6pqbA"
+              data-tally-layout="modal"
+              data-tally-emoji-text="👋"
+              data-tally-emoji-animation="wave"
               className="group relative w-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 text-white font-bold text-base sm:text-lg px-6 py-3 sm:py-4 rounded-xl shadow-2xl transition-all duration-300 hover:shadow-red-500/25 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-red-300 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-pulse" />
