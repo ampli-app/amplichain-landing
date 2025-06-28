@@ -3,7 +3,7 @@ import React from "react";
 const CategoriesSection: React.FC = () => {
   const categories = [
     {
-      image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/sprzet.jpg",
       title: "Sprzęt muzyczny",
       examples: [
         "Instrumenty muzyczne", 
@@ -12,7 +12,7 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/usługi.jpg",
       title: "Usługi muzyczne",
       examples: [
         "Nagrywanie w studiu", 
@@ -21,7 +21,7 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      image: "https://images.unsplash.com/photo-1516116216624-53e697314c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "./images/kons.jpg",
       title: "Konsultacje",
       examples: [
         "Konsultacje producenckie", 
