@@ -49,61 +49,9 @@ const CTASection: React.FC = () => {
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-              Amplichain właśnie ruszył! Dołącz do <strong className="text-white">pierwszej fali sprzedawców</strong> 
+              Amplichain właśnie ruszył! Dołącz do <strong className="text-white">pierwszej fali użytkowników</strong> 
               i skorzystaj z ekskluzywnych bonusów na start
             </p>
-          </div>
-
-          {/* Main Content Sections */}
-          <div className="space-y-12 mb-20">
-            
-            {/* Bonusy Section */}
-            <div className="relative">
-              <div className="relative group">
-                {/* Glow effect */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-ampli-green/30 to-ampli-lightgreen/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500" />
-                
-                {/* Main image */}
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/20">
-                  <img
-                    src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Profesjonalna sprzedaż instrumentów muzycznych"
-                    className="w-full h-80 object-cover"
-                  />
-                  
-                  {/* Overlay with stats */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  
-                  <div className="absolute bottom-8 left-8 right-8">
-                    <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6">
-                      <div className="mb-4">
-                        <h4 className="text-gray-900 font-bold text-lg mb-2">
-                          Bonusy dla pierwszych sprzedawców
-                        </h4>
-                        <p className="text-gray-600 text-sm mb-3">
-                          Zdobądź przewagę konkurencyjną jako jeden z pierwszych sprzedawców
-                        </p>
-                      </div>
-                      
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-3 w-3 text-ampli-green flex-shrink-0" />
-                          <span className="text-xs text-gray-600">Prowizja tylko 3%</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-3 w-3 text-ampli-green flex-shrink-0" />
-                          <span className="text-xs text-gray-600">50 PLN bonusu na promocję</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-3 w-3 text-ampli-green flex-shrink-0" />
-                          <span className="text-xs text-gray-600">Priorytetowe wyświetlanie</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* CTA Section */}
@@ -113,7 +61,7 @@ const CTASection: React.FC = () => {
             </h3>
             
             <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-              Dołącz do <strong className="text-ampli-green">pierwszej fali sprzedawców</strong> i skorzystaj 
+              Dołącz do <strong className="text-ampli-green">pierwszej fali użytkowników</strong> i skorzystaj 
               z kodu rabatowego obniżającego prowizję. Rejestracja zajmuje tylko 2 minuty.
             </p>
 
