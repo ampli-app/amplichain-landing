@@ -23,14 +23,14 @@ const Footer: React.FC = () => {
           <div className="text-center md:text-left">
             <h3 className="text-lg font-bold mb-4 text-gray-900">Kontakt</h3>
             <a 
-              href="mailto:info@amplichain.pl" 
+              href="mailto:hello@amplichain.com" 
               className="text-gray-600 hover:text-ampli-green transition-colors text-sm block mb-2"
             >
-              info@amplichain.pl
+              hello@amplichain.com
             </a>
             <a 
               href="tel:000000000" 
-              className="text-gray-600 hover:text-ampli-green transition-colors text-sm block"
+              className="text-gray-600 hover:text-ampli-green transition-colors text-sm block hidden"
             >
               000 000 000
             </a>
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
               <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors">
+              <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors hidden">
                 <Linkedin size={20} />
               </a>
             </div>
