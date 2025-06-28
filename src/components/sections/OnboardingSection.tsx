@@ -32,8 +32,7 @@ const OnboardingSection: React.FC = () => {
               Proces Onboardingu
             </span>
           </div>
-
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-syne mb-6 sm:mb-8 text-gray-900 tracking-tight leading-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
             Jak <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zacząć</span>?
           </h2>
           
