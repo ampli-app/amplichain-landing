@@ -112,6 +112,11 @@ const OnboardingSection: React.FC = () => {
 
               <div className="my-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
+                  data-tally-open="m6pqbA"
+                  data-tally-layout="modal"
+                  data-tally-width="500"
+                  data-tally-emoji-text="👋"
+                  data-tally-emoji-animation="wave"
                   size="lg" 
                   className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-12 py-6 text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl"
                 >

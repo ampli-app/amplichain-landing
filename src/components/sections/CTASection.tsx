@@ -64,7 +64,7 @@ const CTASection: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <Button 
-                data-tally-open="mRxM6p"
+                data-tally-open="m6pqbA"
                 data-tally-layout="modal"
                 data-tally-width="500"
                 data-tally-emoji-text="👋"

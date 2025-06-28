@@ -76,7 +76,8 @@ const FAQSection: React.FC = () => {
                             Nie znalazłeś odpowiedzi?
                         </h3>
                         <p className="text-slate-600">
-                            Nasz zespół wsparcia chętnie odpowie na każde Twoje pytanie.
+                            Napisz do nas na <b>hello@amplichain.com</b>
+
                         </p>
                     </div>
                     <div className="flex-shrink-0">
