@@ -28,7 +28,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Jak działa proces weryfikacji sprzedawców?",
-      answer: "Wszyscy sprzedawcy przechodzą proces weryfikacji przez Stripe Connect. Sprawdzamy dane osobowe, dokumenty tożsamości i dane bankowe. To zapewnia bezpieczeństwo wszystkim użytkownikom platformy.",
+      answer: "Używamy Stripe Connect do płatności i weryfikacji sprzedawców - to standard w branży, który gwarantuje bezpieczeństwo.",
     },
     // ... reszta pytań
   ];
