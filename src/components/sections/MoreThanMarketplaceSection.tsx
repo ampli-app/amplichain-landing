@@ -6,7 +6,7 @@ const MoreThanMarketplaceSection: React.FC = () => {
       image: "./images/radar.jpg",
       title: "Inteligentne poszukiwania",
       subtitle: "Znajdź to, czego szukasz",
-      description: "Publikuj ogłoszenia \"Szukam\" na tablicy społeczności. Potrzebujesz konkretnego sprzętu? Inni użytkownicy mogą odpowiedzieć swoimi ofertami z marketplace."
+      description: "Publikuj ogłoszenia \"Radar\" na tablicy społeczności. Potrzebujesz konkretnego sprzętu? Inni użytkownicy mogą odpowiedzieć swoimi ofertami z marketplace."
     },
     {
       image: "./images/hand.jpg",
