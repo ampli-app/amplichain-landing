@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const navItems = [
     { href: "#value-proposition", label: "Dlaczego my?" },
     { href: "#categories", label: "Co sprzedawać?" },
-    { href: "#more-than-marketplace", label: "Więcej niż marketplace" },
+    { href: "#more-than-marketplace", label: "Więcej niż PLenti" },
     { href: "#onboarding", label: "Jak zacząć?" },
     { href: "#faq", label: "FAQ" },
   ];
