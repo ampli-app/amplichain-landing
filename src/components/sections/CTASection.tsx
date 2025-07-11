@@ -9,7 +9,7 @@ const CTASection: React.FC = () => {
     // The Tally popup will be triggered by the data attributes on the button
   };
 
-  const deadline = "2025-07-10T23:59:59";
+  const deadline = "2025-07-14T23:59:59";
   const deadlineDate = new Date(deadline);
   const deadlineFormatted = deadlineDate.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });
   const deadlineDayMonth = deadlineDate.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit' });
