@@ -9,7 +9,7 @@ const HeroSection = () => {
     window.open('https://app.amplichain.com/register', '_blank');
   };
 
-  const deadline = "2025-07-10T23:59:59";
+  const deadline = "2025-07-14T23:59:59";
 
   return (
     <section className="min-h-screen pt-24 sm:pt-28 pb-12 sm:pb-16 flex items-center bg-white">
