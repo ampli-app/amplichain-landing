@@ -4,6 +4,8 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import DiscountBanner from "@/components/ui/discount-banner";
 
 const HeroSection = () => {
+  // Flaga do kontrolowania widoczności bannera
+  const showDiscountBanner = false; // Zmień na true żeby pokazać
 
   const handleStartSelling = () => {
     window.open('https://app.amplichain.com/register', '_blank');
@@ -12,15 +14,17 @@ const HeroSection = () => {
   const deadline = "2025-07-14T23:59:59";
 
   return (
-    <section className="min-h-screen pt-24 sm:pt-28 pb-12 sm:pb-16 flex items-center bg-white">
+    <section className="min-h-screen pt-16 sm:pt-20 pb-12 sm:pb-16 flex items-center bg-white">
       <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
-        {/* Full-width Discount Banner */}
-        <div className="w-full max-w-6xl mx-auto mb-8 sm:mb-12">
-          <DiscountBanner 
-            deadlineDate={deadline}
-            onCtaClick={handleStartSelling}
-          />
-        </div>
+        {/* Full-width Discount Banner - warunkowe renderowanie */}
+        {showDiscountBanner && (
+          <div className="w-full max-w-6xl mx-auto mb-8 sm:mb-12">
+            <DiscountBanner 
+              deadlineDate={deadline}
+              onCtaClick={handleStartSelling}
+            />
+          </div>
+        )}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
@@ -39,25 +43,20 @@ const HeroSection = () => {
 
             {/* Main Headline - More Professional Typography */}
             <div className="space-y-4 sm:space-y-6">
-  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
-    <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
-      Twoja sieć <span class="text-gray-900 font-extrabold">muzycznych</span> możliwości
-    </span>
-  </h1>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
+                <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">
+                  Twoja sieć <span className="text-gray-900 font-extrabold">muzycznych</span> możliwości
+                </span>
+              </h1>
 
-              
-  <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
-  To nie jest kolejny marketplace. To nowy{' '}
-  <strong className="font-semibold text-gray-900">hub dla branży muzycznej: </strong>
-  sprzedaż, kontakty i wszystko
-  czego potrzebujesz –{' '}
-  <strong className="font-semibold text-gray-900">w jednym miejscu.</strong>
-</p>
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed font-light">
+                To nie jest kolejny marketplace. To nowy{' '}
+                <strong className="font-semibold text-gray-900">hub dla branży muzycznej: </strong>
+                sprzedaż, kontakty i wszystko
+                czego potrzebujesz –{' '}
+                <strong className="font-semibold text-gray-900">w jednym miejscu.</strong>
+              </p>
             </div>
-
-            {/* Enhanced CTA Buttons */}
-            
-
           </div>
 
           {/* Right Column - Image */}
