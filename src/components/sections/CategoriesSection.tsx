@@ -3,7 +3,7 @@ import React from "react";
 const CategoriesSection: React.FC = () => {
   const categories = [
     {
-      image: "./images/sprzet.jpg",
+      image: "./images/sprzet.webp",
       title: "Sprzęt muzyczny",
       examples: [
         "Instrumenty muzyczne", 
@@ -12,7 +12,7 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      image: "./images/usługi.jpg",
+      image: "./images/usługi.webp",
       title: "Usługi muzyczne",
       examples: [
         "Nagrywanie w studiu", 
@@ -21,7 +21,7 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      image: "./images/kons.jpg",
+      image: "./images/kons.webp",
       title: "Konsultacje",
       examples: [
         "Konsultacje producenckie", 

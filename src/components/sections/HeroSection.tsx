@@ -64,7 +64,7 @@ const HeroSection = () => {
             <div>
               <div>
                 <img
-                  src="./images/mock.png"
+                  src="./images/mock.webp"
                   alt="Profesjonalne narzędzia dla sprzedawców muzycznych"
                   className="w-full h-auto max-h-[500px] md:max-h-[600px] lg:max-h-[700px] xl:max-h-[800px] 2xl:max-h-none object-contain lg:object-cover lg:object-center animate-scale-in"
                 />

@@ -3,19 +3,19 @@ import React from "react";
 const MoreThanMarketplaceSection: React.FC = () => {
   const features = [
     {
-      image: "./images/radar.jpg",
+      image: "./images/radar.webp",
       title: "Inteligentne poszukiwania",
       subtitle: "Znajdź to, czego szukasz",
       description: "Publikuj ogłoszenia \"Radar\" na tablicy społeczności. Potrzebujesz konkretnego sprzętu? Inni użytkownicy mogą odpowiedzieć swoimi ofertami z marketplace."
     },
     {
-      image: "./images/hand.jpg",
+      image: "./images/hand.webp",
       title: "Bezpieczne zakupy",
       subtitle: "Sprawdź przed zakupem",
       description: "Weryfikuj numery seryjne w bazie skradzionych instrumentów. Zgłaszaj kradzieże i czytaj opinie od prawdziwych kupujących po transakcjach."
     },
     {
-      image: "./images/prof.jpg",
+      image: "./images/prof.webp",
       title: "Profesjonalne usługi",
       subtitle: "Od konsultacji po mastering",
       description: "Znajdź eksperta który Ci pomoże: doradztwo przy zakupach, lekcje, mixing, mastering. Wszystko w jednym miejscu, z systemem ocen i bezpiecznych płatności."
