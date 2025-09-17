@@ -5,22 +5,22 @@ import { ArrowRight } from 'lucide-react';
 const ValuePropositionSection: React.FC = () => {
   const benefits = [
     {
-      image: "./images/prow.jpg",
+      image: "./images/prow.webp",
       title: "Najniższe prowizje",
       description: "Więcej pieniędzy zostaje u Ciebie - prowizje niższe niż na Allegro i Fiverr",
     },
     {
-      image: "./images/spol.jpg",
+      image: "./images/spol.webp",
       title: "Prawdziwa społeczność",
       description: "Szukaj sprzętu, poznawaj ludzi z branży, korzystaj z usług profesjonalistów",
     },
     {
-      image: "./images/padlock.jpg",
+      image: "./images/padlock.webp",
       title: "Pełne bezpieczeństwo",
       description: "Weryfikowani sprzedawcy, płatności Stripe, baza skradzionych sprzętów",
     },
     {
-      image: "./images/rocket.jpg",
+      image: "./images/rocket.webp",
       title: "Od startu z nami",
       description: "Dołącz do pierwszych użytkowników i zmieniaj branżę muzyczną",
     }

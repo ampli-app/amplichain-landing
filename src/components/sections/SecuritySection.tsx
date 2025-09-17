@@ -134,7 +134,7 @@ const SecuritySection: React.FC = () => {
           <div className="lg:sticky lg:top-8">
             <div className="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300">
               <img 
-                src="/lovable-uploads/0bc43e50-cae2-4e5a-934f-049c52363336.png" 
+                src="/lovable-uploads/0bc43e50-cae2-4e5a-934f-049c52363336.webp" 
                 alt="Bezpieczna sprzedaż na Amplichain"
                 className="w-full h-auto"
               />
