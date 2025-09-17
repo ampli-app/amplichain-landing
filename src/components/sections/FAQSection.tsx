@@ -16,7 +16,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Kiedy ruszy platforma?",
-      answer: "Planujemy uruchomienie platformy w lipcu 2025. Osoby zapisane na listę oczekujących otrzymają dostęp do platformy jako pierwsze.",
+      answer: "Planujemy uruchomienie platformy we wrześniu 2025. Osoby zapisane na listę oczekujących otrzymają dostęp do platformy jako pierwsze.",
     },
     {
       question: "Czy platforma jest tylko dla profesjonalistów?",
