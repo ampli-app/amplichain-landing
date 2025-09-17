@@ -77,6 +77,8 @@ const Header: React.FC = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-gray-700 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"
+            aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -106,6 +108,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="p-2 text-gray-500 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"
+              aria-label="Zamknij menu"
             >
               <X className="h-5 w-5" />
             </button>

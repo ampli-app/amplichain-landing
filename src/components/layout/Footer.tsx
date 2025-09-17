@@ -73,10 +73,10 @@ const Footer: React.FC = () => {
               <a href="#terms" className="text-gray-500 hover:text-ampli-green transition-colors text-xs hidden">
                 Regulamin
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61573789722059" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-ampli-green transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61573789722059" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-ampli-green transition-colors" aria-label="Odwiedź naszą stronę na Facebooku">
                 <Facebook size={20} />
               </a>
-              <a href="https://www.instagram.com/amplichain" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-ampli-green transition-colors">
+              <a href="https://www.instagram.com/amplichain" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-ampli-green transition-colors" aria-label="Odwiedź nasz profil na Instagramie">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-500 hover:text-ampli-green transition-colors hidden">
