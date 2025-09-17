@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         <div className="container flex justify-between items-center py-4">
           {/* Logo */}
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-3">
-            <img src="./logotype.webp" alt="Amplichain Logo" className="h-8" />
+            <img src="./logotype.png" alt="Amplichain Logo" className="h-8" />
           </a>
 
           {/* Desktop Navigation */}
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-100">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); setIsMobileMenuOpen(false); }} className="flex items-center gap-3">
-              <img src="/logotype.webp" alt="Amplichain Logo" className="h-7" />
+              <img src="/logotype.png" alt="Amplichain Logo" className="h-7" />
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
