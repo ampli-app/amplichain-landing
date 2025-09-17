@@ -127,7 +127,7 @@ const DiscountBanner: React.FC<DiscountBannerProps> = ({
           </div>
           
           <p className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Startujemy w lipcu! Ekskluzywne bonusy dla pierwszych użytkowników        
+            Startujemy we wrześniu! Ekskluzywne bonusy dla pierwszych użytkowników        
           </p>
         </div>
 
