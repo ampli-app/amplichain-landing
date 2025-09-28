@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "react-snap",
+    "postbuild": "react-snap || echo 'React-snap failed, continuing...'",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -88,6 +88,8 @@
     "crawlFrom": "/",
     "include": ["/"],
     "userAgent": "ReactSnap",
+    "skipThirdPartyRequests": true,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
     "minifyHtml": {
       "collapseWhitespace": false,
       "removeComments": false
