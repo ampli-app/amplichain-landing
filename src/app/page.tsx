@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,7 +11,7 @@ import OnboardingSection from "@/components/sections/OnboardingSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 
-const Index = () => {
+export default function Home() {
   // Flaga do kontrolowania widoczności CTA Section
   const showCTASection = false; // Zmień na true żeby pokazać
 
@@ -30,6 +32,4 @@ const Index = () => {
       <Footer />
     </div>
   );
-};
-
-export default Index;
+}

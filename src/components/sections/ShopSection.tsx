@@ -80,7 +80,7 @@ const ShopSection: React.FC = () => {
                   <div className="bg-gray-50 rounded overflow-hidden">
                     <div className="h-24 bg-gray-200"></div>
                     <div className="p-2">
-                      <h5 className="font-medium text-xs">Struny D'Addario</h5>
+                      <h5 className="font-medium text-xs">Struny D&apos;Addario</h5>
                       <p className="text-ampli-green text-xs font-semibold">65 PLN</p>
                     </div>
                   </div>
@@ -104,7 +104,7 @@ const ShopSection: React.FC = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold">Twój własny minisklep</h3>
               </div>
-              
+              <p className="text-gray-600 mb-4">Nie musisz być ekspertem od technologii. Nasze narzędzia są tak proste, że każdy może z nich korzystać.</p>
               <p className="text-gray-600">
                 Otrzymasz dedykowany link, który możesz udostępniać w mediach społecznościowych i promować wszędzie, 
                 gdzie tylko chcesz. Klienci będą mogli przeglądać wszystkie Twoje oferty w jednym miejscu.

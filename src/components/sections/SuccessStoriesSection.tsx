@@ -70,7 +70,7 @@ const SuccessStoriesSection: React.FC = () => {
               </div>
               
               <p className="text-gray-700 mb-6 leading-relaxed italic">
-                "{testimonial.content}"
+                &quot;{testimonial.content}&quot;
               </p>
               
               <div className="bg-ampli-green/10 rounded-xl p-4 flex items-center">
