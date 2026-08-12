@@ -18,6 +18,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Amplichain — Twoja sieć muzycznych możliwości",
   description: "Marketplace i społeczność dla branży muzycznej: sprzedawaj sprzęt, oferuj usługi, znajdź kontakty. Najniższe prowizje, weryfikowani sprzedawcy, bezpieczne płatności.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
