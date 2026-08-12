@@ -17,12 +17,12 @@ const ValuePropositionSection: React.FC = () => {
     {
       image: "./images/padlock.webp",
       title: "Pełne bezpieczeństwo",
-      description: "Weryfikowani sprzedawcy, płatności Stripe, baza skradzionych sprzętów",
+      description: "Numer seryjny sprawdzony w rejestrze kradzieży blokuje wystawienie i zakup, opinie tylko z opłaconych transakcji, pieniądze w depozycie do potwierdzenia odbioru",
     },
     {
       image: "./images/rocket.webp",
-      title: "Od startu z nami",
-      description: "Dołącz do pierwszych użytkowników i zmieniaj branżę muzyczną",
+      title: "Status Founding Member",
+      description: "Pierwsi użytkownicy dostają odznakę Founding Member z numerem członkowskim i zwrot do 500 zł na pierwszym zleceniu usługowym",
     }
   ];
 

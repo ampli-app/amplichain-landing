@@ -12,7 +12,7 @@ const MoreThanMarketplaceSection: React.FC = () => {
       image: "./images/hand.webp",
       title: "Bezpieczne zakupy",
       subtitle: "Sprawdź przed zakupem",
-      description: "Weryfikuj numery seryjne w bazie skradzionych instrumentów. Zgłaszaj kradzieże i czytaj opinie od prawdziwych kupujących po transakcjach."
+      description: "Sprawdzaj numery seryjne w rejestrze kradzieży - zgłoszony sprzęt jest automatycznie blokowany do wystawienia i zakupu. Opinie pochodzą wyłącznie z opłaconych transakcji."
     },
     {
       image: "./images/prof.webp",

@@ -43,9 +43,8 @@ const HeroSection = () => {
               </h1>
 
               <p className="text-lg sm:text-xl md:text-2xl text-rhythm-600 max-w-2xl leading-relaxed font-light">
-                To nie jest kolejny marketplace. To nowy{' '}
-                <strong className="font-semibold text-rhythm-950">hub dla branży muzycznej: </strong>
-                sprzedaż, kontakty i wszystko
+                <strong className="font-semibold text-rhythm-950">Jeden system zamiast OLX-a, Excela i Calendly</strong>
+                {' '}– zbudowany dla muzyków. Sprzedaż, kontakty i wszystko,
                 czego potrzebujesz –{' '}
                 <strong className="font-semibold text-rhythm-950">w jednym miejscu.</strong>
               </p>

@@ -19,6 +19,10 @@ const FAQSection: React.FC = () => {
       answer: "Pracujemy nad uruchomieniem platformy. Osoby zapisane na listę oczekujących otrzymają dostęp jako pierwsze.",
     },
     {
+      question: "Co zyskują pierwsi użytkownicy?",
+      answer: "Pierwsi użytkownicy dostają odznakę Founding Member z numerem członkowskim, widoczną na profilu i przy ofertach. Do tego zwrot do 500 zł na pierwszym zleceniu usługowym - finansowany przez platformę, nie z Twojej wypłaty.",
+    },
+    {
       question: "Czy platforma jest tylko dla profesjonalistów?",
       answer: "Nie, Amplichain jest platformą dla wszystkich pasjonatów muzyki - od początkujących po profesjonalistów z branży. Każdy może sprzedawać swój sprzęt, oferować usługi muzyczne. Zależy nam aby każdy mógł budować swoją markę osobistą w branży.",
     },
