@@ -26,19 +26,19 @@ const MoreThanMarketplaceSection: React.FC = () => {
     <section id="more-than-marketplace" className="pt-8 pb-16 bg-white">
       <div className="container">
         <div className="text-center mb-16">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
-            Więcej niż <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">marketplace</span>
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-display mb-8 text-rhythm-950 tracking-tight">
+            Więcej niż <span className="text-olivine-text">marketplace</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-rhythm-600 max-w-3xl mx-auto leading-relaxed">
             Amplichain to więcej niż zwykły marketplace - to kompleksowe rozwiązanie dla społeczności muzycznej.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="group bg-white rounded-2xl sm:rounded-3xl p-6 shadow-soft hover:shadow-hover transition-all duration-300 border border-gray-100 flex flex-col">
+            <div key={index} className="group bg-white rounded-[20px] p-6 shadow-card hover:shadow-hover transition-all duration-200 flex flex-col">
               <div className="relative mb-6">
-                <div className="aspect-video overflow-hidden rounded-xl">
+                <div className="aspect-video overflow-hidden rounded-2xl">
                   <img
                     src={feature.image}
                     alt={feature.title}
@@ -47,13 +47,13 @@ const MoreThanMarketplaceSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold font-syne mb-2 text-gray-900 text-center">
+                <h3 className="text-2xl font-display mb-2 text-rhythm-950 text-center">
                   {feature.title}
                 </h3>
-                <h4 className="text-lg font-medium text-ampli-green mb-4 text-center">
+                <h4 className="text-lg font-medium text-olivine-text mb-4 text-center">
                   {feature.subtitle}
                 </h4>
-                <p className="text-gray-600 text-center">
+                <p className="text-rhythm-600 text-center">
                   {feature.description}
                 </p>
               </div>

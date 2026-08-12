@@ -54,10 +54,10 @@ const Header: React.FC = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="relative px-4 py-2 text-sm font-medium text-gray-700 hover:text-ampli-green transition-all duration-200 group"
+                className="relative px-4 py-2 text-sm font-medium text-rhythm-950 hover:text-olivine-text transition-all duration-200 group"
               >
                 <span className="relative z-10">{item.label}</span>
-                <div className="absolute inset-0 bg-ampli-green/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                <div className="absolute inset-0 bg-olivine-pale rounded-lg scale-0 group-hover:scale-100 transition-transform duration-200"></div>
               </button>
             ))}
           </nav>
@@ -69,16 +69,16 @@ const Header: React.FC = () => {
             data-tally-width="500"
             data-tally-emoji-text="👋"
             data-tally-emoji-animation="wave"
-            size="sm" 
-            className="hidden lg:flex bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl"
+            size="sm"
+            className="hidden lg:flex bg-action hover:bg-action-hover text-white font-semibold shadow-card hover:shadow-hover transition-all duration-200 rounded-xl"
           >
-            <span className="whitespace-nowrap font-semibold">Zapisz się na listę</span>
+            <span className="whitespace-nowrap">Zapisz się na listę</span>
           </Button>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"
+            className="lg:hidden p-2 text-rhythm-950 hover:text-olivine-text transition-colors duration-200 hover:bg-rhythm-50 rounded-lg"
             aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
             aria-expanded={isMobileMenuOpen}
           >
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="p-2 text-gray-500 hover:text-ampli-green transition-colors duration-200 hover:bg-gray-100 rounded-lg"
+              className="p-2 text-rhythm-500 hover:text-olivine-text transition-colors duration-200 hover:bg-rhythm-50 rounded-lg"
               aria-label="Zamknij menu"
             >
               <X className="h-5 w-5" />
@@ -123,7 +123,7 @@ const Header: React.FC = () => {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="w-full text-left px-4 py-3 text-gray-700 hover:text-ampli-green hover:bg-ampli-green/10 rounded-lg transition-all duration-200 font-medium"
+                  className="w-full text-left px-4 py-3 text-rhythm-950 hover:text-olivine-text hover:bg-olivine-pale rounded-lg transition-all duration-200 font-medium"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.label}
@@ -140,9 +140,9 @@ const Header: React.FC = () => {
               data-tally-width="500"
               data-tally-emoji-text="👋"
               data-tally-emoji-animation="wave"
-              className="w-full bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl py-3"
+              className="w-full bg-action hover:bg-action-hover text-white font-semibold shadow-card hover:shadow-hover transition-all duration-200 rounded-xl py-3"
             >
-              <span className="whitespace-nowrap font-semibold">Zapisz się na listę</span>
+              <span className="whitespace-nowrap">Zapisz się na listę</span>
             </Button>
           </div>
         </div>

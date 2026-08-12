@@ -35,19 +35,19 @@ const CategoriesSection: React.FC = () => {
     <section id="categories" className="pt-8 pb-16 bg-white">
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
-            Co mogę <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">sprzedawać</span>?
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-display mb-8 text-rhythm-950 tracking-tight">
+            Co mogę <span className="text-olivine-text">sprzedawać</span>?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-rhythm-600 max-w-3xl mx-auto leading-relaxed">
           Dajesz wartość scenie muzycznej? Czas na tym zarobić.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <div key={index} className="group bg-white rounded-2xl sm:rounded-3xl p-6 shadow-soft hover:shadow-hover transition-all duration-300 border border-gray-100 flex flex-col">
+            <div key={index} className="group bg-white rounded-[20px] p-6 shadow-card hover:shadow-hover transition-all duration-200 flex flex-col">
               <div className="relative mb-6">
-                <div className="aspect-video overflow-hidden rounded-xl">
+                <div className="aspect-video overflow-hidden rounded-2xl">
                   <img
                     src={category.image}
                     alt={category.title}
@@ -56,13 +56,13 @@ const CategoriesSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold font-syne mb-4 text-gray-900 text-center">
+                <h3 className="text-2xl font-display mb-4 text-rhythm-950 text-center">
                   {category.title}
                 </h3>
                 <ul className="space-y-3 text-left flex-grow">
                   {category.examples.map((example, idx) => (
-                    <li key={idx} className="flex items-center text-gray-600">
-                      <span className="w-2 h-2 bg-ampli-green rounded-full mr-3 flex-shrink-0"></span>
+                    <li key={idx} className="flex items-center text-rhythm-600">
+                      <span className="w-2 h-2 bg-olivine-500 rounded-full mr-3 flex-shrink-0"></span>
                       {example}
                     </li>
                   ))}
@@ -71,9 +71,9 @@ const CategoriesSection: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <p className="text-xl text-gray-600 font-medium">
+          <p className="text-xl text-rhythm-600 font-medium">
             ...i nie tylko!
           </p>
         </div>

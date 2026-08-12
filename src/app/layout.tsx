@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Righteous, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const righteous = Righteous({
+  variable: "--font-righteous",
+  weight: "400",
+  subsets: ["latin", "latin-ext"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin", "latin-ext"],
 });
 
 export const metadata: Metadata = {
-  title: "Amplichain - Marketplace dla Twojego Biznesu",
-  description: "Kompleksowa platforma e-commerce z zaawansowanymi narzędziami sprzedażowymi, automatyzacją i integracjami.",
+  title: "Amplichain — Twoja sieć muzycznych możliwości",
+  description: "Marketplace i społeczność dla branży muzycznej: sprzedawaj sprzęt, oferuj usługi, znajdź kontakty. Najniższe prowizje, weryfikowani sprzedawcy, bezpieczne płatności.",
 };
 
 export default function RootLayout({
@@ -26,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${righteous.variable} ${poppins.variable} antialiased`}
       >
         <Providers>
           {children}

@@ -16,7 +16,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Kiedy ruszy platforma?",
-      answer: "Planujemy uruchomienie platformy we wrześniu 2025. Osoby zapisane na listę oczekujących otrzymają dostęp do platformy jako pierwsze.",
+      answer: "Pracujemy nad uruchomieniem platformy. Osoby zapisane na listę oczekujących otrzymają dostęp jako pierwsze.",
     },
     {
       question: "Czy platforma jest tylko dla profesjonalistów?",
@@ -38,28 +38,28 @@ const FAQSection: React.FC = () => {
       <div className="container">
         {/* Nagłówek - teraz maksymalnie czysty, bez ikony */}
         <div className="text-center mb-16">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-display mb-8 text-rhythm-950 tracking-tight">
             Często zadawane pytania
           </h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-rhythm-600 max-w-3xl mx-auto leading-relaxed">
             Wszystko, co musisz wiedzieć o sprzedaży na Amplichain, w jednym miejscu.
           </p>
         </div>
 
         {/* Akordeon z FAQ */}
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm border border-slate-200/80 p-2">
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-subtle border border-rhythm-200 p-2">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border-b border-slate-200/80 last:border-b-0"
+                className="border-b border-rhythm-200 last:border-b-0"
               >
-                <AccordionTrigger className="text-left text-lg font-semibold text-slate-800 p-6 hover:no-underline focus:outline-none">
+                <AccordionTrigger className="text-left text-lg font-semibold text-rhythm-950 p-6 hover:no-underline focus:outline-none">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-rhythm-600 leading-relaxed">
                     {faq.answer}
                   </p>
                 </AccordionContent>
@@ -70,25 +70,25 @@ const FAQSection: React.FC = () => {
 
         {/* Sekcja "Masz inne pytania?" */}
         <div className="max-w-3xl mx-auto mt-12">
-            <div className="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-sm">
+            <div className="bg-white rounded-2xl border border-rhythm-200 p-8 shadow-subtle">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                     <div className="text-center sm:text-left">
-                        <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                        <h3 className="text-2xl font-display mb-2 text-rhythm-950">
                             Nie znalazłeś odpowiedzi?
                         </h3>
-                        <p className="text-slate-600">
+                        <p className="text-rhythm-600">
                             Napisz do nas na <b>hello@amplichain.com</b>
 
                         </p>
                     </div>
                     <div className="flex-shrink-0">
-                         <Button 
+                         <Button
                             asChild
-                            className="inline-flex items-center gap-2 bg-gradient-to-r from-ampli-green to-ampli-lightgreen hover:from-ampli-lightgreen hover:to-ampli-green text-white font-bold shadow-2xl shadow-ampli-green/25 hover:shadow-ampli-green/40 transition-all duration-300 transform hover:scale-105 rounded-xl"
+                            className="inline-flex items-center gap-2 bg-action hover:bg-action-hover text-white font-semibold shadow-card hover:shadow-hover transition-all duration-200 rounded-xl"
                          >
                             <a href="mailto:hello@amplichain.com">
                                 <MessageCircle className="w-5 h-5" />
-                                <span className="whitespace-nowrap font-semibold">Skontaktuj się z nami</span>
+                                <span className="whitespace-nowrap">Skontaktuj się z nami</span>
                             </a>
                          </Button>
                     </div>

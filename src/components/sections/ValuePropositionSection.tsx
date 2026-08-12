@@ -35,27 +35,27 @@ const ValuePropositionSection: React.FC = () => {
       <div className="container px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-3 bg-gray-50/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg mb-6 sm:mb-8">
-            <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
-            <span className="text-xs sm:text-sm font-bold text-ampli-green tracking-wide uppercase">
+          <div className="inline-flex items-center gap-3 bg-olivine-pale border border-olivine-200 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8">
+            <div className="w-2 h-2 bg-olivine-500 rounded-full animate-pulse" />
+            <span className="text-xs sm:text-sm font-bold text-olivine-700 tracking-wide uppercase">
               Dlaczego Amplichain
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-6 sm:mb-8 text-gray-900 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display mb-6 sm:mb-8 text-rhythm-950 tracking-tight">
             Co zyskujesz z
             <br />
-            <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">Amplichain?</span>
+            <span className="text-olivine-text">Amplichain?</span>
           </h2>
-          
+
         </div>
 
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 sm:mb-20">
           {benefits.map((benefit, index) => (
-            <div key={index} className="group bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 transform hover:scale-105 hover:-translate-y-2 flex flex-col">
+            <div key={index} className="group bg-white rounded-[20px] p-6 sm:p-7 shadow-card hover:shadow-hover transition-all duration-200 flex flex-col">
               <div className="relative mb-6">
-                <div className="aspect-video overflow-hidden rounded-xl sm:rounded-2xl">
+                <div className="aspect-video overflow-hidden rounded-2xl">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -63,19 +63,19 @@ const ValuePropositionSection: React.FC = () => {
                   />
                 </div>
               </div>
-              
-              <h3 className="text-lg sm:text-xl font-bold font-syne mb-3 sm:mb-4 text-gray-900">
+
+              <h3 className="text-lg sm:text-xl font-display mb-3 sm:mb-4 text-rhythm-950">
                 {benefit.title}
               </h3>
-              
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+
+              <p className="text-sm sm:text-base text-rhythm-600 leading-relaxed">
                 {benefit.description}
               </p>
             </div>
           ))}
         </div>
 
-        
+
       </div>
     </section>
   );

@@ -2,24 +2,24 @@
 
 :root {
   --background: 0 0% 100%;
-  --foreground: 0 0% 3.9%;
+  --foreground: 240 7% 16%;
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 3.9%;
+  --card-foreground: 240 7% 16%;
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 3.9%;
-  --primary: 0 0% 9%;
+  --popover-foreground: 240 7% 16%;
+  --primary: 240 7% 16%;
   --primary-foreground: 0 0% 98%;
-  --secondary: 0 0% 96.1%;
-  --secondary-foreground: 0 0% 9%;
-  --muted: 0 0% 96.1%;
-  --muted-foreground: 0 0% 45.1%;
-  --accent: 0 0% 96.1%;
-  --accent-foreground: 0 0% 9%;
+  --secondary: 240 6% 97%;
+  --secondary-foreground: 240 7% 16%;
+  --muted: 240 6% 97%;
+  --muted-foreground: 240 4% 60%;
+  --accent: 240 6% 97%;
+  --accent-foreground: 240 7% 16%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 89.8%;
-  --input: 0 0% 89.8%;
-  --ring: 0 0% 3.9%;
+  --border: 240 6% 86%;
+  --input: 240 6% 86%;
+  --ring: 74 100% 24%;
   --radius: 0.5rem;
 }
 
@@ -43,17 +43,52 @@
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
-  --color-ampli-green: #7b9a00;
-  --color-ampli-darkgreen: #6b8a00;
-  --color-ampli-blue: #007FBF;
-  --color-ampli-lightgreen: #8baa10;
-  --color-ampli-lightblue: #1090CF;
-  --color-ampli-darkblue: #006FAF;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-syne: 'Syne', sans-serif;
-  --font-work-sans: 'Work Sans', sans-serif;
+
+  /* Brand — Olivine (patrz amplichain/web-src/DESIGN.md) */
+  --color-olivine-50: #f5f9e5;
+  --color-olivine-100: #e8f0c9;
+  --color-olivine-200: #d1e299;
+  --color-olivine-300: #b3cd5f;
+  --color-olivine-400: #9ab736;
+  --color-olivine-500: #7b9a00;
+  --color-olivine-600: #67810a;
+  --color-olivine-700: #52680d;
+  --color-olivine-800: #42520f;
+  --color-olivine-900: #384610;
+  --color-olivine-950: #1c260a;
+
+  /* Semantyczne — patrz Contrast Audit w DESIGN.md: olivine-500 to WYŁĄCZNIE tło, nigdy tekst/CTA-fill */
+  --color-action: #52680d;
+  --color-action-hover: #445708;
+  --color-olivine-text: #4a5e00;
+  --color-olivine-pale: #f5f9e5;
+
+  /* Neutralne — Rhythm */
+  --color-rhythm-50: #f7f7f8;
+  --color-rhythm-100: #eeeef0;
+  --color-rhythm-200: #d8d8dd;
+  --color-rhythm-300: #b9b9c1;
+  --color-rhythm-400: #9595a0;
+  --color-rhythm-500: #767682;
+  --color-rhythm-600: #5e5e6a;
+  --color-rhythm-700: #4d4d57;
+  --color-rhythm-800: #434349;
+  --color-rhythm-900: #38383e;
+  --color-rhythm-950: #27272d;
+
+  --font-display: var(--font-righteous), Righteous, cursive;
+  --font-heading: var(--font-righteous), Righteous, cursive;
+  --font-body: var(--font-poppins), Poppins, ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), Poppins, ui-sans-serif, system-ui, sans-serif;
+
   --radius: 0.5rem;
+
+  --shadow-card: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 6px, rgba(123, 154, 0, 0.08) 0px 6px 16px;
+  --shadow-hover: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 4px 12px, rgba(123, 154, 0, 0.12) 0px 8px 24px;
+  --shadow-subtle: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  --shadow-floating: rgba(0, 0, 0, 0.12) 0px 8px 32px, rgba(123, 154, 0, 0.1) 0px 2px 8px;
+  --shadow-olivine-glow: 0px 20px 40px rgba(123, 154, 0, 0.18);
+
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-fade-in: fade-in 0.5s ease-out;
@@ -98,32 +133,15 @@
   50% { opacity: 0.7; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-  }
-}
-
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

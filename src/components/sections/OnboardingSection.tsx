@@ -26,17 +26,17 @@ const OnboardingSection: React.FC = () => {
       <div className="container relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <div className="inline-flex items-center gap-2 sm:gap-3 bg-white/80 backdrop-blur-sm border-2 border-ampli-green/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg mb-6 sm:mb-8">
-            <div className="w-2 h-2 bg-ampli-green rounded-full animate-pulse" />
-            <span className="text-xs sm:text-sm font-bold text-ampli-green tracking-wide uppercase">
+          <div className="inline-flex items-center gap-2 sm:gap-3 bg-olivine-pale border border-olivine-200 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8">
+            <div className="w-2 h-2 bg-olivine-500 rounded-full animate-pulse" />
+            <span className="text-xs sm:text-sm font-bold text-olivine-700 tracking-wide uppercase">
               Proces Onboardingu
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-syne mb-8 text-gray-900 tracking-tight">
-            Jak <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zacząć</span>?
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-display mb-8 text-rhythm-950 tracking-tight">
+            Jak <span className="text-olivine-text">zacząć</span>?
           </h2>
-          
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+
+          <p className="text-xl text-rhythm-600 max-w-3xl mx-auto leading-relaxed">
           Prosty proces rejestracji - od założenia konta do wystawienia pierwszych ofert
           </p>
         </div>
@@ -48,30 +48,23 @@ const OnboardingSection: React.FC = () => {
               <div key={index} className="group relative">
                 {/* Connection line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden xl:block absolute top-1/3 -right-4 w-8 h-0.5 bg-gradient-to-r from-ampli-green/30 to-ampli-green/10 z-10" />
+                  <div className="hidden xl:block absolute top-1/3 -right-4 w-8 h-0.5 bg-olivine-200 z-10" />
                 )}
 
                 {/* Step card */}
-                <div className="relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg transition-all duration-500 transform group-hover:-translate-y-2 border border-gray-100/50 overflow-visible h-full">
-                  {/* Background pattern */}
-                  <div className="absolute top-0 right-0 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-ampli-green/5 to-transparent rounded-bl-3xl" />
-
+                <div className="relative bg-white rounded-[20px] p-6 sm:p-8 shadow-card hover:shadow-hover transition-all duration-200 h-full">
                   {/* Content */}
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="relative">
-                        <div className="bg-gradient-to-br from-ampli-green via-ampli-lightgreen to-ampli-darkgreen text-white rounded-full h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center font-bold text-base sm:text-lg shadow-xl group-hover:scale-110 transition-all duration-300">
-                          <span className="relative z-10">{index + 1}</span>
-                          <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full"></div>
-                        </div>
-                        <div className="absolute -inset-1 bg-gradient-to-br from-ampli-green/30 to-ampli-lightgreen/30 rounded-full blur-sm animate-pulse"></div>
+                      <div className="bg-action text-white rounded-full h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center font-bold text-base sm:text-lg">
+                        {index + 1}
                       </div>
-                      <h3 className="text-xl sm:text-2xl font-bold font-syne text-gray-900">
+                      <h3 className="text-xl sm:text-2xl font-display text-rhythm-950">
                         {step.title}
                       </h3>
                     </div>
-                    
-                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+
+                    <p className="text-rhythm-600 leading-relaxed text-sm sm:text-base">
                       {step.description}
                     </p>
                   </div>
@@ -81,27 +74,34 @@ const OnboardingSection: React.FC = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section — Dark Surface CTA Card */}
         <div className="mt-12 sm:mt-16 lg:mt-20 text-center">
-          <div className="max-w-5xl mx-auto rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border-2 border-gray-200">
+          <div
+            className="max-w-5xl mx-auto rounded-[20px] p-6 sm:p-8 lg:p-12 bg-rhythm-950"
+            style={{ boxShadow: "var(--shadow-olivine-glow)" }}
+          >
             <div className="relative">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-syne mb-4 sm:mb-6 text-gray-900 leading-tight">
-                Zacznij <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">zarabiać</span> na swojej <span className="bg-gradient-to-r from-ampli-green to-ampli-darkgreen bg-clip-text text-transparent">pasji</span>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-4 sm:mb-6 text-white leading-tight">
+                Zacznij <span className="text-olivine-200">zarabiać</span> na swojej <span className="text-olivine-200">pasji</span>
               </h3>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
-                Przekształć swoją muzyczną pasję w stabilne źródło dochodu. 
+              <p className="text-base sm:text-lg lg:text-xl text-white/65 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
+                Przekształć swoją muzyczną pasję w stabilne źródło dochodu.
                 Sprzedawaj sprzęt, oferuj usługi i rozwijaj swój biznes z najniższymi prowizjami na rynku.
               </p>
 
               <div className="my-6 sm:my-8 flex flex-col sm:flex-row gap-4 justify-center items-center px-2">
-                <Button 
+                <Button
                   data-tally-open="m6pqbA"
                   data-tally-layout="modal"
                   data-tally-width="500"
                   data-tally-emoji-text="👋"
                   data-tally-emoji-animation="wave"
-                  size="lg" 
-                  className="group bg-gradient-to-r from-ampli-green to-ampli-darkgreen hover:from-ampli-darkgreen hover:to-ampli-green text-white font-bold px-6 sm:px-12 py-4 sm:py-6 text-sm sm:text-xl shadow-xl shadow-ampli-green/20 hover:shadow-ampli-green/30 transition-all duration-300 transform hover:scale-105 rounded-2xl w-full sm:w-auto"
+                  size="lg"
+                  className="group text-white font-bold px-6 sm:px-12 py-4 sm:py-6 text-sm sm:text-xl transition-all duration-200 rounded-2xl w-full sm:w-auto"
+                  style={{
+                    background: "linear-gradient(135deg, #7B9A00, #52680d)",
+                    boxShadow: "0px 8px 24px rgba(123,154,0,0.25)",
+                  }}
                 >
                   <span className="text-center leading-tight">
                     <span className="block sm:hidden">Zacznij zarabiać</span>
@@ -112,17 +112,17 @@ const OnboardingSection: React.FC = () => {
               </div>
 
               {/* Trust indicators */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 pt-4 sm:pt-6 text-xs sm:text-sm text-gray-500">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 pt-4 sm:pt-6 text-xs sm:text-sm text-white/50">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-ampli-green flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-olivine-300 flex-shrink-0" />
                   <span>Bez opłat miesięcznych</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-ampli-green flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-olivine-300 flex-shrink-0" />
                   <span>Bezpieczne transakcje</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-ampli-green flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-olivine-300 flex-shrink-0" />
                   <span>Pełne wsparcie</span>
                 </div>
               </div>
