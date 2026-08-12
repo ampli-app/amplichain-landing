@@ -12,7 +12,7 @@ const CategoriesSection: React.FC = () => {
       ]
     },
     {
-      image: "./images/usługi.webp",
+      image: "./images/uslugi.webp",
       title: "Usługi muzyczne",
       examples: [
         "Nagrywanie w studiu", 

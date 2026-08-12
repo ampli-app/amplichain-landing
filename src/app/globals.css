@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+/*
+ * Tailwind v4 nie centruje ani nie dodaje paddingu do .container domyślnie
+ * (brak tailwind.config.ts w tym projekcie). Bez tej definicji sekcje bez
+ * ręcznego mx-auto lgną do lewej krawędzi. Wartości zgodne z Container
+ * spec w amplichain/web-src/DESIGN.md.
+ */
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  max-width: 1400px;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 240 7% 16%;
