@@ -1,0 +1,7 @@
+name = "amplichain-landing"
+compatibility_date = "2026-10-01"
+
+# Statyczna strona (next build → out/) serwowana przez Workers Static Assets
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
